@@ -1,0 +1,57 @@
+# ==========================================================
+#  CẤU HÌNH BOT VPS  (khóa bí mật để trong .env)
+# ==========================================================
+timezone: "Asia/Ho_Chi_Minh"
+
+github:
+  repo: "ĐIỀN_TAIKHOAN/dailyreels-queue"   # kho riêng tư Claude đẩy kịch bản vào
+  branch: "main"
+  poll_seconds: 60                         # bao lâu kiểm tra kịch bản mới 1 lần
+
+market:
+  ticker: ["BTC", "ETH", "BNB", "SOL", "XRP", "TRX", "DOGE"]
+
+elevenlabs:
+  model_id: "eleven_multilingual_v2"
+  language_code: "vi"
+
+channels:
+  chainfolk:
+    theme: chainfolk
+    display_name: "ChainFolk"
+    cta_voice: "Theo dõi ChainFolk để cập nhật tin crypto mới nhất mỗi ngày nhé!"
+    cta_title: "Theo dõi ChainFolk"
+    cta_subtitle: "Cập nhật tin crypto mới nhất mỗi ngày"
+    disclaimer: "Không phải lời khuyên đầu tư."
+    voice:
+      voice_id: "ĐIỀN_VOICE_ID_CHAINFOLK"
+      stability: 0.43
+      similarity_boost: 0.96
+      style: 0.0
+      speed: 1.03
+    hashtags_base: ["chainfolk", "tintuccrypto", "crypto"]
+    platforms:
+      tiktok:    {enabled: false, token_file: "data/tokens/tiktok_chainfolk.json", mode: "inbox"}
+      facebook:  {enabled: false, page_id: "ĐIỀN_PAGE_ID", token_env: "FB_PAGE_TOKEN_CHAINFOLK"}
+
+  tndgems:
+    theme: tndgems
+    display_name: "TND GEMS"
+    cta_voice: "Theo dõi TND GEMS để không bỏ lỡ những chuyển động on-chain đáng chú ý."
+    cta_title: "Theo dõi TND GEMS"
+    cta_subtitle: "Không bỏ lỡ chuyển động on-chain"
+    disclaimer: "Không phải lời khuyên đầu tư."
+    voice:
+      voice_id: "ĐIỀN_VOICE_ID_TNDGEMS"
+      stability: 0.43
+      similarity_boost: 0.96
+      style: 0.0
+      speed: 1.05
+    hashtags_base: ["tndgems", "onchain", "crypto"]
+    platforms:
+      tiktok:    {enabled: false, token_file: "data/tokens/tiktok_tndgems.json", mode: "inbox"}
+      facebook:  {enabled: false, page_id: "ĐIỀN_PAGE_ID", token_env: "FB_PAGE_TOKEN_TNDGEMS"}
+
+publish:
+  label_ai_content: true            # gắn nhãn nội dung AI
+  graph_api_version: "v26.0"

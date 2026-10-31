@@ -1,0 +1,31 @@
+{
+  "channel": "tndgems",
+  "date": "30.10.2026",
+  "headline": [["NÓNG:", "accent"], ["Tether và Circle đóng băng", "normal"], ["hơn 2,3 tỷ USD", "accent"], ["của hacker vụ Binance", "normal"]],
+  "source": "Nguồn: dữ liệu on-chain, Unchained",
+  "beats": [
+    {"voice": "Bốn mươi phút. Đó là khoảng thời gian Tether và Circle cần để khóa hơn hai tỷ đô la của hacker trong vụ Binance.",
+     "visual": {"type": "big_number", "value": 40, "ring_max": 40, "suffix": "phút", "tone": "good"}},
+    {"voice": "Lúc ba giờ hai mươi tư sáng nay theo giờ Việt Nam, ví nóng Binance 14 bị chiếm quyền thông qua một tính năng mới của Ethereum tên là EIP bảy nghìn bảy trăm linh hai, rồi bị rút sạch sang một ví lạ.",
+     "visual": {"type": "tx_card", "title": "Transaction Details · Ethereum", "status": "Success",
+                "rows": [{"k": "Thời gian", "v": "29/10 20:24 UTC (03:24 VN)"}, {"k": "From", "v": "Binance 14 [hot wallet]"}, {"k": "Method", "v": "EIP-7702 Delegate", "tone": "bad"}, {"k": "To", "v": "0x•••• [Exploiter]", "tone": "bad"}],
+                "tokens_title": "Token chuyển đi (theo Unchained)",
+                "tokens": [{"sym": "ETH", "amount": "197.170 ETH", "note": "~456 triệu $"}, {"sym": "USDT", "amount": "1,68 tỷ USDT", "note": "→ ví hacker"}, {"sym": "USDC", "amount": "823 triệu USDC", "note": "→ ví hacker"}, {"sym": "+62", "amount": "62 token khác", "note": "~564 triệu $"}]}},
+    {"voice": "Ba mươi bảy phút sau, Tether đưa ví này vào danh sách đen. Ba phút tiếp theo, Circle khóa tám trăm hai mươi ba triệu USDC.",
+     "visual": {"type": "timeline", "title": "Dòng thời gian (giờ VN, 30/10)",
+                "events": [{"time": "03:24", "text": "Ví nóng Binance 14 bị rút sạch", "tone": "bad"}, {"time": "04:01", "text": "Tether đưa ví hacker vào danh sách đen", "badge": "+37 phút", "token": "USDT"}, {"time": "04:04", "text": "Circle khóa 823 triệu USDC", "badge": "+3 phút", "token": "USDC"}]}},
+    {"voice": "CEO Tether xác nhận hơn một tỷ năm trăm sáu mươi bảy triệu USDT đã bị đóng băng.",
+     "visual": {"type": "stat_cards", "cards": [{"label": "Tether", "token": "USDT", "value": 1.567, "decimals": 3, "prefix": "> ", "unit": "tỷ USDT", "stamp": "Frozen", "tone": "ice"}]}},
+    {"voice": "Nhưng không phải tất cả đều bị chặn kịp. Khoảng bảy trăm triệu USDT đã được chuyển đi và đổi sang ETH trước khi lệnh đóng băng có hiệu lực.",
+     "visual": {"type": "graph", "title": "Không phải tất cả đều bị chặn kịp", "center": {"title": "Ví hacker", "sub": "0x••••"},
+                "branches": [{"label": "FROZEN", "sub": "1,567 tỷ USDT", "tone": "ice"}, {"label": "FROZEN", "sub": "823 triệu USDC", "tone": "ice"}, {"label": "~700 triệu", "sub": "USDT → ETH", "tone": "bad", "token": "ETH"}]}},
+    {"voice": "Stablecoin có thể bị đóng băng, đó là con dao hai lưỡi của crypto.",
+     "visual": {"type": "bullets", "title": "Stablecoin có thể bị đóng băng", "items": [{"text": "Bảo vệ nạn nhân khi bị hack", "tone": "good"}, {"text": "Nhưng tài sản phụ thuộc bên phát hành", "tone": "bad"}]}}
+  ],
+  "post": {
+    "title": "40 phút: Tether & Circle khóa hơn 2,3 tỷ USD của hacker Binance",
+    "caption": "On-chain: ví nóng Binance 14 bị chiếm quyền qua EIP-7702. Tether và Circle đóng băng hơn 2,3 tỷ USD trong 40 phút, khoảng 700 triệu USDT kịp chạy thoát.",
+    "hashtags": ["onchain", "binance", "tether", "usdc", "crypto"],
+    "sources": ["https://finance.yahoo.com/markets/crypto/articles/binance-says-user-funds-completely-214417766.html"]
+  }
+}
