@@ -1,3 +1,7 @@
 engine/data/
+vps/data/*
+!vps/data/tokens/
+vps/data/tokens/*
+!vps/data/tokens/.gitkeep
 __pycache__/
 *.pyc

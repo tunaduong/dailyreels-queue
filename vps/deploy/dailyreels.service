@@ -1,0 +1,14 @@
+[Unit]
+Description=Bot video crypto hang ngay (ChainFolk / TND GEMS)
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/dailyreels
+ExecStart=/opt/dailyreels/.venv/bin/python run.py
+Restart=always
+RestartSec=10
+User=dailyreels
+
+[Install]
+WantedBy=multi-user.target
