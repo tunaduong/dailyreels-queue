@@ -1,0 +1,38 @@
+{
+  "channel": "chainfolk",
+  "date": "30.10.2026",
+  "headline": [["Binance bị tấn công ví nóng,", "normal"], ["hàng tỷ USD", "accent"], ["bị rút trong 40 phút", "normal"]],
+  "ticker_line": "Binance: tiền người dùng vẫn an toàn",
+  "source": "Nguồn: Unchained, Blockaid, CoinGecko",
+  "beats": [
+    {"voice": "Sàn tiền mã hóa lớn nhất thế giới vừa gặp sự cố an ninh nghiêm trọng.",
+     "visual": {"type": "hero", "icon": "warn", "tone": "alert", "kicker": "SỰ CỐ AN NINH", "title": "BINANCE", "subtitle": "Sàn crypto lớn nhất thế giới"}},
+    {"voice": "Hàng tỷ đô la bị rút khỏi ví nóng của Binance chỉ trong khoảng bốn mươi phút.",
+     "visual": {"type": "big_number", "kicker": "Bị rút khỏi ví nóng", "caption": "HÀNG TỶ USD", "tokens": ["ETH", "USDT", "USDC"], "value": 40, "ring_max": 40, "suffix": "phút", "tone": "bad"}},
+    {"voice": "Rạng sáng ngày ba mươi tháng mười theo giờ Việt Nam, các ví nóng của Binance trên mạng Ethereum bị chuyển tài sản sang một địa chỉ lạ.",
+     "visual": {"type": "flow", "from": {"kicker": "Ví nóng", "title": "Binance 14", "sub": "Ethereum · hot wallet", "tokens": ["ETH", "USDT", "USDC"]},
+                "to": {"kicker": "Địa chỉ nhận", "title": "0x••••", "sub": "chưa rõ danh tính", "tone": "bad"},
+                "amount": {"value": 3.5, "decimals": 1, "prefix": "~", "suffix": "tỷ USD"}, "caption": "29/10 · 20:24 → 21:04 UTC (03:24 → 04:04 giờ VN)"}},
+    {"voice": "Các bên phân tích on-chain ước tính số tiền bị ảnh hưởng từ hơn ba tỷ đến hơn sáu tỷ đô, tùy cách tính.",
+     "visual": {"type": "range", "title": "Ước tính số tiền bị ảnh hưởng", "min": 3, "max": 7, "unit": "tỷ",
+                "markers": [{"value": 3.5, "label": "~3,5 tỷ", "who": "Unchained"}, {"value": 5.8, "label": "~5,8 tỷ", "who": "Cobo"}, {"value": 6.3, "label": "~6,3 tỷ", "who": "Binance*"}],
+                "notes": ["Binance chưa chốt con số thiệt hại cuối cùng.", "*Ước tính tài sản liên quan, theo CoinGabbar."]}},
+    {"voice": "Binance khẳng định tiền của người dùng hoàn toàn an toàn và sàn sẽ chịu toàn bộ thiệt hại.",
+     "visual": {"type": "hero", "icon": "shield", "tone": "good", "kicker": "BINANCE KHẲNG ĐỊNH", "title": "Tiền người dùng an toàn", "subtitle": "Sàn chịu toàn bộ thiệt hại — Yi He, đồng sáng lập"}},
+    {"voice": "Tether và Circle cũng đã kịp đóng băng hơn hai tỷ đô stablecoin liên quan đến vụ việc.",
+     "visual": {"type": "stat_cards", "cards": [{"label": "Tether", "token": "USDT", "value": 1.567, "decimals": 3, "prefix": "> ", "unit": "tỷ USDT", "stamp": "Đã đóng băng", "tone": "ice"},
+                                                {"label": "Circle", "token": "USDC", "value": 823, "unit": "triệu USDC", "stamp": "Đã đóng băng", "tone": "ice"}],
+                "total": {"label": "Tổng cộng bị khóa:", "text": "> 2,3 tỷ USD"}}},
+    {"voice": "Thị trường phản ứng ngay lập tức. Bitcoin rơi về quanh mức bảy mươi bảy nghìn đô.",
+     "visual": {"type": "price_chart", "symbol": "BTC", "days": 1, "timeframe_label": "30m", "start": 79830, "end": 77000,
+                "side": [{"label": "Vốn hóa thị trường", "value": "2.670 tỷ USD"}, {"label": "24h", "value": "▼ 3,7%", "tone": "bad"}]}},
+    {"voice": "Chỉ số sợ hãi và tham lam giảm từ năm mươi mốt xuống ba mươi.",
+     "visual": {"type": "gauge", "title": "Chỉ số Sợ hãi & Tham lam", "from": 51, "to": 30, "from_label": "Hôm qua", "to_label": "Hôm nay"}}
+  ],
+  "post": {
+    "title": "Binance bị hack ví nóng: hàng tỷ USD bị rút trong 40 phút",
+    "caption": "Binance gặp sự cố an ninh: ví nóng trên Ethereum bị rút hàng tỷ USD. Binance khẳng định tiền người dùng an toàn, Tether và Circle đóng băng hơn 2,3 tỷ USD.",
+    "hashtags": ["binance", "crypto", "bitcoin", "tintuccrypto", "blockchain"],
+    "sources": ["https://finance.yahoo.com/markets/crypto/articles/binance-says-user-funds-completely-214417766.html"]
+  }
+}
