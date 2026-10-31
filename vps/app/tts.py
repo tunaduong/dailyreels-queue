@@ -15,7 +15,8 @@ def synth_beats(texts, voice, workdir, api_key, fake=False):
             body = {"text": txt, "model_id": voice.get("model_id", "eleven_multilingual_v2"),
                     "voice_settings": {"stability": voice.get("stability", 0.43), "similarity_boost": voice.get("similarity_boost", 0.96),
                                        "style": voice.get("style", 0.0), "use_speaker_boost": True, "speed": voice.get("speed", 1.03)}}
-            if voice.get("language_code"): body["language_code"] = voice["language_code"]
+            mid = str(body["model_id"])   # chỉ model turbo/flash v2.5 nhận language_code
+            if voice.get("language_code") and ("turbo" in mid or "flash" in mid): body["language_code"] = voice["language_code"]
             if i > 0: body["previous_text"] = texts[i - 1]
             if i < len(texts) - 1: body["next_text"] = texts[i + 1]
             for attempt in range(3):
