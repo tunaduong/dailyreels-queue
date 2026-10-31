@@ -8,10 +8,16 @@ SYM2ID = {"BTC": "bitcoin", "ETH": "ethereum", "BNB": "binancecoin", "SOL": "sol
           "DOGE": "dogecoin", "TON": "the-open-network", "ADA": "cardano", "AVAX": "avalanche-2", "LINK": "chainlink",
           "HYPE": "hyperliquid", "SUI": "sui", "ARB": "arbitrum", "OP": "optimism", "USDT": "tether", "USDC": "usd-coin"}
 
-def _get(url, params=None, key=None):
+def _get(url, params=None, key=None, tries=4):
+    """gọi CoinGecko, tự chờ và thử lại khi bị giới hạn (429)"""
+    import time
     h = {"accept": "application/json"}
     if key: h["x-cg-demo-api-key"] = key
-    r = requests.get(url, params=params, headers=h, timeout=20); r.raise_for_status(); return r.json()
+    for i in range(tries):
+        r = requests.get(url, params=params, headers=h, timeout=25)
+        if r.status_code == 429 and i < tries - 1:
+            wait = int(r.headers.get("Retry-After") or 0) or 15 * (i + 1); log.info("CoinGecko 429, chờ %ss", wait); time.sleep(min(wait, 60)); continue
+        r.raise_for_status(); return r.json()
 
 def ticker(symbols, key=None):
     """-> [(SYM, '76.974', -5.02), ...] ; rỗng nếu lỗi"""

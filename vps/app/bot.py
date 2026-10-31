@@ -66,8 +66,15 @@ class Bot:
         with self.st.lock: self.st.d["jobs"][jid] = {"ch": ch, "stage": "producing", "script": s, "created": time.time(), "note": s.get("note", "")}; self.st.save()
         json.dump(s, open(os.path.join(self.jobdir(jid), "script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         head = " ".join(x[0] for x in s["headline"])
-        self.tg.send(self.owner(), f"📥 Kịch bản mới từ Claude — <b>{E(self.chname(ch))}</b>\n{E(head)}\n🎙️ Đang tạo giọng và dựng video…")
-        self.produce(jid)
+        self.tg.send(self.owner(), f"📥 Kịch bản mới từ Claude — <b>{E(self.chname(ch))}</b>\n{E(head)}\n🎙️ Đang tạo giọng đọc…")
+        self.safe_produce(jid)
+
+    def safe_produce(self, jid):
+        try: self.produce(jid)
+        except Exception as e:
+            log.error("dựng %s lỗi: %s\n%s", jid, e, traceback.format_exc())
+            with self.st.lock: self.st.d["jobs"][jid]["stage"] = "lỗi dựng"; self.st.save()
+            self.tg.send(self.owner(), f"⚠️ <b>Dựng video lỗi</b> <code>{E(jid)}</code>\n<code>{E(str(e))[:900]}</code>", [[("🔁 Làm lại", f"rr|{jid}")]])
 
     # ------------------------------------------------------------ giọng + dựng
     def produce(self, jid):
@@ -75,6 +82,7 @@ class Bot:
         voice = self.voice_for(ch)
         texts = [b["voice"] for b in s["beats"]] + [c["cta_voice"]]
         audio = tts.synth_beats(texts, voice, os.path.join(work, "voice"), self.env.get("ELEVENLABS_API_KEY"), fake=self.fake_voice)
+        self.tg.send(chat, f"🎞️ {E(self.chname(ch))}: đã có giọng, đang dựng video (5–8 phút)…")
         mk = dict(self.cfg.get("market", {})); mk["coingecko_key"] = self.env.get("COINGECKO_KEY")
         v = Video(s, c, audio, work, mk, offline=self.offline, logos=self.logos)
         out = os.path.join(work, f"{jid}.mp4"); prev = os.path.join(work, "preview.png"); v.render(out, prev)
@@ -142,6 +150,9 @@ class Bot:
         job = self.st.d["jobs"].get(jid)
         if not job: return
         self.tg.clear_buttons(chat, cb["message"]["message_id"])
+        if kind == "rr":
+            with self.st.lock: job["stage"] = "producing"; self.st.save()
+            self.tg.send(chat, "🔁 Đang làm lại video…"); self.pool.submit(self.safe_produce, jid); return
         if kind == "pub": self.tg.send(chat, "🚀 Đang đăng…"); self.run_bg(chat, "Đăng bài", self.publish, jid)
         elif kind == "rp": self.run_bg(chat, "Đăng lại", self.publish, jid, [p for p, r in job.get("results", {}).items() if str(r).startswith("❌")])
         elif kind == "done":
@@ -182,8 +193,16 @@ class Bot:
             rows.append(f"• {E(self.chname(j['ch']))} <code>{jid}</code>: {E(j.get('stage', ''))}")
         return "\n".join(rows)
 
+    def resume(self):
+        for jid, j in list(self.st.d["jobs"].items()):
+            if j.get("stage") == "producing":
+                self.tg.send(self.owner(), f"♻️ Bot vừa khởi động lại — làm tiếp video dở <code>{E(jid)}</code>…"); self.pool.submit(self.safe_produce, jid)
+
     def loop(self, once=False):
-        if not once: threading.Thread(target=self.watch_inbox, daemon=True).start()
+        if not once:
+            try: self.resume()
+            except Exception as e: log.warning("resume lỗi: %s", e)
+            threading.Thread(target=self.watch_inbox, daemon=True).start()
         log.info("Bot đang chạy. Kho: %s. Chat: %s", self.repo.repo, self.allowed)
         while True:
             for u in self.tg.updates(self.st.d.get("offset", 0)):

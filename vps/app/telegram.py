@@ -49,8 +49,8 @@ class TG:
 
     def updates(self, offset, timeout=25):
         try:
-            r = requests.get(f"{self.url}/getUpdates", timeout=timeout + 10,
+            r = requests.get(f"{self.url}/getUpdates", timeout=timeout + 20,
                              params={"offset": offset, "timeout": timeout, "allowed_updates": json.dumps(["message", "callback_query"])})
             return r.json().get("result", [])
         except Exception as e:
-            log.warning("getUpdates lỗi: %s", e); return []
+            log.debug("getUpdates: %s", e); return []

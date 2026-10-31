@@ -42,8 +42,7 @@ class Video:
         self.tape = [] if offline or self.theme.TAPE is None else market.ticker(mc.get("ticker", ["BTC", "ETH", "BNB", "SOL", "XRP"]), key)
         CORE.LOGOS.clear()
         if not offline and logos is not None:
-            for name in collect_names({"beats": self.beats}):
-                img = logos.get(name)
+            for name, img in logos.prefetch(collect_names({"beats": self.beats})).items():
                 if img is not None: CORE.LOGOS[name] = img
         self.ctx = []
         fg = None

@@ -1,7 +1,7 @@
 """Logo thật của token và sàn, lấy từ CoinGecko (lưu đệm trong data/logos)."""
 import os, io, json, logging, requests
 from PIL import Image
-from .market import SYM2ID, CG
+from .market import SYM2ID, CG, _get
 
 log = logging.getLogger("logos")
 EXCHANGES = {"BINANCE": "binance", "COINBASE": "gdax", "OKX": "okex", "BYBIT": "bybit_spot", "KRAKEN": "kraken", "BITGET": "bitget",
@@ -19,24 +19,40 @@ class Logos:
         r = requests.get(url, timeout=20); r.raise_for_status()
         im = Image.open(io.BytesIO(r.content)).convert("RGBA"); im.thumbnail((256, 256)); im.save(path); return im
 
+    def prefetch(self, names):
+        """tải trước nhiều logo bằng ÍT lần gọi nhất (1 lần cho mọi token) để tránh bị CoinGecko chặn"""
+        need = [n.upper() for n in names if n.upper() not in self.mem and not os.path.exists(os.path.join(self.dir, n.upper() + ".png"))]
+        coins = {n: (SYM2ID.get(n) or EXTRA_COINS.get(n)) for n in need if n not in EXCHANGES}
+        ids = [c for c in coins.values() if c]
+        if ids:
+            try:
+                js = _get(f"{CG}/coins/markets", {"vs_currency": "usd", "ids": ",".join(ids)}, self.key)
+                by = {c["id"]: c.get("image") for c in js}
+                for n, cid in coins.items():
+                    if cid and by.get(cid):
+                        try: self.mem[n] = self._download(by[cid].replace("/small/", "/large/"), os.path.join(self.dir, n + ".png"))
+                        except Exception as e: log.warning("tải logo %s lỗi: %s", n, e)
+            except Exception as e: log.warning("logo (gộp) lỗi: %s", e)
+        return {n: self.get(n) for n in names}
+
     def get(self, name):
-        """name: 'BTC' | 'USDT' | 'BINANCE' ... -> RGBA hoặc None"""
+        """name: 'BTC' | 'USDT' | 'BINANCE' ... -> RGBA hoặc None (đệm trên đĩa, chỉ tải 1 lần)"""
         k = str(name).upper().strip()
         if k in self.mem: return self.mem[k]
         path = os.path.join(self.dir, k + ".png"); im = None
         try:
             if os.path.exists(path): im = Image.open(path).convert("RGBA")
             elif k in EXCHANGES:
-                js = requests.get(f"{CG}/exchanges/{EXCHANGES[k]}", headers=self._h(), timeout=20).json()
+                js = _get(f"{CG}/exchanges/{EXCHANGES[k]}", None, self.key)
                 if js.get("image"): im = self._download(js["image"], path)
             else:
                 cid = SYM2ID.get(k) or EXTRA_COINS.get(k)
                 if not cid:
-                    res = requests.get(f"{CG}/search", params={"query": k}, headers=self._h(), timeout=20).json().get("coins", [])
+                    res = _get(f"{CG}/search", {"query": k}, self.key).get("coins", [])
                     cid = next((c["id"] for c in res if c.get("symbol", "").upper() == k), None)
                 if cid:
-                    js = requests.get(f"{CG}/coins/markets", params={"vs_currency": "usd", "ids": cid}, headers=self._h(), timeout=20).json()
-                    if js and js[0].get("image"): im = self._download(js[0]["image"].replace("/small/", "/large/"), path)
+                    js = _get(f"{CG}/coins/markets", {"vs_currency": "usd", "ids": cid}, self.key)
+                    if isinstance(js, list) and js and js[0].get("image"): im = self._download(js[0]["image"].replace("/small/", "/large/"), path)
         except Exception as e: log.warning("logo %s lỗi: %s", k, e)
         self.mem[k] = im; return im
 
