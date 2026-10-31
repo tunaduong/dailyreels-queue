@@ -4,6 +4,8 @@ from .core import *
 from .themes import THEMES
 from .templates import TEMPLATES
 from .. import market
+from ..logos import collect_names
+from . import core as CORE
 
 log = logging.getLogger("engine")
 LEAD, GAP, TAIL, XF = 0.15, 0.25, 0.9, 0.35
@@ -25,7 +27,7 @@ def build_audio(paths, out_wav):
     return out_wav, list(zip(starts, durs)), t - GAP + TAIL
 
 class Video:
-    def __init__(self, script, channel_cfg, beat_audio, workdir, market_cfg=None, offline=False):
+    def __init__(self, script, channel_cfg, beat_audio, workdir, market_cfg=None, offline=False, logos=None):
         self.s = script; self.cfg = channel_cfg; self.work = workdir; os.makedirs(workdir, exist_ok=True)
         self.theme = THEMES[channel_cfg["theme"]](); self.theme.static(script); self.P = self.theme.P
         self.beats = list(script["beats"]) + [{"voice": channel_cfg["cta_voice"], "visual": {"type": "cta", "title": channel_cfg["cta_title"],
@@ -34,6 +36,11 @@ class Video:
         self.wav, self.times, self.total = build_audio(beat_audio, os.path.join(workdir, "voice_mix.wav"))
         mc = market_cfg or {}; key = mc.get("coingecko_key")
         self.tape = [] if offline or self.theme.TAPE is None else market.ticker(mc.get("ticker", ["BTC", "ETH", "BNB", "SOL", "XRP"]), key)
+        CORE.LOGOS.clear()
+        if not offline and logos is not None:
+            for name in collect_names({"beats": self.beats}):
+                img = logos.get(name)
+                if img is not None: CORE.LOGOS[name] = img
         self.ctx = []
         fg = None
         for b in self.beats:

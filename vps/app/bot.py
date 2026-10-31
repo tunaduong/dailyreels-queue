@@ -5,6 +5,7 @@ from .telegram import TG
 from . import tts, captions
 from .research import validate
 from .queue import Repo
+from .logos import Logos
 from .render.engine import Video
 from .publish import youtube, tiktok, meta
 
@@ -32,6 +33,8 @@ class Bot:
         self.pool = ThreadPoolExecutor(max_workers=1)
         self.fake_voice = env.get("FAKE_VOICE", "0") == "1"
         self.tz = zoneinfo.ZoneInfo(cfg.get("timezone", "Asia/Ho_Chi_Minh"))
+        self.st.d.setdefault("settings", {}).setdefault("model", {})
+        self.logos = Logos(root, env.get("COINGECKO_KEY"))
 
     def chname(self, ch): return self.cfg["channels"][ch]["display_name"]
     def jobdir(self, jid): p = os.path.join(self.root, "data", "jobs", jid); os.makedirs(p, exist_ok=True); return p
@@ -69,12 +72,11 @@ class Bot:
     # ------------------------------------------------------------ giọng + dựng
     def produce(self, jid):
         job = self.st.d["jobs"][jid]; s = job["script"]; ch = job["ch"]; c = self.cfg["channels"][ch]; work = self.jobdir(jid); chat = self.owner()
-        voice = dict(c["voice"]); voice.setdefault("model_id", self.cfg.get("elevenlabs", {}).get("model_id", "eleven_multilingual_v2"))
-        voice.setdefault("language_code", self.cfg.get("elevenlabs", {}).get("language_code"))
+        voice = self.voice_for(ch)
         texts = [b["voice"] for b in s["beats"]] + [c["cta_voice"]]
         audio = tts.synth_beats(texts, voice, os.path.join(work, "voice"), self.env.get("ELEVENLABS_API_KEY"), fake=self.fake_voice)
         mk = dict(self.cfg.get("market", {})); mk["coingecko_key"] = self.env.get("COINGECKO_KEY")
-        v = Video(s, c, audio, work, mk, offline=self.offline)
+        v = Video(s, c, audio, work, mk, offline=self.offline, logos=self.logos)
         out = os.path.join(work, f"{jid}.mp4"); prev = os.path.join(work, "preview.png"); v.render(out, prev)
         caps = captions.build(s, c)
         with self.st.lock: job.update(stage="review", video=out, captions=caps); self.st.save()
@@ -85,6 +87,21 @@ class Bot:
         self.tg.video(chat, out, cap, [first, [("✏️ Sửa", f"ed|{jid}"), ("❌ Bỏ", f"dr|{jid}")]])
         if not plats:
             self.tg.send(chat, f"📋 <b>Caption để copy:</b>\n<code>{E(caps['tiktok']['title'])}</code>\n<i>Nhớ bật nhãn “Nội dung AI” khi đăng.</i>")
+
+    def voice_for(self, ch):
+        v = dict(self.cfg["channels"][ch]["voice"])
+        v["model_id"] = self.st.d["settings"]["model"].get(ch) or v.get("model_id") or self.cfg.get("elevenlabs", {}).get("model_id")
+        return v
+
+    def voice_test(self, chat):
+        line = "Xin chào, đây là bản tin crypto. Bitcoin vừa giảm về quanh mức bảy mươi bảy nghìn đô, trong khi chỉ số sợ hãi và tham lam rơi xuống ba mươi."
+        self.tg.send(chat, "🎧 Đang tạo giọng mẫu với 2 model hỗ trợ tiếng Việt cho từng kênh…")
+        for ch in self.cfg["channels"]:
+            for m in tts.VI_MODELS:
+                v = self.voice_for(ch); v["model_id"] = m; p = os.path.join(self.root, "data", f"voice_test_{ch}_{m}.mp3")
+                used = tts._synth_one(line, v, p, self.env.get("ELEVENLABS_API_KEY"))
+                cur = " ✅ (đang dùng)" if tts.pick_model(self.voice_for(ch)["model_id"]) == m else ""
+                self.tg.audio(chat, p, f"<b>{E(self.chname(ch))}</b> · model <code>{used}</code>{cur}", [[(f"Dùng model này cho {self.chname(ch)}", f"gm|{ch}|{m}")]])
 
     def platforms(self, ch): return [p for p, pc in self.cfg["channels"][ch]["platforms"].items() if pc.get("enabled")]
 
@@ -118,7 +135,11 @@ class Bot:
     def on_callback(self, cb):
         chat = cb["message"]["chat"]["id"]; self.tg.answer(cb["id"], "Đã nhận")
         if chat not in self.allowed: return
-        kind, jid = (cb.get("data", "").split("|") + [""])[:2]; job = self.st.d["jobs"].get(jid)
+        parts = cb.get("data", "").split("|"); kind, jid = (parts + [""])[:2]
+        if kind == "gm":
+            with self.st.lock: self.st.d["settings"]["model"][parts[1]] = parts[2]; self.st.save()
+            self.tg.send(chat, f"✅ {E(self.chname(parts[1]))} sẽ dùng model <code>{E(parts[2])}</code> từ video kế tiếp."); return
+        job = self.st.d["jobs"].get(jid)
         if not job: return
         self.tg.clear_buttons(chat, cb["message"]["message_id"])
         if kind == "pub": self.tg.send(chat, "🚀 Đang đăng…"); self.run_bg(chat, "Đăng bài", self.publish, jid)
@@ -139,6 +160,7 @@ class Bot:
             self.tg.send(chat, f"Chat ID của bạn: <code>{chat}</code>"); return
         if text.startswith(("/start", "/help")) or not text: self.tg.send(chat, HELP); return
         if text.startswith("/trangthai"): self.tg.send(chat, self.status_text()); return
+        if text.startswith("/giong"): self.run_bg(chat, "Thử giọng", self.voice_test, chat); return
         if text.startswith("/lich"):
             body = text[5:].strip()
             if not body: self.tg.send(chat, LICH_HELP); return
@@ -179,6 +201,7 @@ HELP = """🤖 <b>Bot video crypto</b>
 • /lich — gửi danh sách tin cả tuần.
 • Gửi nội dung/link bất kỳ → chuyển cho Claude làm video.
 • Mỗi video có nút: ✅ Đăng (TikTok nháp + Facebook Reels) · ✏️ Sửa · ❌ Bỏ
+• /giong — nghe thử giọng & chọn model đọc tiếng Việt.
 • /trangthai — xem tiến độ."""
 LICH_HELP = """🗓️ Gửi lịch tuần theo mẫu (mỗi dòng 1 ngày, có thể kèm link):
 /lich

@@ -12,7 +12,7 @@ market:
   ticker: ["BTC", "ETH", "BNB", "SOL", "XRP", "TRX", "DOGE"]
 
 elevenlabs:
-  model_id: "eleven_multilingual_v2"
+  model_id: "eleven_v4"           # hỗ trợ tiếng Việt (multilingual_v2 thì không)
   language_code: "vi"
 
 channels:

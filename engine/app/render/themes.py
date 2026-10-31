@@ -23,8 +23,8 @@ class ChainFolk(Theme):
     handle_safe_right = 905
 
     def __init__(self):
-        self.mark = Image.open(os.path.join(LOGOS, "chainfolk_mark.png")).convert("RGBA")
-        self.word = Image.open(os.path.join(LOGOS, "chainfolk_word.png")).convert("RGBA")
+        self.mark = Image.open(os.path.join(LOGO_DIR, "chainfolk_mark.png")).convert("RGBA")
+        self.word = Image.open(os.path.join(LOGO_DIR, "chainfolk_word.png")).convert("RGBA")
 
     def static(self, s):
         P = self.P; im = Image.new("RGBA", (W, H), self.BG + (255,))
@@ -71,7 +71,7 @@ class TndGems(Theme):
     BOX = (60, 175, 905, 720)
 
     def __init__(self):
-        self.mark = Image.open(os.path.join(LOGOS, "tndgems_mark.png")).convert("RGBA")
+        self.mark = Image.open(os.path.join(LOGO_DIR, "tndgems_mark.png")).convert("RGBA")
 
     def _facets(self, w, h, seed=3):
         import random

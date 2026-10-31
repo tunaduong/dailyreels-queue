@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FONTS = os.path.join(ROOT, "assets", "fonts")
-LOGOS = os.path.join(ROOT, "assets", "logos")
+LOGO_DIR = os.path.join(ROOT, "assets", "logos")
 W, H, FPS = 1080, 1920, 30
 
 _fc = {}
@@ -143,7 +143,15 @@ def stamp(size_wh, text, col, font, angle=-8):
 TOKEN_COL = {"BTC": (247, 147, 26), "ETH": (98, 126, 234), "USDT": (38, 161, 123), "USDC": (39, 117, 202), "BNB": (240, 185, 11),
              "SOL": (153, 69, 255), "XRP": (35, 41, 47), "TRX": (235, 0, 41), "DOGE": (194, 166, 51), "TON": (0, 136, 204),
              "ADA": (0, 51, 173), "AVAX": (232, 65, 66), "LINK": (42, 90, 218), "ARB": (40, 160, 240), "OP": (255, 4, 32), "SUI": (77, 162, 255)}
+LOGOS = {}   # SYM/SÀN -> ảnh RGBA thật (engine nạp trước khi dựng)
+
+def paste_logo(L, img, cx, cy, r, a=1.0):
+    im = img.copy(); im.thumbnail((int(2 * r), int(2 * r)), Image.LANCZOS)
+    safe_comp(L, with_alpha(im, a), cx - im.width / 2, cy - im.height / 2)
+
 def token_badge(d, cx, cy, r, sym):
+    img = LOGOS.get(str(sym).upper())
+    if img is not None and hasattr(d, "L"): paste_logo(d.L, img, cx, cy, r); return
     sym = str(sym)[:5]; c = TOKEN_COL.get(sym.upper(), (110, 116, 140))
     d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=c + (255,))
     f = F("Inter-ExtraBold", r * (0.9 if len(sym) <= 3 else 0.62)); tw = d.textlength(sym, font=f); bb = d.textbbox((0, 0), sym, font=f)

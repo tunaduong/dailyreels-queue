@@ -30,6 +30,17 @@ def hero(L, box, P, v, t, dur, ctx):
     x0, y0, x1, y1 = box; s = _S(box); tone = v.get("tone", "alert"); col = _tone(P, tone)
     icon = v.get("icon", "warn"); a = prog(t, 0, .35); d = BD(L)
     cx0 = x0
+    if v.get("logo"):
+        icx, icy = x0 + 140 * s, (y0 + y1) / 2
+        if tone in ("alert", "bad"):
+            for k in range(3):
+                u = (t * .6 + k / 3) % 1; r = 60 + 220 * u * s
+                d.ellipse([icx - r, icy - r, icx + r, icy + r], outline=A(col, .47 * (1 - u) * a), width=4)
+        soft_dot(L, icx, icy, 110 * s, col, .35 * a, blur=40); d = BD(L)
+        img = LOGOS.get(str(v["logo"]).upper())
+        if img is not None: paste_logo(L, img, icx, icy + 12 * (1 - a), 105 * s, a)
+        else: token_badge(d, icx, icy, 90 * s, v["logo"])
+        d = BD(L); icon = "none"; cx0 = x0 + 290 * s
     if icon != "none":
         icx, icy = x0 + 140 * s, (y0 + y1) / 2
         if tone in ("alert", "bad"):
@@ -345,6 +356,42 @@ def cta(L, box, P, v, t, dur, ctx):
     text_c(d, cx, y + 10 * s, "+ THEO DÕI", F("Inter-ExtraBold", 28 * s), A(P["bg"], b)); y += 76 * s
     t3 = str(v.get("disclaimer", "")); text_c(d, cx, y, t3, fit(d, t3, "Inter-Medium", 22 * s, x1 - x0 - 160), A(P["muted"], prog(t, 1.0, 1.4)))
 
-TEMPLATES = {"hero": hero, "big_number": big_number, "stat_cards": stat_cards, "flow": flow, "range": range_bar,
+# ------------------------------------------------------------------ quote (phát ngôn chính thức)
+def quote(L, box, P, v, t, dur, ctx):
+    x0, y0, x1, y1 = box; s = _S(box); a = prog(t, 0, .35); tone = v.get("tone", "neutral")
+    glass(L, (x0, y0 + 20, x1, y1 - 20), a, tint=_tint(P, tone), edge=_edge(P, tone)); d = BD(L)
+    glow_text(L, (x0 + 26, y0 + 10), "“", F("InterDisplay-Bold", 150 * s), P["accent"], a, blur=12, strength=90); d = BD(L)
+    px = x0 + 40; mw = x1 - x0 - 80; y = y0 + 120 * s
+    qf = F("InterDisplay-Bold", 46 * s); lines = wrap(d, str(v.get("text", "")), qf, mw)
+    if len(lines) > 4: qf = F("InterDisplay-Bold", 36 * s); lines = wrap(d, str(v.get("text", "")), qf, mw)[:5]
+    for i, ln in enumerate(lines):
+        b = prog(t, .3 + i * .25, .6 + i * .25); d.text((px + 20 * (1 - b), y), ln, font=qf, fill=A(P["text"], b)); y += qf.size * 1.3
+    b = _rv(t, len(lines) + 1, dur); y = max(y + 20 * s, y1 - 130 * s); lx = px
+    if v.get("logo"):
+        img = LOGOS.get(str(v["logo"]).upper())
+        if img is not None: paste_logo(L, img, px + 32 * s, y + 34 * s, 32 * s, b)
+        else: token_badge(d, px + 32 * s, y + 34 * s, 30 * s, v["logo"])
+        d = BD(L); lx = px + 80 * s
+    d.text((lx, y), str(v.get("who", "")), font=fit(d, str(v.get("who", "")), "Inter-Bold", 32 * s, x1 - lx - 40), fill=A(P["accent"], b))
+    d.text((lx, y + 42 * s), str(v.get("role", "")), font=fit(d, str(v.get("role", "")), "Inter-Medium", 24 * s, x1 - lx - 40), fill=A(P["muted"], b))
+
+# ------------------------------------------------------------------ news_card (các nguồn báo đưa tin)
+def news_card(L, box, P, v, t, dur, ctx):
+    x0, y0, x1, y1 = box; s = _S(box); items = (v.get("items") or [])[:3]; n = max(1, len(items)); d = BD(L)
+    if v.get("title"): text_c(d, (x0 + x1) / 2, y0, str(v["title"]), fit(d, str(v["title"]), "Inter-Bold", 34 * s, x1 - x0), A(P["text"], prog(t, 0, .35)))
+    top = y0 + (60 * s if v.get("title") else 0); gap = 18 * s; ch = (y1 - top - gap * (n - 1)) / n
+    for i, it in enumerate(items):
+        b = prog(t, (dur * .6) * i / n, (dur * .6) * i / n + .4); yy = top + i * (ch + gap) + 30 * (1 - b)
+        if b <= 0: continue
+        glass(L, (x0, yy, x1, yy + ch), b, tint=P["tint"], edge=P["edge"]); d = BD(L)
+        px = x0 + 28; d.rounded_rectangle([px, yy + 20 * s, px + 8, yy + ch - 20 * s], 4, fill=A(P["accent"], b))
+        out = str(it.get("outlet", "")).upper(); d.text((px + 28, yy + 18 * s), out, font=fit(d, out, "Inter-ExtraBold", 24 * s, (x1 - x0) * .6), fill=A(P["accent"], b))
+        if it.get("date"):
+            df = F("Inter-Medium", 22 * s); dw = d.textlength(str(it["date"]), font=df); d.text((x1 - 30 - dw, yy + 20 * s), str(it["date"]), font=df, fill=A(P["muted"], b))
+        hf = F("Inter-Bold", 30 * s if n > 1 else 40 * s); hy = yy + 58 * s
+        for ln in wrap(d, str(it.get("headline", "")), hf, x1 - px - 60)[:(2 if n > 1 else 4)]:
+            d.text((px + 28, hy), ln, font=hf, fill=A(P["text"], b)); hy += hf.size * 1.28
+
+TEMPLATES = {"hero": hero, "quote": quote, "news_card": news_card, "big_number": big_number, "stat_cards": stat_cards, "flow": flow, "range": range_bar,
              "price_chart": price_chart, "gauge": gauge, "timeline": timeline, "tx_card": tx_card, "graph": graph,
              "bullets": bullets, "cta": cta}

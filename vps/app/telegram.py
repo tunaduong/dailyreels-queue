@@ -34,6 +34,11 @@ class TG:
         if thumb: files["thumbnail"] = open(thumb, "rb")
         return self.call("sendVideo", files=files, timeout=600, **p)
 
+    def audio(self, chat, path, caption="", buttons=None):
+        p = {"chat_id": chat, "caption": caption[:1000], "parse_mode": "HTML"}
+        if buttons: p["reply_markup"] = self.kb(buttons)
+        return self.call("sendAudio", files={"audio": open(path, "rb")}, timeout=300, **p)
+
     def answer(self, cb_id, text=""):
         try: self.call("answerCallbackQuery", callback_query_id=cb_id, text=text[:190])
         except Exception: pass
