@@ -15,16 +15,20 @@ def probe_duration(path):
     return float(out.stdout.strip())
 
 def build_audio(paths, out_wav):
-    """nối các đoạn giọng với khoảng lặng GAP, chèn LEAD ở đầu -> (wav, [(start, dur)])"""
-    durs = [probe_duration(p) for p in paths]; starts = []; t = LEAD
+    """giải mã từng đoạn giọng -> wav (đo thời lượng chính xác), nối với khoảng lặng GAP, LEAD ở đầu -> (wav, [(start, dur)], tổng)"""
+    wavs = []
+    for p in paths:
+        w = os.path.splitext(p)[0] + "_dec.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", p, "-ar", "48000", "-ac", "2", w], check=True); wavs.append(w)
+    durs = [probe_duration(w) for w in wavs]; starts = []; t = LEAD
     for d in durs: starts.append(t); t += d + GAP
     inputs = []; filt = []; ld = int(LEAD * 1000)
-    for i, p in enumerate(paths):
-        inputs += ["-i", p]; pre = f"adelay={ld}|{ld}," if i == 0 else ""
-        filt.append(f"[{i}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,{pre}apad=pad_dur={GAP}[a{i}]")
-    filt.append("".join(f"[a{i}]" for i in range(len(paths))) + f"concat=n={len(paths)}:v=0:a=1,apad=pad_dur={TAIL}[out]")
+    for i, w in enumerate(wavs):
+        inputs += ["-i", w]; pre = f"adelay={ld}|{ld}," if i == 0 else ""
+        filt.append(f"[{i}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,{pre}apad=pad_dur={GAP}[a{i}]")
+    filt.append("".join(f"[a{i}]" for i in range(len(wavs))) + f"concat=n={len(wavs)}:v=0:a=1,apad=pad_dur={TAIL}[out]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(filt), "-map", "[out]", "-ar", "48000", "-ac", "2", out_wav], check=True)
-    return out_wav, list(zip(starts, durs)), t - GAP + TAIL
+    return out_wav, list(zip(starts, durs)), probe_duration(out_wav)
 
 class Video:
     def __init__(self, script, channel_cfg, beat_audio, workdir, market_cfg=None, offline=False, logos=None):
@@ -81,16 +85,23 @@ class Video:
         return self.theme.compose(t, cur, tape)
 
     def render(self, out_mp4, preview_png=None):
-        n = int(self.total * FPS)
+        n = int(self.total * FPS); errlog = out_mp4 + ".ffmpeg.log"
         cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                "-i", self.wav, "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-g", str(FPS * 2),
-               "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-shortest", "-movflags", "+faststart", out_mp4]
-        p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-        for k in range(n):
-            im = self.frame(k / FPS)
-            if preview_png and k == int(FPS * 1.5): im.convert("RGB").save(preview_png)
-            p.stdin.write(im.convert("RGB").tobytes())
-            if k % 300 == 0: log.info("render %s %d/%d", os.path.basename(out_mp4), k, n)
-        p.stdin.close(); rc = p.wait()
-        if rc: raise RuntimeError("ffmpeg lỗi khi xuất video")
+               "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-t", f"{n / FPS:.3f}", "-movflags", "+faststart", out_mp4]
+        with open(errlog, "w") as ef:
+            p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=ef)
+            try:
+                for k in range(n):
+                    im = self.frame(k / FPS)
+                    if preview_png and k == int(FPS * 1.5): im.convert("RGB").save(preview_png)
+                    p.stdin.write(im.convert("RGB").tobytes())
+                    if k % 300 == 0: log.info("render %s %d/%d", os.path.basename(out_mp4), k, n)
+                p.stdin.close()
+            except (BrokenPipeError, OSError):
+                pass
+            rc = p.wait()
+        if rc or not os.path.exists(out_mp4) or os.path.getsize(out_mp4) < 10000:
+            tail = open(errlog, encoding="utf-8", errors="replace").read()[-600:]
+            raise RuntimeError(f"ffmpeg dừng (mã {rc}) ở khung {k}/{n}: {tail or 'không có thông báo'}")
         return out_mp4
