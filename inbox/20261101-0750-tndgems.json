@@ -1,0 +1,45 @@
+{
+ "channel": "tndgems",
+ "date": "01.11.2026",
+ "headline": [["Hacker Triều Tiên đang giữ", "normal"], ["18.270 BTC", "accent"], ["nhiều hơn cả Tesla", "normal"]],
+ "source": "Nguồn: TRM Labs, CoinDesk, FBI",
+ "beats": [
+  {"voice": "Mười tám nghìn hai trăm bảy mươi bitcoin. Đó là số BTC nhóm tin tặc Triều Tiên lấy từ Binance, nhiều hơn cả Tesla đang nắm giữ.",
+   "visual": {"type": "big_number", "value": 18270, "suffix": "BTC", "kicker": "Bị rút khỏi ví nóng Binance", "caption": "HƠN TESLA", "tokens": ["BTC"], "tone": "bad"}},
+  {"voice": "Để so sánh, Tesla giữ mười một nghìn năm trăm linh chín BTC. Kho dự trữ của El Salvador chỉ khoảng bảy nghìn tám trăm hai mươi BTC.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Ví hacker", "token": "BTC", "value": 18270, "unit": "BTC", "tone": "bad"},
+     {"label": "Tesla", "token": "BTC", "value": 11509, "unit": "BTC", "tone": "neutral"},
+     {"label": "El Salvador", "token": "BTC", "value": 7820, "prefix": "~", "unit": "BTC", "tone": "neutral"}],
+     "total": {"label": "Theo CoinDesk,", "text": "gấp ~2,3 lần El Salvador"}}},
+  {"voice": "Ba giờ năm phút sáng ba mươi tháng mười, giờ Việt Nam, năm ví XRP của Binance bị rút. Ba giờ hai mươi, tới ví bitcoin. Hơn ba phút sau, ví Ethereum bị quét sạch.",
+   "visual": {"type": "timeline", "title": "Dòng thời gian (giờ VN, 30/10)", "events": [
+     {"time": "03:05", "text": "233 triệu XRP rời 5 ví nóng", "tone": "bad", "token": "XRP"},
+     {"time": "03:20", "text": "18.270 BTC rời ví nóng bitcoin", "tone": "bad", "token": "BTC"},
+     {"time": "03:23", "text": "Ví nóng Ethereum bị quét sạch", "badge": "+3 phút 24 giây", "tone": "bad", "token": "ETH"},
+     {"time": "04:01", "text": "Tether khóa 971 triệu USDT", "tone": "ice", "token": "USDT"}]}},
+  {"voice": "Mấu chốt nằm ở năm mươi chữ ký EIP bảy nghìn bảy trăm linh hai được soạn sẵn, biến ví nóng thành một cỗ máy hút tiền.",
+   "visual": {"type": "tx_card", "title": "Transaction Details · Ethereum", "status": "Success", "rows": [
+     {"k": "Thời gian", "v": "29/10 20:20 UTC (03:20 VN)"},
+     {"k": "From", "v": "0x•••• [Operator]", "tone": "bad"},
+     {"k": "Method", "v": "EIP-7702 × 50 chữ ký", "tone": "bad"},
+     {"k": "Kết quả", "v": "Ví nóng Binance → sweeper", "tone": "bad"}],
+     "tokens_title": "Bị quét khỏi ví Ethereum (theo TRM Labs)",
+     "tokens": [{"sym": "ETH", "amount": "167.464 ETH", "note": "→ ví hacker"}, {"sym": "USDT", "amount": "1,615 tỷ USDT", "note": "→ ví hacker"}, {"sym": "+63", "amount": "63 token khác", "note": "→ ví hacker"}]}},
+  {"voice": "Số bitcoin bị chia nhỏ vào mười chín địa chỉ. Mười bảy ví giữ đúng một nghìn BTC mỗi ví.",
+   "visual": {"type": "flow", "from": {"kicker": "Ví nóng", "title": "Binance BTC", "sub": "Bitcoin · hot wallet", "tokens": ["BTC"]}, "to": {"kicker": "Chia vào 19 ví", "title": "17 × 1.000 BTC", "sub": "+ 2 ví ~833 và ~438 BTC", "tone": "bad"}, "amount": {"value": 18270, "decimals": 0, "suffix": "BTC"}, "caption": "29/10 · 20:20 UTC (03:20 giờ VN)"}},
+  {"voice": "Phần stablecoin thì đang chạy qua DeFi. Ba trăm hai mươi lăm triệu USDT bị đổi sang ETH, sáu mươi triệu USDT được thế chấp trên Aave, ba trăm triệu USDT gửi vào JustLend.",
+   "visual": {"type": "graph", "title": "Dòng tiền rửa qua DeFi", "center": {"title": "Ví hacker", "sub": "0x••••"}, "branches": [
+     {"label": "UniswapX", "sub": "325 triệu USDT → ETH", "tone": "bad", "token": "ETH"},
+     {"label": "Aave", "sub": "Thế chấp 60 triệu USDT", "tone": "bad", "token": "USDT"},
+     {"label": "JustLend", "sub": "300 triệu USDT (Tron)", "tone": "bad", "token": "TRX"}]}},
+  {"voice": "FBI đã công bố danh sách ví của nhóm TraderTraitor và yêu cầu các sàn chặn mọi giao dịch liên quan.",
+   "visual": {"type": "quote", "who": "FBI", "role": "Cảnh báo an ninh mạng · 31/10 (lược dịch)", "text": "Chặn giao dịch với, hoặc bắt nguồn từ, các địa chỉ TraderTraitor dùng để rửa tài sản bị đánh cắp.", "tone": "bad"}}
+ ],
+ "post": {
+  "title": "18.270 BTC: hacker Triều Tiên vụ Binance đang giữ nhiều BTC hơn Tesla",
+  "caption": "On-chain: 18.270 BTC bị chia vào 19 ví, ví Ethereum bị quét qua 50 chữ ký EIP-7702 soạn sẵn, stablecoin đang được rửa qua UniswapX, Aave, JustLend. FBI xác nhận nhóm TraderTraitor của Triều Tiên đứng sau.",
+  "hashtags": ["onchain", "binance", "bitcoin", "trieutien", "crypto"],
+  "sources": ["https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history", "https://coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve", "https://www.koreaherald.com/article/10921526"]
+ }
+}
