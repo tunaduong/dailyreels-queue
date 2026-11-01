@@ -65,10 +65,12 @@ class TndGems(Theme):
     P = dict(bg=(10, 14, 14), text=(245, 245, 245), muted=(150, 175, 165), accent=(45, 232, 154), good=(45, 232, 154),
              bad=(255, 84, 112), ice=(150, 225, 255), tint=(14, 30, 24), edge=(45, 232, 154), bad_tint=(40, 16, 22),
              good_tint=(14, 40, 30), ice_tint=(14, 30, 40), grid=(24, 40, 34), net=(45, 232, 154), tape_bg=(4, 12, 10), tape_line=(30, 60, 48), glow=(45, 232, 154), accent2=(150, 225, 255))
-    VH, PY = 860, 860
-    WIN = (1080, 860)
+    # Bố cục theo vùng an toàn TikTok/Reels: tránh thanh tìm kiếm phía trên (~240px)
+    # và phần chú thích phía dưới (~380px), nội dung + bảng tiêu đề nằm giữa màn hình.
+    VH, PY = 1040, 1040
+    WIN = (1080, 1040)
     TAPE = None
-    BOX = (60, 175, 905, 720)
+    BOX = (50, 262, 905, 950)
 
     def __init__(self):
         self.mark = Image.open(os.path.join(LOGO_DIR, "tndgems_mark.png")).convert("RGBA")
@@ -98,11 +100,11 @@ class TndGems(Theme):
         mk = self.mark.resize((int(self.mark.width * 64 / self.mark.height), 64), Image.LANCZOS); im.alpha_composite(mk, (px + 24, pyy + 11))
         d = ImageDraw.Draw(im); tx = px + 24 + mk.width + 16; f = F("Inter-ExtraBold", 44)
         d.text((tx, pyy + 17), "TND", font=f, fill=self.WH); d.text((tx + d.textlength("TND ", font=f), pyy + 17), "GEMS", font=f, fill=self.MINT)
-        y = py + 80
-        d.text((90, y + 8), "NGÀY ĐĂNG: " + s.get("date", "").replace(".", "/"), font=F("Inter-Bold", 30), fill=self.MINT); y += 84
+        y = py + 68
+        d.text((90, y + 8), "NGÀY ĐĂNG: " + s.get("date", "").replace(".", "/"), font=F("Inter-Bold", 30), fill=self.MINT); y += 72
         segs = [(str(t).upper(), self.MINT if tone == "accent" else self.WH) for t, tone in s["headline"]]
         size = 62
-        while size > 46 and count_lines(segs, F("Inter-ExtraBold", size), 820) > 4: size -= 4
+        while size > 46 and count_lines(segs, F("Inter-ExtraBold", size), 820) > 3: size -= 4
         y, n = wrap_head(im, 90, y, segs, F("Inter-ExtraBold", size), int(size * 1.29), 820)
         d.text((90, y + 26), s.get("source", ""), font=fit(d, s.get("source", ""), "Inter-Medium", 32, 820, 22), fill=P["muted"])
         self.last_text_y = y + 66

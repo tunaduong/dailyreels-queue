@@ -23,7 +23,7 @@ def _fmtv(val, dec, k=1.0, prefix="", suffix=""):
     if x is None: return f"{prefix}{val}{suffix}"
     return f"{prefix}{fmt_num(x, int(dec or 0))}{suffix}"
 
-def _S(box): return min(1.15, (box[3] - box[1]) / 456)
+def _S(box): return min(1.3, (box[3] - box[1]) / 456)
 
 # ------------------------------------------------------------------ hero
 def hero(L, box, P, v, t, dur, ctx):
