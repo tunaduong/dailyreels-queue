@@ -1,0 +1,38 @@
+{
+ "channel": "chainfolk",
+ "date": "01.11.2026",
+ "headline": [["FBI: Triều Tiên đứng sau vụ trộm", "normal"], ["hơn 6 tỷ USD", "accent"], ["từ Binance", "normal"]],
+ "ticker_line": "Binance: đã bù khoảng 90% thiệt hại",
+ "source": "Nguồn: FBI, TRM Labs, Yonhap, AFP",
+ "beats": [
+  {"voice": "Cục Điều tra Liên bang Mỹ vừa đưa ra kết luận: Triều Tiên đứng sau vụ trộm tiền mã hóa lớn nhất lịch sử, nhắm vào sàn Binance.",
+   "visual": {"type": "hero", "logo": "BINANCE", "icon": "warn", "tone": "alert", "kicker": "FBI CÔNG BỐ", "title": "TRIỀU TIÊN", "subtitle": "Đứng sau vụ trộm hơn 6 tỷ USD từ Binance"}},
+  {"voice": "Theo FBI, nhóm tin tặc TraderTraitor của Triều Tiên đã lấy đi hơn sáu tỷ đô la tài sản số từ sàn này.",
+   "visual": {"type": "quote", "who": "FBI", "role": "Cảnh báo an ninh mạng · 31/10 (lược dịch)", "text": "Triều Tiên chịu trách nhiệm cho vụ trộm hơn 6 tỷ USD tài sản ảo từ sàn tiền mã hóa Binance.", "tone": "bad"}},
+  {"voice": "Công ty TRM Labs ước tính con số là sáu phẩy ba sáu tỷ đô, gấp khoảng bốn lần vụ Bybit năm hai nghìn không trăm hai mươi lăm.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Binance · 10/2026", "value": 6.36, "decimals": 2, "unit": "tỷ USD", "stamp": "Kỷ lục", "tone": "bad"},
+     {"label": "Bybit · 02/2025", "value": 1.5, "decimals": 1, "unit": "tỷ USD", "tone": "neutral"}],
+     "total": {"label": "Theo TRM Labs:", "text": "gấp ~4 lần"}}},
+  {"voice": "Binance cho biết đã bù đắp khoảng chín mươi phần trăm thiệt hại, bằng quỹ bảo vệ người dùng, quỹ bảo hiểm và tiền của công ty.",
+   "visual": {"type": "big_number", "value": 90, "ring_max": 100, "prefix": "~", "suffix": "%", "kicker": "Binance đã bù đắp", "caption": "THIỆT HẠI", "tokens": ["BTC", "ETH", "USDT", "BNB"], "tone": "good"}},
+  {"voice": "Với người dùng, nạp tiền vẫn hoạt động bình thường. Sàn dự kiến mở lại rút tiền vào Chủ nhật, sau khi hoàn tất kiểm tra an ninh.",
+   "visual": {"type": "bullets", "title": "Người dùng cần biết", "items": [
+     {"text": "Nạp tiền: vẫn hoạt động bình thường", "tone": "good"},
+     {"text": "Rút tiền: dự kiến mở lại Chủ nhật", "tone": "ice"},
+     {"text": "Khoảng 3 tỷ USD đã bị đóng băng", "tone": "ice"},
+     {"text": "10% còn lại: token kém thanh khoản", "tone": "accent"}]}},
+  {"voice": "FBI cũng kêu gọi các sàn và nền tảng DeFi chặn mọi giao dịch với những địa chỉ mà nhóm tin tặc đang dùng để rửa tiền.",
+   "visual": {"type": "hero", "icon": "shield", "tone": "ice", "kicker": "FBI KÊU GỌI", "title": "CHẶN VÍ HACKER", "subtitle": "Sàn, DeFi, dịch vụ swap chặn địa chỉ liên quan", "tokens": ["ETH", "BTC"]}},
+  {"voice": "Hãng tin Yonhap và AFP đã đồng loạt đưa tin về kết luận này của FBI.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "Yonhap / Korea Herald", "date": "01/11/2026", "headline": "FBI says N. Korea responsible for over $6b crypto theft from Binance"},
+     {"outlet": "AFP / Yahoo News", "date": "01/11/2026", "headline": "FBI says North Korea behind $6 billion crypto theft from Binance"}]}}
+ ],
+ "post": {
+  "title": "FBI: Triều Tiên đứng sau vụ trộm hơn 6 tỷ USD từ Binance",
+  "caption": "FBI xác định nhóm TraderTraitor của Triều Tiên đứng sau vụ hack Binance, lớn nhất lịch sử crypto. Binance cho biết đã bù khoảng 90% thiệt hại và dự kiến mở lại rút tiền vào Chủ nhật.",
+  "hashtags": ["binance", "fbi", "trieutien", "crypto", "tintuccrypto"],
+  "sources": ["https://www.koreaherald.com/article/10921526", "https://www.yahoo.com/news/us/articles/fbi-says-north-korea-behind-001658611.html", "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history", "https://finance.yahoo.com/markets/crypto/articles/binance-says-90-hack-impact-191513226.html"]
+ }
+}
