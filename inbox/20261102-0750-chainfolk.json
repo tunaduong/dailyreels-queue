@@ -1,0 +1,40 @@
+{
+ "channel": "chainfolk",
+ "date": "02.11.2026",
+ "headline": [["Binance mở lại rút tiền,", "normal"], ["đã bù 95%", "accent"], ["số tài sản bị hack", "normal"]],
+ "ticker_line": "Binance: người dùng không chịu thiệt hại",
+ "source": "Nguồn: CoinDesk, TechCrunch, Investing.com",
+ "beats": [
+  {"voice": "Sau gần ba ngày phong tỏa, Binance đã mở lại lệnh rút tiền cho người dùng.",
+   "visual": {"type": "hero", "logo": "BINANCE", "icon": "shield", "tone": "good", "kicker": "MỞ LẠI RÚT TIỀN", "title": "BINANCE", "subtitle": "Rút tiền trở lại sau vụ hack sáu phẩy ba tỷ USD"}},
+  {"voice": "Sàn cho biết đã bù khoảng chín mươi lăm phần trăm số tài sản bị đánh cắp, tăng từ chín mươi phần trăm một ngày trước đó.",
+   "visual": {"type": "big_number", "value": 95, "ring_max": 100, "prefix": "~", "suffix": "%", "kicker": "Tài sản bị hack đã được bù", "caption": "TỪ 90% LÊN 95%", "tone": "good"}},
+  {"voice": "Đợt đầu bắt đầu lúc mười ba giờ chiều qua theo giờ Việt Nam. Bitcoin được mở trước, sau đó là Ethereum, USDT, USDC, BNB và XRP.",
+   "visual": {"type": "bullets", "title": "Đợt 1 · 13:00 giờ VN, 01/11", "items": [
+     {"text": "Bitcoin mở đầu tiên", "tone": "good"},
+     {"text": "Tiếp theo: ETH, USDT, USDC, BNB, XRP", "tone": "ice"},
+     {"text": "Có thể chậm do lượng lệnh lớn", "tone": "accent"}]}},
+  {"voice": "Binance khẳng định sàn sẽ tự gánh toàn bộ thiệt hại và không chuyển khoản lỗ sang người dùng.",
+   "visual": {"type": "quote", "logo": "BINANCE", "who": "Binance", "role": "Thông báo chính thức · 01/11 (lược dịch)", "text": "Binance sẽ gánh chịu tác động tài chính từ số tiền bị đánh cắp. Khoản lỗ sẽ không bị chuyển sang người dùng.", "tone": "good"}},
+  {"voice": "Để bù đắp, sàn dành ra sáu phẩy ba bốn tỷ đô, lấy từ quỹ bảo vệ người dùng SAFU, ngân quỹ công ty và một phần quỹ bảo hiểm hợp đồng tương lai.",
+   "visual": {"type": "graph", "title": "Nguồn tiền bù đắp", "center": {"title": "6,34 tỷ USD", "sub": "vốn riêng của Binance"}, "branches": [
+     {"label": "Quỹ SAFU", "sub": "bảo vệ người dùng", "tone": "ice"},
+     {"label": "Ngân quỹ", "sub": "công ty", "tone": "ice"},
+     {"label": "Quỹ bảo hiểm", "sub": "một phần · futures", "tone": "ice"}]}},
+  {"voice": "Bằng chứng dự trữ mới, kèm bản chứng minh không tiết lộ, dự kiến được công bố trước ngày ba tháng mười một.",
+   "visual": {"type": "hero", "icon": "lock", "tone": "neutral", "kicker": "CẦN THEO DÕI", "title": "Bằng chứng dự trữ", "subtitle": "Chụp số dư 00:00 UTC 31/10 · bản zk dự kiến trước 03/11"}},
+  {"voice": "Các trang tin lớn như CoinDesk và TechCrunch đều đã xác nhận việc Binance mở lại rút tiền.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "CoinDesk", "date": "01/11/2026", "headline": "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"},
+     {"outlet": "TechCrunch", "date": "01/11/2026", "headline": "Binance resumes withdrawals following $6.3 billion breach"}]}}
+ ],
+ "post": {
+  "title": "Binance mở lại rút tiền sau vụ hack 6,3 tỷ USD, đã bù 95% tài sản",
+  "caption": "Binance mở lại rút tiền theo từng đợt từ 01/11, bắt đầu với Bitcoin. Sàn cho biết đã bù khoảng 95% tài sản bị đánh cắp và người dùng sẽ không chịu thiệt hại.",
+  "hashtags": ["binance", "crypto", "bitcoin", "tintuccrypto", "blockchain"],
+  "sources": [
+   "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+   "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/",
+   "https://crypto.news/binance-restores-usdt-usdc-eth-bnb-withdrawals/"]
+ }
+}

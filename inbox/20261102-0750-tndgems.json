@@ -1,0 +1,183 @@
+{
+ "channel": "tndgems",
+ "date": "02.11.2026",
+ "headline": [
+  [
+   "Binance mở lại rút tiền:",
+   "normal"
+  ],
+  [
+   "3,64 tỷ USD",
+   "accent"
+  ],
+  [
+   "chảy ra trong 9,5 giờ",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: Binance, Reuters, DefiLlama",
+ "beats": [
+  {
+   "voice": "Bốn phẩy sáu lăm tỷ đô. Đó là số tiền bị rút khỏi Binance chỉ trong chín tiếng rưỡi đầu tiên sau khi sàn mở lại.",
+   "visual": {
+    "type": "big_number",
+    "value": 4.65,
+    "decimals": 2,
+    "suffix": "tỷ USD",
+    "kicker": "Bị rút khỏi Binance",
+    "caption": "TRONG 9,5 GIỜ",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Trong cùng khoảng thời gian, chỉ có một phẩy không một tỷ đô được nạp vào. Dòng tiền ròng chảy ra khoảng ba phẩy sáu tư tỷ đô.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Rút ra",
+      "value": 4.65,
+      "decimals": 2,
+      "unit": "tỷ USD",
+      "tone": "bad"
+     },
+     {
+      "label": "Nạp vào",
+      "value": 1.01,
+      "decimals": 2,
+      "unit": "tỷ USD",
+      "tone": "good"
+     },
+     {
+      "label": "Ròng ra",
+      "value": 3.64,
+      "decimals": 2,
+      "prefix": "~",
+      "unit": "tỷ USD",
+      "tone": "bad"
+     }
+    ],
+    "total": {
+     "label": "Khung giờ:",
+     "text": "06:00 → 15:30 UTC, 01/11"
+    }
+   }
+  },
+  {
+   "voice": "Mười ba giờ chiều qua theo giờ Việt Nam, cửa rút mở cho bitcoin. Mười chín giờ ba mươi sáu, cả mười lăm mạng của đợt một đã hoạt động trở lại.",
+   "visual": {
+    "type": "timeline",
+    "title": "Dòng thời gian (giờ VN, 01/11)",
+    "events": [
+     {
+      "time": "13:00",
+      "text": "Đợt 1 mở, BTC đi trước",
+      "tone": "ice",
+      "token": "BTC"
+     },
+     {
+      "time": "19:36",
+      "text": "Đủ 15 mạng của đợt 1 hoạt động",
+      "badge": "+6 giờ 36 phút",
+      "tone": "good"
+     },
+     {
+      "time": "22:30",
+      "text": "Ròng ra ~3,64 tỷ USD",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Thứ tự mở lại: Bitcoin đi đầu, rồi Ethereum, BNB Chain, XRP và Base. Solana, Tron cùng các mạng còn lại theo sau.",
+   "visual": {
+    "type": "bullets",
+    "title": "Thứ tự mở lại · đợt 1",
+    "items": [
+     {
+      "text": "1. Bitcoin",
+      "tone": "good"
+     },
+     {
+      "text": "2. Ethereum, BNB Chain, XRP, Base",
+      "tone": "ice"
+     },
+     {
+      "text": "3. OP, ARB, TRX, SOL, DOGE, POL, AVAX",
+      "tone": "ice"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Con số nghe lớn, nhưng so với một trăm bảy mươi mốt tỷ đô tài sản Binance công bố, dòng ròng chỉ chiếm khoảng hai phẩy một phần trăm.",
+   "visual": {
+    "type": "big_number",
+    "value": 2.1,
+    "decimals": 1,
+    "ring_max": 100,
+    "prefix": "~",
+    "suffix": "%",
+    "kicker": "Ròng ra / tổng tài sản",
+    "caption": "TRÊN 171 TỶ USD",
+    "tone": "accent"
+   }
+  },
+  {
+   "voice": "Lưu ý, đây là số Binance tự công bố. DefiLlama đo độc lập ghi nhận khoảng bốn phẩy không năm tỷ đô ròng ra trong hai mươi tư giờ.",
+   "visual": {
+    "type": "range",
+    "title": "Dòng tiền ròng ra, theo nguồn",
+    "min": 3,
+    "max": 5,
+    "unit": "tỷ",
+    "markers": [
+     {
+      "value": 3.64,
+      "label": "~3,64 tỷ",
+      "who": "Binance · 9,5 giờ"
+     },
+     {
+      "value": 4.05,
+      "label": "~4,05 tỷ",
+      "who": "DefiLlama · 24 giờ"
+     }
+    ],
+    "notes": [
+     "Hai nguồn đo khung thời gian khác nhau."
+    ]
+   }
+  },
+  {
+   "voice": "Kênh tài chính CNBC cũng đã đưa tin về dòng tiền tháo chạy này.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "CNBC",
+      "date": "02/11/2026",
+      "headline": "Binance sees $3.64 billion in net outflows as withdrawals resume after massive hack"
+     }
+    ]
+   }
+  }
+ ],
+ "post": {
+  "title": "3,64 tỷ USD rời Binance trong 9,5 giờ đầu mở lại rút tiền",
+  "caption": "Ngày đầu Binance mở lại rút tiền: 4,65 tỷ USD rút ra, 1,01 tỷ nạp vào, ròng ra khoảng 3,64 tỷ USD, tương đương ~2,1% tổng tài sản sàn công bố. DefiLlama ghi nhận ~4,05 tỷ USD trong 24 giờ.",
+  "hashtags": [
+   "onchain",
+   "binance",
+   "dongtien",
+   "crypto",
+   "bitcoin"
+  ],
+  "sources": [
+   "https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html",
+   "https://en.coin-turk.com/binance-records-3-64-billion-net-outflows-after-6-3-billion-security-breach/",
+   "https://www.spendnode.io/blog/binance-withdrawals-reopen-outflow-november-2026/"
+  ]
+ }
+}
