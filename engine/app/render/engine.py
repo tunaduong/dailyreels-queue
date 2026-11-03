@@ -6,9 +6,11 @@ from .templates import TEMPLATES
 from .. import market
 from ..logos import collect_names
 from . import core as CORE
+from .cover import make_cover
 
 log = logging.getLogger("engine")
 LEAD, GAP, TAIL, XF = 0.15, 0.25, 0.9, 0.35
+COVER_FRAMES = 2   # 2 khung đầu (~0,07s) là ảnh bìa -> TikTok/Reels lấy khung 0 làm bìa
 
 def probe_duration(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path], capture_output=True, text=True)
@@ -42,7 +44,7 @@ class Video:
         self.tape = [] if offline or self.theme.TAPE is None else market.ticker(mc.get("ticker", ["BTC", "ETH", "BNB", "SOL", "XRP"]), key)
         CORE.LOGOS.clear()
         if not offline and logos is not None:
-            for name, img in logos.prefetch(collect_names({"beats": self.beats})).items():
+            for name, img in logos.prefetch(collect_names({"beats": self.beats + [{"visual": script.get("cover") or {}}]})).items():
                 if img is not None: CORE.LOGOS[name] = img
         self.ctx = []
         fg = None
@@ -83,7 +85,12 @@ class Video:
             tape = ticker_tape(self.theme.WIN[0], t, self.tape, h=self.theme.TAPE, bg=self.P["tape_bg"], up=self.P["good"], dn=self.P["bad"], txt=self.P["text"], line=self.P["tape_line"]) if self.tape else None
         return self.theme.compose(t, cur, tape)
 
-    def render(self, out_mp4, preview_png=None):
+    def cover(self, out_png, thumb_jpg=None):
+        """ảnh bìa 1080x1920 (+ bản nhỏ cho Telegram) theo trường `cover` của kịch bản"""
+        return make_cover(self.s, self.theme, out_png, thumb_jpg)
+
+    def render(self, out_mp4, preview_png=None, cover_img=None):
+        """cover_img: ảnh bìa (PIL) chèn vào COVER_FRAMES khung đầu để nền tảng lấy làm bìa"""
         n = int(self.total * FPS); errlog = out_mp4 + ".ffmpeg.log"
         cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                "-i", self.wav, "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-g", str(FPS * 2),
@@ -92,7 +99,7 @@ class Video:
             p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=ef)
             try:
                 for k in range(n):
-                    im = self.frame(k / FPS)
+                    im = cover_img if cover_img is not None and k < COVER_FRAMES else self.frame(k / FPS)
                     if preview_png and k == int(FPS * 1.5): im.convert("RGB").save(preview_png)
                     p.stdin.write(im.convert("RGB").tobytes())
                     if k % 300 == 0: log.info("render %s %d/%d", os.path.basename(out_mp4), k, n)

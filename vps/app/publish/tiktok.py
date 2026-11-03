@@ -31,7 +31,7 @@ def upload(video, meta, pcfg, label_ai=True):
         opts = info.get("privacy_level_options", ["SELF_ONLY"])
         priv = "PUBLIC_TO_EVERYONE" if "PUBLIC_TO_EVERYONE" in opts else opts[0]
         data = _post("/v2/post/publish/video/init/", at, {"post_info": {"title": meta["title"], "privacy_level": priv, "disable_duet": False,
-                     "disable_stitch": False, "disable_comment": False, "video_cover_timestamp_ms": 1500, "is_aigc": bool(label_ai)}, "source_info": src})
+                     "disable_stitch": False, "disable_comment": False, "video_cover_timestamp_ms": 0, "is_aigc": bool(label_ai)}, "source_info": src})
     else:
         data = _post("/v2/post/publish/inbox/video/init/", at, {"source_info": src})
     url, pid = data["upload_url"], data["publish_id"]

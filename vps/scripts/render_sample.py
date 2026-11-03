@@ -1,5 +1,5 @@
 """Chạy thử engine KHÔNG cần API: python -m scripts.render_sample samples/chainfolk_binance.json [--full] [--offline]
-- mặc định: xuất ảnh xem nhanh các beat (sheet PNG)
+- mặc định: xuất ảnh xem nhanh (sheet PNG: ô đầu là ảnh bìa, sau đó từng beat) + cover.png
 - --full: xuất cả video với giọng giả (im lặng)"""
 import sys, os, json, logging
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -17,10 +17,11 @@ name = os.path.splitext(os.path.basename(path))[0]; work = os.path.join(root, "d
 texts = [b["voice"] for b in script["beats"]] + [ch["cta_voice"]]
 audio = tts.synth_beats(texts, ch["voice"], os.path.join(work, "voice"), None, fake=True)
 v = Video(script, ch, audio, work, cfg.get("market"), offline=offline)
+cover = v.cover(os.path.join(work, "cover.png"))          # ảnh bìa (khung đầu tiên của sheet)
 if full:
-    print(v.render(os.path.join(work, name + ".mp4"), os.path.join(work, "preview.png")))
+    print(v.render(os.path.join(work, name + ".mp4"), os.path.join(work, "preview.png"), cover))
 else:
     ts = [st + d * .75 for st, d in v.times]
-    sheet = Image.new("RGB", (360 * len(ts), 640))
-    for i, t in enumerate(ts): sheet.paste(v.frame(t).convert("RGB").resize((360, 640)), (i * 360, 0))
+    sheet = Image.new("RGB", (360 * (len(ts) + 1), 640)); sheet.paste(cover.resize((360, 640)), (0, 0))
+    for i, t in enumerate(ts): sheet.paste(v.frame(t).convert("RGB").resize((360, 640)), ((i + 1) * 360, 0))
     out = os.path.join(work, "sheet.png"); sheet.save(out); print(out, "tổng thời lượng %.1fs" % v.total)

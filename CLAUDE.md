@@ -5,4 +5,4 @@ Trước khi đẩy kịch bản, LUÔN dựng thử ảnh xem nhanh và tự so
 ```
 python3 engine/scripts/render_sample.py inbox/<file>.json --offline
 ```
-Mở `engine/data/test/<tên>/sheet.png`, kiểm tra: chữ tràn/chồng, số trên hình khớp lời đọc, không có cảnh trống. Sửa kịch bản rồi dựng lại tới khi sạch. `engine/data/` không commit.
+Mở `engine/data/test/<tên>/sheet.png` (ô đầu tiên là ảnh bìa, ảnh gốc ở `cover.png`), kiểm tra: chữ tràn/chồng, số trên hình khớp lời đọc, không có cảnh trống; ảnh bìa chữ to, không tràn, đọc được ở cỡ nhỏ. Sửa kịch bản rồi dựng lại tới khi sạch. `engine/data/` không commit.

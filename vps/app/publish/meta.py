@@ -14,7 +14,7 @@ def instagram(video, meta, pcfg, ver, label_ai=True):
     tok = os.environ[pcfg["token_env"]]; ig = pcfg["ig_user_id"]; size = os.path.getsize(video)
     js = _ok(requests.post(f"{GRAPH}/{ver}/{ig}/media", timeout=60, headers={"Authorization": f"Bearer {tok}"},
                            data={"media_type": "REELS", "upload_type": "resumable", "caption": meta["caption"], "share_to_feed": "true",
-                                 "thumb_offset": "1500", **({"is_ai_generated": "true"} if label_ai else {})}), "IG tạo container")
+                                 "thumb_offset": "0", **({"is_ai_generated": "true"} if label_ai else {})}), "IG tạo container")
     cid = js["id"]
     with open(video, "rb") as f:
         _ok(requests.post(f"{RUP}/ig-api-upload/{ver}/{cid}", data=f, timeout=1800,

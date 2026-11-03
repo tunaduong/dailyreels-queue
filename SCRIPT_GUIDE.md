@@ -32,8 +32,18 @@ Tìm tin crypto nổi bật trong 24 giờ qua (web search), có con số rõ r�
  "headline": [["đoạn thường", "normal"], ["con số nóng", "accent"]],
  "ticker_line": "chỉ chainfolk", "source": "Nguồn: ...",
  "beats": [{"voice": "câu đọc", "visual": {"type": "...", "...": "..."}}],
+ "cover": {"kicker": "...", "big": {"text": "> 40", "unit": "TRIỆU USD"}, "lines": [["...", "normal"], ["...", "accent"]], "tokens": ["BTC"]},
  "post": {"title": "≤90 ký tự", "caption": "2-3 câu", "hashtags": ["khongdau"], "sources": ["url"]}}
 ```
+
+### Ảnh bìa (`cover`)
+Máy tự vẽ ảnh bìa 1080×1920 theo nhận diện kênh, chèn vào khung đầu video (TikTok/Reels lấy làm bìa) và gửi kèm file PNG trên Telegram. Không có `cover` thì máy lấy `headline`, nhưng **nên luôn viết `cover`** vì bìa cần ít chữ, chữ to hơn tiêu đề:
+- `kicker`: ≤18 ký tự, nhãn ngắn (VD "SỰ CỐ AN NINH", "HACK ON-CHAIN", "ETF").
+- `big` (tùy chọn): con số nóng nhất. `text` ≤5 ký tự (VD "> 40", "34", "6,3"), `unit` ≤18 ký tự (VD "TRIỆU USD BỊ RÚT", "PHÚT"). Số phải khớp lời đọc.
+- `lines`: 1–3 đoạn [text, "normal"|"accent"], tổng ≤40 ký tự; có `big` thì ≤32 ký tự. Không lặp lại nguyên câu `big`.
+- `tokens` (tùy chọn): 2–4 ký hiệu token/sàn để hiện logo. `logo` (tùy chọn): 1 sàn/token, hiện logo lớn (dùng khi tin xoay quanh 1 sàn có logo, VD BINANCE).
+- `tone`: alert (đỏ, mặc định) | good | neutral.
+- 2 kênh viết bìa khác nhau: ChainFolk nêu sự kiện + con số; TND GEMS nhấn con số on-chain/mốc thời gian.
 Câu kêu gọi theo dõi ở cuối do máy tự thêm, **không viết vào beats**.
 
 

@@ -85,14 +85,21 @@ class Bot:
         self.tg.send(chat, f"🎞️ {E(self.chname(ch))}: đã có giọng, đang dựng video (5–8 phút)…")
         mk = dict(self.cfg.get("market", {})); mk["coingecko_key"] = self.env.get("COINGECKO_KEY")
         v = Video(s, c, audio, work, mk, offline=self.offline, logos=self.logos)
-        out = os.path.join(work, f"{jid}.mp4"); prev = os.path.join(work, "preview.png"); v.render(out, prev)
+        out = os.path.join(work, f"{jid}.mp4"); prev = os.path.join(work, "preview.png")
+        cover_png, thumb = os.path.join(work, "cover.png"), os.path.join(work, "cover_thumb.jpg")
+        try: cover_img = v.cover(cover_png, thumb)
+        except Exception as e: log.warning("ảnh bìa %s lỗi: %s", jid, e); cover_img = None; cover_png = thumb = None
+        v.render(out, prev, cover_img)
         caps = captions.build(s, c)
-        with self.st.lock: job.update(stage="review", video=out, captions=caps); self.st.save()
+        with self.st.lock: job.update(stage="review", video=out, captions=caps, cover=cover_png); self.st.save()
         plats = self.platforms(ch)
         cap = (f"🎬 <b>{E(self.chname(ch))}</b> · {v.total:.0f}s\n\n<b>Caption:</b>\n{E(caps['tiktok']['title'][:700])}\n\n"
                f"<b>Lời đọc:</b>\n" + E(" ".join(b["voice"] for b in s["beats"]))[:400] + "…")
         first = [("✅ Đăng: " + " + ".join(PNAME[p] for p in plats), f"pub|{jid}")] if plats else [("✅ Xong — tôi tự đăng", f"done|{jid}")]
-        self.tg.video(chat, out, cap, [first, [("✏️ Sửa", f"ed|{jid}"), ("❌ Bỏ", f"dr|{jid}")]])
+        self.tg.video(chat, out, cap, [first, [("✏️ Sửa", f"ed|{jid}"), ("❌ Bỏ", f"dr|{jid}")]], thumb=thumb)
+        if cover_png:
+            try: self.tg.document(chat, cover_png, f"🖼️ Ảnh bìa {E(self.chname(ch))} (1080×1920) — đã gắn sẵn ở khung đầu video; đăng tay thì chọn ảnh này làm bìa.")
+            except Exception as e: log.warning("gửi ảnh bìa lỗi: %s", e)
         if not plats:
             self.tg.send(chat, f"📋 <b>Caption để copy:</b>\n<code>{E(caps['tiktok']['title'])}</code>\n<i>Nhớ bật nhãn “Nội dung AI” khi đăng.</i>")
 

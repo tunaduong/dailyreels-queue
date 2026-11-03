@@ -34,6 +34,10 @@ class TG:
         if thumb: files["thumbnail"] = open(thumb, "rb")
         return self.call("sendVideo", files=files, timeout=600, **p)
 
+    def document(self, chat, path, caption=""):
+        """gửi file gốc (không nén) — dùng cho ảnh bìa"""
+        return self.call("sendDocument", files={"document": open(path, "rb")}, timeout=300, chat_id=chat, caption=caption[:1000], parse_mode="HTML")
+
     def audio(self, chat, path, caption="", buttons=None):
         p = {"chat_id": chat, "caption": caption[:1000], "parse_mode": "HTML"}
         if buttons: p["reply_markup"] = self.kb(buttons)
