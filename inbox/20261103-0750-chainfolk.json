@@ -1,0 +1,29 @@
+{
+ "channel": "chainfolk",
+ "date": "03.11.2026",
+ "headline": [["Sàn Brazil Mercado Bitcoin", "normal"], ["mất hơn 40 triệu USD,", "accent"], ["dừng nạp rút", "normal"]],
+ "ticker_line": "Mercado Bitcoin tạm dừng nạp và rút",
+ "source": "Nguồn: CoinDesk, Decrypt, Hypernative",
+ "beats": [
+  {"voice": "Chỉ bốn ngày sau vụ Binance, thêm một sàn tiền mã hóa lớn gặp sự cố an ninh. Lần này là Mercado Bitcoin của Brazil.",
+   "visual": {"type": "hero", "icon": "warn", "tone": "alert", "kicker": "SỰ CỐ AN NINH", "title": "MERCADO BITCOIN", "subtitle": "Sàn crypto lớn nhất Brazil", "tokens": ["BTC", "ETH", "SOL"]}},
+  {"voice": "Hãng bảo mật Hypernative ước tính hơn bốn mươi triệu đô đã bị rút khỏi các ví của sàn, trên ít nhất mười blockchain.",
+   "visual": {"type": "big_number", "kicker": "Bị rút khỏi ví của sàn", "value": 40, "prefix": ">", "suffix": "triệu USD", "caption": "TRÊN ÍT NHẤT 10 MẠNG", "tokens": ["ETH", "BTC", "SOL"], "tone": "bad"}},
+  {"voice": "Một chuyên gia của Arkham thì ghi nhận hơn bốn mươi sáu triệu đô. Sàn chưa xác nhận con số nào.",
+   "visual": {"type": "range", "title": "Ước tính số tiền bị rút", "min": 30, "max": 50, "unit": "triệu", "markers": [{"value": 40, "label": "> 40 triệu", "who": "Hypernative"}, {"value": 46, "label": "> 46 triệu", "who": "Arkham*"}], "notes": ["Mercado Bitcoin chưa công bố số thiệt hại.", "*Chuyên gia Emmett Gallic, theo CoinCentral."]}},
+  {"voice": "Mercado Bitcoin cho biết đã phát hiện và nhanh chóng ngăn chặn sự cố, khách hàng không mất tiền và dữ liệu không bị lộ.",
+   "visual": {"type": "quote", "who": "Mercado Bitcoin", "role": "Thông báo trên X · 02/11 (lược dịch)", "text": "Chúng tôi đã phát hiện và nhanh chóng ngăn chặn một sự cố bảo mật tại một trong các hệ thống.", "tone": "neutral"}},
+  {"voice": "Hiện việc nạp và rút vẫn tạm dừng để phòng ngừa, sàn chưa đưa ra thời điểm mở lại.",
+   "visual": {"type": "bullets", "title": "Ảnh hưởng tới người dùng", "items": [{"text": "Nạp và rút tạm dừng để phòng ngừa", "tone": "bad"}, {"text": "Chưa có thời điểm mở lại", "tone": "accent"}, {"text": "Sàn: khách hàng không mất tiền", "tone": "good"}]}},
+  {"voice": "Tether cho biết đã đóng băng hơn bốn triệu rưỡi USDT liên quan đến vụ việc.",
+   "visual": {"type": "stat_cards", "cards": [{"label": "Tether", "token": "USDT", "value": 4.5, "decimals": 1, "prefix": "> ", "unit": "triệu USDT", "stamp": "Đã đóng băng", "tone": "ice"}]}},
+  {"voice": "CoinDesk và Decrypt đều đưa tin, đồng thời lưu ý chưa có bằng chứng nào liên hệ vụ này với vụ Binance.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [{"outlet": "CoinDesk", "date": "02/11/2026", "headline": "Brazil's Mercado Bitcoin halts withdrawals after $40 million drained across 10 chains"}, {"outlet": "Decrypt", "date": "02/11/2026", "headline": "Brazil's Largest Exchange Mercado Bitcoin Halts Withdrawals After $40 Million Hack"}]}}
+ ],
+ "post": {
+  "title": "Sàn Brazil Mercado Bitcoin bị rút hơn 40 triệu USD, tạm dừng nạp rút",
+  "caption": "Mercado Bitcoin tạm dừng nạp và rút sau sự cố an ninh, Hypernative ước tính hơn 40 triệu USD bị rút trên ít nhất 10 blockchain. Sàn nói khách hàng không mất tiền, Tether đóng băng hơn 4,5 triệu USDT.",
+  "hashtags": ["mercadobitcoin", "crypto", "bitcoin", "tintuccrypto", "baomat"],
+  "sources": ["https://www.coindesk.com/business/2026/11/02/brazil-s-mercado-bitcoin-halts-withdrawals-after-usd40-million-drained-across-10-chains", "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack"]
+ }
+}

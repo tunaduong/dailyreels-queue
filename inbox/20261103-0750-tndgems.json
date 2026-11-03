@@ -1,0 +1,26 @@
+{
+ "channel": "tndgems",
+ "date": "03.11.2026",
+ "headline": [["34 PHÚT:", "accent"], ["ví Mercado Bitcoin bị rút", "normal"], ["hơn 40 triệu USD", "accent"]],
+ "source": "Nguồn: Hypernative, Unchained, CoinDesk",
+ "beats": [
+  {"voice": "Ba mươi tư phút. Đó là khoảng thời gian phần lớn số tiền bị rút khỏi các ví của sàn Mercado Bitcoin.",
+   "visual": {"type": "big_number", "value": 34, "ring_max": 34, "suffix": "phút", "tone": "bad"}},
+  {"voice": "Theo Hypernative, từ chín giờ mười lăm sáng qua giờ Việt Nam, ví nạp bitcoin của sàn đã bị quét dần. Đợt rút lớn diễn ra từ một giờ mười chín đến một giờ năm mươi ba chiều.",
+   "visual": {"type": "timeline", "title": "Dòng thời gian (giờ VN, 02/11)", "events": [{"time": "09:15", "text": "Ví nạp BTC của sàn bắt đầu bị quét", "tone": "accent", "token": "BTC"}, {"time": "13:19", "text": "Đợt rút lớn bắt đầu", "tone": "bad"}, {"time": "13:53", "text": "Đợt rút chính kết thúc", "badge": "+34 phút", "tone": "bad"}]}},
+  {"voice": "Riêng trên mạng Bitcoin, ví nhận đã gom khoảng một trăm linh sáu BTC qua bảy giao dịch, trong đó một lệnh lên tới một trăm linh bốn BTC. Đến tối qua, số bitcoin này vẫn nằm yên.",
+   "visual": {"type": "tx_card", "title": "Ví nhận BTC · Bitcoin", "rows": [{"k": "Địa chỉ", "v": "•••• (sàn đã công bố)"}, {"k": "Đã nhận", "v": "~106,07 BTC · 7 giao dịch"}, {"k": "Lớn nhất", "v": "104,43 BTC · 13:41 VN", "tone": "bad"}, {"k": "Đã rút", "v": "Chưa (lúc 21:58 VN)"}]}},
+  {"voice": "Hypernative ước tính kẻ tấn công đang giữ khoảng hai nghìn tám trăm năm mươi hai ETH, một trăm linh sáu BTC, mười nghìn bảy trăm SOL, cùng hơn hai trăm loại token khác.",
+   "visual": {"type": "stat_cards", "cards": [{"label": "Ethereum", "token": "ETH", "value": 2852, "prefix": "~", "unit": "ETH", "tone": "bad"}, {"label": "Bitcoin", "token": "BTC", "value": 106, "prefix": "~", "unit": "BTC", "tone": "bad"}, {"label": "Solana", "token": "SOL", "value": 10700, "prefix": "~", "unit": "SOL", "tone": "bad"}], "total": {"label": "Cùng với:", "text": "6,7 triệu XLM + >200 token"}}},
+  {"voice": "Điểm đáng chú ý: đây là các lệnh chuyển tiền thông thường, không phải lỗi hợp đồng thông minh. Chưa rõ kẻ tấn công lấy được quyền ký bằng cách nào.",
+   "visual": {"type": "bullets", "title": "Không phải lỗi hợp đồng", "items": [{"text": "Lệnh chuyển thường, có chữ ký", "tone": "bad"}, {"text": "Tiền về ví mới trên ≥10 mạng", "tone": "ice"}, {"text": "Chưa rõ cách lấy được quyền ký", "tone": "accent"}]}},
+  {"voice": "CEO Tether Paolo Ardoino xác nhận đã đóng băng hơn bốn triệu rưỡi USDT liên quan.",
+   "visual": {"type": "quote", "logo": "USDT", "who": "Paolo Ardoino", "role": "CEO Tether · 02/11 (lược dịch)", "text": "Tether đã đóng băng hơn 4,5 triệu USDT liên quan đến sự cố bảo mật này.", "tone": "good"}}
+ ],
+ "post": {
+  "title": "34 phút: ví Mercado Bitcoin bị rút hơn 40 triệu USD trên 10 blockchain",
+  "caption": "On-chain: phần lớn tiền bị rút khỏi ví Mercado Bitcoin trong 34 phút bằng lệnh chuyển thường, không phải lỗi hợp đồng. Ví nhận BTC gom ~106 BTC, Tether đóng băng hơn 4,5 triệu USDT.",
+  "hashtags": ["onchain", "mercadobitcoin", "hack", "tether", "crypto"],
+  "sources": ["https://finance.yahoo.com/markets/crypto/articles/mercado-bitcoin-halts-withdrawals-over-153238091.html", "https://www.coindesk.com/business/2026/11/02/brazil-s-mercado-bitcoin-halts-withdrawals-after-usd40-million-drained-across-10-chains"]
+ }
+}
