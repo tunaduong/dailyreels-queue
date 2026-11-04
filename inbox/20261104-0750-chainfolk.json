@@ -1,0 +1,170 @@
+{
+ "channel": "chainfolk",
+ "date": "04.11.2026",
+ "headline": [
+  [
+   "Binance công bố nguyên nhân vụ hack",
+   "normal"
+  ],
+  [
+   "6,3 tỷ USD:",
+   "accent"
+  ],
+  [
+   "một buổi phỏng vấn giả",
+   "normal"
+  ]
+ ],
+ "ticker_line": "Binance đã bù 98% tài sản bị ảnh hưởng",
+ "source": "Nguồn: Binance, Fortune, BleepingComputer",
+ "beats": [
+  {
+   "voice": "Binance vừa công bố nguyên nhân vụ hack lớn nhất lịch sử tiền mã hóa. Tất cả bắt đầu từ một buổi phỏng vấn xin việc giả.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "BÁO CÁO SỰ CỐ",
+    "title": "PHỎNG VẤN GIẢ",
+    "subtitle": "Nguyên nhân vụ hack lớn nhất lịch sử crypto"
+   }
+  },
+  {
+   "voice": "Theo báo cáo công bố ngày ba tháng mười một, tin tặc Triều Tiên đã lấy đi khoảng sáu phẩy ba tỷ đô.",
+   "visual": {
+    "type": "big_number",
+    "value": 6.3,
+    "decimals": 1,
+    "prefix": "~",
+    "suffix": "tỷ USD",
+    "kicker": "Bị đánh cắp ngày 29/10",
+    "caption": "KỶ LỤC CRYPTO",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Tháng chín, một kỹ sư Binance được kẻ giả danh nhà tuyển dụng liên hệ qua nền tảng tìm việc. Sau hai vòng phỏng vấn, anh được yêu cầu tải một bài kiểm tra lập trình có chứa mã độc.",
+   "visual": {
+    "type": "bullets",
+    "title": "Cái bẫy tuyển dụng",
+    "items": [
+     {
+      "text": "Giả danh giám đốc dự án, mời phỏng vấn",
+      "tone": "ice"
+     },
+     {
+      "text": "Hai vòng: nhân sự, rồi \"CEO\" công ty ảo",
+      "tone": "accent"
+     },
+     {
+      "text": "Bài kiểm tra lập trình chứa mã độc",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Binance cho biết đây không phải một vụ xâm nhập đơn lẻ hay lừa đảo đơn giản, mà là chiến dịch kéo dài nhiều tháng.",
+   "visual": {
+    "type": "quote",
+    "logo": "BINANCE",
+    "who": "Binance",
+    "role": "Báo cáo sự cố · 03/11 (lược dịch)",
+    "text": "Đây không phải một vụ xâm nhập đơn lẻ hay một vụ lừa đảo đơn giản.",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Đến nay, khoảng hai phẩy tám lăm tỷ đô đã bị đóng băng hoặc chặn lại. Binance cho biết đã bù chín mươi tám phần trăm tài sản bị ảnh hưởng.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Đóng băng",
+      "value": 2.85,
+      "decimals": 2,
+      "unit": "tỷ USD",
+      "stamp": "03/11",
+      "tone": "ice"
+     },
+     {
+      "label": "Đã bù",
+      "value": 98,
+      "unit": "%",
+      "stamp": "Tài sản",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Sàn cũng gửi lời xin lỗi tới người dùng vì sự gián đoạn trong những ngày qua.",
+   "visual": {
+    "type": "quote",
+    "logo": "BINANCE",
+    "who": "Binance",
+    "role": "Báo cáo sự cố · 03/11 (lược dịch)",
+    "text": "Chuyện này lẽ ra không được xảy ra. Chúng tôi xin lỗi vì những lo ngại và gián đoạn đã gây ra.",
+    "tone": "neutral"
+   }
+  },
+  {
+   "voice": "Nhiều hãng tin quốc tế như Fortune đã đưa tin về báo cáo này.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "Fortune",
+      "date": "03/11/2026",
+      "headline": "North Korea used LinkedIn, fake job interviews to trick Binance engineer in $6.3 billion hack"
+     },
+     {
+      "outlet": "BleepingComputer",
+      "date": "03/11/2026",
+      "headline": "Binance says fake job interview led to $6.3 billion crypto heist"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "BÁO CÁO SỰ CỐ",
+  "big": {
+   "text": "6,3",
+   "unit": "TỶ USD BỊ TRỘM"
+  },
+  "lines": [
+   [
+    "Từ ",
+    "normal"
+   ],
+   [
+    "phỏng vấn giả",
+    "accent"
+   ]
+  ],
+  "tone": "alert",
+  "tokens": [
+   "BINANCE",
+   "USDT",
+   "ETH"
+  ]
+ },
+ "post": {
+  "title": "Vụ hack Binance 6,3 tỷ USD bắt đầu từ một buổi phỏng vấn xin việc giả",
+  "caption": "Binance công bố báo cáo sự cố: tin tặc Triều Tiên giả làm nhà tuyển dụng, gài mã độc vào bài kiểm tra lập trình của một kỹ sư. Khoảng 2,85 tỷ USD đã bị đóng băng, Binance đã bù 98% tài sản bị ảnh hưởng.",
+  "hashtags": [
+   "binance",
+   "crypto",
+   "hack",
+   "tintuccrypto",
+   "bitcoin"
+  ],
+  "sources": [
+   "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+   "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+  ]
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "channel": "tndgems",
+ "date": "04.11.2026",
+ "headline": [
+  [
+   "Hacker nằm vùng trong Binance",
+   "normal"
+  ],
+  [
+   "9 ngày",
+   "accent"
+  ],
+  [
+   "trước cú rút 6,3 tỷ USD",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: báo cáo Binance, The Register",
+ "beats": [
+  {
+   "voice": "Chín ngày. Từ lúc hacker vào được máy đội ví Binance đến khi rút sáu phẩy ba tỷ đô.",
+   "visual": {
+    "type": "big_number",
+    "value": 9,
+    "ring_max": 9,
+    "suffix": "ngày",
+    "kicker": "Nằm vùng trong đội ví",
+    "caption": "20/10 → 29/10",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Tháng sáu, một kỹ sư tải nhầm bản Homebrew bị cài mã độc nhưng bị phát hiện. Tháng chín, kỹ sư thứ hai dính bẫy phỏng vấn giả. Ngày hai mươi tháng mười, hacker lan sang đội ví.",
+   "visual": {
+    "type": "timeline",
+    "title": "Dòng thời gian (theo báo cáo Binance)",
+    "events": [
+     {
+      "time": "T6",
+      "text": "Homebrew giả, bị phát hiện, thay máy",
+      "tone": "ice"
+     },
+     {
+      "time": "T9",
+      "text": "Kỹ sư B dính bẫy phỏng vấn giả",
+      "tone": "accent"
+     },
+     {
+      "time": "20/10",
+      "text": "Xâm nhập máy kỹ sư A và C đội ví",
+      "tone": "bad"
+     },
+     {
+      "time": "29/10",
+      "text": "Kích hoạt lệnh rút tiền",
+      "badge": "+9 ngày",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Từ máy kỹ sư B, chúng dùng một công cụ AI nội bộ để vào máy hai kỹ sư khác, lấy được token triển khai container.",
+   "visual": {
+    "type": "graph",
+    "title": "Từ một máy tính sang cả đội ví",
+    "center": {
+     "title": "Kỹ sư B",
+     "sub": "máy nhiễm mã độc"
+    },
+    "branches": [
+     {
+      "label": "Công cụ AI",
+      "sub": "nội bộ Binance",
+      "tone": "ice"
+     },
+     {
+      "label": "Kỹ sư A",
+      "sub": "token container",
+      "tone": "bad"
+     },
+     {
+      "label": "Kỹ sư C",
+      "sub": "máy chạy script",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Ngày hai mươi chín, hacker dựng container trên máy kỹ sư C, chạm tới dịch vụ ký ví và chuyển tiền qua nhiều blockchain.",
+   "visual": {
+    "type": "flow",
+    "from": {
+     "kicker": "Container giả",
+     "title": "Máy kỹ sư C",
+     "sub": "token đánh cắp",
+     "tokens": [
+      "ETH",
+      "USDT",
+      "BTC"
+     ]
+    },
+    "to": {
+     "kicker": "Dịch vụ ký ví",
+     "title": "Ví Binance",
+     "sub": "bị rút qua nhiều chain",
+     "tone": "bad"
+    },
+    "amount": {
+     "value": 6.3,
+     "decimals": 1,
+     "prefix": "~",
+     "suffix": "tỷ USD"
+    },
+    "caption": "29/10/2026"
+   }
+  },
+  {
+   "voice": "Binance thừa nhận mã độc này chưa từng được biết đến, công cụ bảo mật của sàn khi đó không phát hiện ra.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "lock",
+    "tone": "alert",
+    "kicker": "MÃ ĐỘC 0-DAY",
+    "title": "Không bị phát hiện",
+    "subtitle": "Công cụ bảo mật của sàn không nhận ra mã độc"
+   }
+  },
+  {
+   "voice": "Trớ trêu là năm nay Binance đã chặn năm mươi bảy vụ tấn công liên quan Triều Tiên. Hiện khoảng hai phẩy tám lăm tỷ đô tiền bị trộm đã bị đóng băng hoặc chặn lại.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Bị chặn",
+      "value": 57,
+      "unit": "vụ",
+      "stamp": "Năm 2026",
+      "tone": "neutral"
+     },
+     {
+      "label": "Đóng băng",
+      "value": 2.85,
+      "decimals": 2,
+      "unit": "tỷ USD",
+      "stamp": "03/11",
+      "tone": "ice"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Các chi tiết này nằm trong báo cáo sự cố Binance công bố ngày ba tháng mười một.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "The Register",
+      "date": "03/11/2026",
+      "headline": "North Korean fake job interview led to $6.3B Binance heist"
+     },
+     {
+      "outlet": "The Hill",
+      "date": "03/11/2026",
+      "headline": "Binance says malicious code, fake job interview led to $6.3B hack"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "ĐIỀU TRA HACK",
+  "big": {
+   "text": "9",
+   "unit": "NGÀY NẰM VÙNG"
+  },
+  "lines": [
+   [
+    "trước cú rút ",
+    "normal"
+   ],
+   [
+    "6,3 tỷ USD",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "BINANCE",
+   "ETH",
+   "USDT"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "9 ngày nằm vùng: hacker đi từ phỏng vấn giả tới ví Binance như thế nào",
+  "caption": "Theo báo cáo sự cố của Binance: mã độc từ bài test phỏng vấn giả, lan qua công cụ AI nội bộ tới đội ví, rồi rút 6,3 tỷ USD ngày 29/10. Khoảng 2,85 tỷ USD đã bị đóng băng hoặc chặn lại.",
+  "hashtags": [
+   "onchain",
+   "binance",
+   "hack",
+   "lazarus",
+   "crypto"
+  ],
+  "sources": [
+   "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+   "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+  ]
+ }
+}
