@@ -1,0 +1,41 @@
+{
+ "channel": "tndgems",
+ "date": "05.11.2026",
+ "headline": [["378 triệu USD", "accent"], ["lệnh short bị thanh lý", "normal"], ["trong 1 giờ", "accent"], ["khi BTC vượt 80K", "normal"]],
+ "source": "Nguồn: CoinGlass, crypto.news, Bitfinex",
+ "beats": [
+  {"voice": "Ba trăm bảy mươi tám triệu đô. Đó là số tiền phe bán khống bị thanh lý chỉ trong một giờ, khi Bitcoin vượt tám mươi nghìn đô.",
+   "visual": {"type": "big_number", "value": 378, "suffix": "triệu USD", "kicker": "Short bị thanh lý", "caption": "TRONG 1 GIỜ", "tokens": ["BTC"], "tone": "bad"}},
+  {"voice": "Khoảng mười giờ sáng qua giờ Việt Nam, giữa đêm bầu cử Mỹ, Bitcoin chạm đáy bảy mươi lăm nghìn sáu trăm. Khoảng mười hai giờ sau, giá đã lên trên tám mươi mốt nghìn.",
+   "visual": {"type": "timeline", "title": "Dòng thời gian (giờ VN, 04/11)", "events": [
+     {"time": "~10:00", "text": "BTC chạm đáy ~75.600 USD", "tone": "bad", "token": "BTC"},
+     {"time": "~22:00", "text": "BTC lên đỉnh ngày trên 81.000 USD", "badge": "+12 giờ", "tone": "good", "token": "BTC"}]}},
+  {"voice": "Cả ngày, CoinGlass ghi nhận gần chín trăm mười lăm triệu đô bị thanh lý. Năm trăm năm mươi lăm triệu trong số đó là lệnh short.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Short", "value": 555, "unit": "triệu USD", "stamp": "Cháy", "tone": "bad"},
+     {"label": "Long", "value": 360, "unit": "triệu USD", "stamp": "Cháy", "tone": "neutral"}],
+    "total": {"label": "Tổng 24h:", "text": "~915 triệu USD"}}},
+  {"voice": "Riêng Bitcoin gần bốn trăm triệu, Ether khoảng hai trăm ba mươi bảy triệu, Solana gần hai mươi chín triệu.",
+   "visual": {"type": "graph", "title": "Thanh lý 24h theo tài sản", "center": {"title": "~915 triệu USD", "sub": "117.560 trader"}, "branches": [
+     {"label": "~396 triệu", "sub": "Bitcoin", "tone": "bad", "token": "BTC"},
+     {"label": "~237 triệu", "sub": "Ether", "tone": "bad", "token": "ETH"},
+     {"label": "~29 triệu", "sub": "Solana", "tone": "bad", "token": "SOL"}]}},
+  {"voice": "Lệnh thanh lý lớn nhất: một vị thế ETH trị giá ba mươi tám triệu đô trên sàn HTX.",
+   "visual": {"type": "tx_card", "title": "Lệnh thanh lý lớn nhất · 24h", "status": "Liquidated", "rows": [
+     {"k": "Sàn", "v": "HTX"}, {"k": "Cặp", "v": "ETH-USDT"}, {"k": "Giá trị", "v": "38 triệu USD", "tone": "bad"}, {"k": "Dữ liệu", "v": "CoinGlass"}]}},
+  {"voice": "Nghịch lý là tiền vẫn rời quỹ ETF. Ba phiên liền, các quỹ Bitcoin giao ngay tại Mỹ bị rút khoảng một tỷ một trăm sáu mươi triệu đô.",
+   "visual": {"type": "flow", "from": {"kicker": "Quỹ ETF", "title": "Bitcoin giao ngay", "sub": "tại Mỹ", "tokens": ["BTC"]}, "to": {"kicker": "Dòng tiền ra", "title": "Rút ròng", "sub": "3 phiên liên tiếp", "tone": "bad"},
+              "amount": {"value": 1.16, "decimals": 2, "prefix": "~", "suffix": "tỷ USD"}, "caption": "Theo Bitfinex, dẫn bởi crypto.news"}},
+  {"voice": "Bitcoin Magazine và crypto dot news cùng gọi đây là một cú ép short sau bầu cử.",
+   "visual": {"type": "news_card", "title": "Báo chí crypto đưa tin", "items": [
+     {"outlet": "crypto.news", "date": "04/11/2026", "headline": "Bitcoin breaks $80K as crypto shorts lose $378M in one hour"},
+     {"outlet": "Bitcoin Magazine", "date": "04/11/2026", "headline": "Bitcoin Price Holds Near $80,000 as Democratic Sweep Sparks Short Squeeze"}]}}
+ ],
+ "cover": {"kicker": "SHORT SQUEEZE", "big": {"text": "378", "unit": "TRIỆU USD / 1 GIỜ"}, "lines": [["Phe short ", "normal"], ["cháy tài khoản", "accent"]], "tokens": ["BTC", "ETH"], "tone": "alert"},
+ "post": {
+  "title": "378 triệu USD lệnh short bị thanh lý trong 1 giờ khi Bitcoin vượt 80.000 USD",
+  "caption": "Sau bầu cử giữa kỳ Mỹ, Bitcoin bật từ 75.600 lên trên 81.000 USD trong khoảng 12 giờ. CoinGlass ghi nhận gần 915 triệu USD bị thanh lý trong 24 giờ, trong khi quỹ ETF Bitcoin vẫn bị rút khoảng 1,16 tỷ USD qua 3 phiên.",
+  "hashtags": ["onchain", "bitcoin", "shortsqueeze", "thanhly", "crypto"],
+  "sources": ["https://crypto.news/bitcoin-80k-378m-short-liquidations-etf-outflows", "https://bitcoinmagazine.com/markets/bitcoin-price-holds-near-80000-short"]
+ }
+}

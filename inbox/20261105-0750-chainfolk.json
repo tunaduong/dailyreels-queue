@@ -1,0 +1,38 @@
+{
+ "channel": "chainfolk",
+ "date": "05.11.2026",
+ "headline": [["Dân chủ thắng bầu cử giữa kỳ Mỹ,", "normal"], ["Bitcoin vượt 80.000 USD", "accent"], ["sau đêm biến động", "normal"]],
+ "ticker_line": "Dân chủ kiểm soát cả 2 viện Quốc hội Mỹ",
+ "source": "Nguồn: CoinDesk, Motley Fool, CoinGecko",
+ "beats": [
+  {"voice": "Đảng Dân chủ giành quyền kiểm soát cả hai viện Quốc hội Mỹ, và thị trường tiền mã hóa vừa trải qua một đêm đầy biến động.",
+   "visual": {"type": "hero", "logo": "BTC", "icon": "chart", "tone": "neutral", "kicker": "BẦU CỬ GIỮA KỲ MỸ", "title": "DÂN CHỦ THẮNG LỚN", "subtitle": "Kiểm soát cả Hạ viện và Thượng viện"}},
+  {"voice": "Trong đêm kiểm phiếu, Bitcoin rơi xuống quanh bảy mươi lăm nghìn bảy trăm đô, rồi bật tăng trở lại trên tám mươi nghìn đô.",
+   "visual": {"type": "price_chart", "symbol": "BTC", "days": 1, "timeframe_label": "30m", "start": 75700, "end": 80150,
+              "side": [{"label": "Đáy trong ngày", "value": "75.695 USD", "tone": "bad"}, {"label": "24h", "value": "▲ 3,6%", "tone": "good"}]}},
+  {"voice": "Tính trong hai mươi bốn giờ, Bitcoin tăng hơn ba phần trăm, còn Ether tăng hơn sáu phần trăm, lên khoảng hai nghìn bốn trăm hai mươi đô.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Bitcoin", "token": "BTC", "value": 3.6, "decimals": 1, "prefix": "+", "unit": "%", "stamp": "24 giờ", "tone": "good"},
+     {"label": "Ether", "token": "ETH", "value": 6.6, "decimals": 1, "prefix": "+", "unit": "%", "stamp": "~2.420 USD", "tone": "good"}]}},
+  {"voice": "Tâm điểm là dự luật CLARITY về cấu trúc thị trường crypto. Dự luật từng bị chặn ở Thượng viện hồi tháng chín với tỷ số bốn mươi chín, năm mươi.",
+   "visual": {"type": "bullets", "title": "Dự luật CLARITY", "items": [
+     {"text": "Bị chặn ở Thượng viện 49–50 (tháng 9)", "tone": "bad"},
+     {"text": "Dân chủ cân nhắc sửa đổi dự luật", "tone": "ice"},
+     {"text": "Có thể tăng quyền SEC, siết bảo vệ", "tone": "accent"}]}},
+  {"voice": "Theo CEO TransFi, việc đổi phe kiểm soát Quốc hội sẽ thay đổi điều kiện của một thỏa thuận về crypto trong năm sau.",
+   "visual": {"type": "quote", "who": "Raj Kamal", "role": "CEO TransFi · 04/11 (lược dịch, theo CoinDesk)", "text": "Việc thay đổi phe kiểm soát sẽ thay đổi các điều khoản của một thỏa thuận năm 2027.", "tone": "neutral"}},
+  {"voice": "Nhiều trang tin tài chính cho biết đà hồi phục còn được hỗ trợ bởi chứng khoán Mỹ tăng mạnh và giá dầu giảm.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "CoinDesk", "date": "04/11/2026", "headline": "Here's how analysts are reacting to the new blue Congress"},
+     {"outlet": "The Motley Fool", "date": "04/11/2026", "headline": "Crypto Market Today, Nov. 4: Bitcoin Stages Sharp Recovery as Wall Street Rallies and Regulatory Hopes Return"}]}},
+  {"voice": "Giới phân tích đang theo dõi mốc tám mươi hai nghìn đô, xem đà tăng có được duy trì hay không.",
+   "visual": {"type": "big_number", "value": 82, "suffix": "nghìn USD", "kicker": "Mốc giới phân tích theo dõi", "caption": "NGƯỠNG KHÁNG CỰ", "tokens": ["BTC"], "tone": "accent"}}
+ ],
+ "cover": {"kicker": "BẦU CỬ MỸ", "big": {"text": "> 80", "unit": "NGHÌN USD / BTC"}, "lines": [["Bitcoin ", "normal"], ["bật tăng", "accent"], [" sau bầu cử", "normal"]], "tokens": ["BTC", "ETH"], "tone": "good"},
+ "post": {
+  "title": "Dân chủ thắng bầu cử giữa kỳ Mỹ: Bitcoin rơi về 75.700 USD rồi vượt 80.000 USD",
+  "caption": "Đảng Dân chủ kiểm soát cả hai viện Quốc hội Mỹ. Bitcoin dao động mạnh trong đêm kiểm phiếu rồi hồi phục trên 80.000 USD, Ether tăng hơn 6%. Dự luật CLARITY về cấu trúc thị trường crypto có thể bị sửa đổi.",
+  "hashtags": ["bitcoin", "baucumy", "crypto", "tintuccrypto", "clarityact"],
+  "sources": ["https://www.coindesk.com/daybook-us/2026/11/04/here-s-how-analysts-are-reacting-to-the-new-blue-congress", "https://www.fool.com/coverage/stock-market-today/2026/11/04/crypto-market-today-nov-4-bitcoin-stages-sharp-recovery-as-wall-street-rallies-and-regulatory-hopes-return/"]
+ }
+}
