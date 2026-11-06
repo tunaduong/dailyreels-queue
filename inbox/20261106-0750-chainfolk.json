@@ -1,0 +1,44 @@
+{
+ "channel": "chainfolk",
+ "date": "06.11.2026",
+ "headline": [["Phố Wall bán tháo,", "normal"], ["Bitcoin mất mốc 80.000 USD", "accent"], ["chỉ sau một ngày", "normal"]],
+ "ticker_line": "Nasdaq vào vùng điều chỉnh, giảm 5,52%",
+ "source": "Nguồn: The Block, Yahoo Finance, CoinGlass",
+ "beats": [
+  {"voice": "Đà tăng của Bitcoin sau bầu cử Mỹ đã bị xóa sạch, khi Phố Wall chìm trong một phiên bán tháo dữ dội.",
+   "visual": {"type": "hero", "logo": "BTC", "icon": "warn", "tone": "alert", "kicker": "THỊ TRƯỜNG ĐẢO CHIỀU", "title": "BITCOIN MẤT 80K", "subtitle": "Đà tăng sau bầu cử Mỹ bị xóa sạch", "tokens": ["BTC", "ETH"]}},
+  {"voice": "Chỉ một ngày sau khi vượt tám mươi nghìn đô, Bitcoin giảm khoảng sáu phần trăm, có lúc xuống bảy mươi lăm nghìn năm trăm sáu mươi tám đô.",
+   "visual": {"type": "price_chart", "symbol": "BTC", "days": 1, "timeframe_label": "30m", "start": 80300, "end": 75700,
+              "side": [{"label": "Đáy trong ngày", "value": "75.568 USD", "tone": "bad"}, {"label": "24h", "value": "▼ ~6%", "tone": "bad"}]}},
+  {"voice": "Chứng khoán Mỹ đóng cửa trong sắc đỏ. Nasdaq mất năm phẩy năm hai phần trăm, chỉ số Dow Jones giảm hơn một nghìn tám trăm điểm.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Nasdaq", "value": 5.52, "decimals": 2, "prefix": "-", "unit": "%", "tone": "bad"},
+     {"label": "S&P 500", "value": 4.36, "decimals": 2, "prefix": "-", "unit": "%", "tone": "bad"},
+     {"label": "Dow Jones", "value": 1833, "prefix": "-", "unit": "điểm", "tone": "bad"}]}},
+  {"voice": "Nguyên nhân chính là làn sóng bán tháo cổ phiếu trí tuệ nhân tạo và chip. Chỉ số bán dẫn Philadelphia rơi hơn mười hai phần trăm.",
+   "visual": {"type": "bullets", "title": "Vì sao thị trường giảm?", "items": [
+     {"text": "Bán tháo cổ phiếu AI và chip", "tone": "bad"},
+     {"text": "Chỉ số bán dẫn Philadelphia -12,25%", "tone": "bad"},
+     {"text": "Giá dầu tăng trở lại", "tone": "accent"}]}},
+  {"voice": "Tiền mã hóa không thoát. Ether rơi hơn bảy phần trăm, cổ phiếu Coinbase và Strategy cùng giảm khoảng mười phần trăm.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Ether", "token": "ETH", "value": 7, "prefix": "> -", "unit": "%", "tone": "bad"},
+     {"label": "Coinbase", "token": "COINBASE", "value": 10, "prefix": "~ -", "unit": "%", "tone": "bad"},
+     {"label": "Strategy", "value": 10, "prefix": "~ -", "unit": "%", "tone": "bad"}]}},
+  {"voice": "Một nhà giao dịch của Wintermute nhận định, ông Trump vẫn còn hai năm nhiệm kỳ, và căng thẳng Trung Đông vẫn đang leo thang.",
+   "visual": {"type": "quote", "who": "Jasper De Maere", "role": "OTC trader, Wintermute · 05/11 (lược dịch, The Block)", "text": "Ông Trump vẫn là tổng thống thêm hai năm, Trung Đông vẫn đang leo thang.", "tone": "neutral"}},
+  {"voice": "The Block và Yahoo Finance cùng ghi nhận, toàn bộ đà tăng sau bầu cử đã biến mất chỉ sau một phiên.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "The Block", "date": "05/11/2026", "headline": "Bitcoin erases post-election gains as Wall Street selloff triggers over $1 billion in crypto liquidations"},
+     {"outlet": "Yahoo Finance", "date": "05/11/2026", "headline": "Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown"}]}},
+  {"voice": "Theo Wintermute, mốc cần theo dõi phía dưới là bảy mươi ba nghìn đô. Bitcoin cần lấy lại tám mươi nghìn để xu hướng tích cực hơn.",
+   "visual": {"type": "big_number", "value": 73, "suffix": "nghìn USD", "kicker": "Mốc theo dõi (Wintermute)", "caption": "CẦN LẤY LẠI 80K", "tokens": ["BTC"], "tone": "accent"}}
+ ],
+ "cover": {"kicker": "BÁN THÁO", "big": {"text": "75,7", "unit": "NGHÌN USD / BTC"}, "lines": [["Bitcoin ", "normal"], ["mất mốc 80K", "accent"], [" sau 1 ngày", "normal"]], "tokens": ["BTC", "ETH"], "tone": "alert"},
+ "post": {
+  "title": "Phố Wall bán tháo, Bitcoin mất mốc 80.000 USD chỉ sau một ngày",
+  "caption": "Bitcoin giảm khoảng 6%, có lúc xuống 75.568 USD khi Nasdaq mất 5,52% và vào vùng điều chỉnh vì làn sóng bán tháo cổ phiếu AI. Đà tăng sau bầu cử Mỹ đã bị xóa sạch.",
+  "hashtags": ["bitcoin", "crypto", "nasdaq", "tintuccrypto", "thitruong"],
+  "sources": ["https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434", "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"]
+ }
+}

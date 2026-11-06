@@ -1,0 +1,38 @@
+{
+ "channel": "tndgems",
+ "date": "06.11.2026",
+ "headline": [["Đảo chiều:", "normal"], ["954 triệu USD lệnh long", "accent"], ["bị thanh lý trong 24 giờ", "normal"]],
+ "source": "Nguồn: CoinGlass, crypto.news, The Block",
+ "beats": [
+  {"voice": "Chín trăm năm mươi tư triệu đô. Đó là số tiền phe mua bị thanh lý trong hai mươi bốn giờ, chỉ một ngày sau cú ép short.",
+   "visual": {"type": "big_number", "value": 954, "suffix": "triệu USD", "kicker": "Lệnh LONG bị thanh lý · 24h", "caption": "88,2% TỔNG THANH LÝ", "tokens": ["BTC", "ETH"], "tone": "bad"}},
+  {"voice": "Tổng cộng một tỷ không trăm tám mươi triệu đô. Riêng bốn giờ cuối đã chiếm gần chín trăm triệu.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "4 giờ", "value": 896, "unit": "triệu USD", "tone": "bad"},
+     {"label": "12 giờ", "value": 982, "unit": "triệu USD", "tone": "bad"},
+     {"label": "24 giờ", "value": 1.08, "decimals": 2, "unit": "tỷ USD", "tone": "bad"}]}},
+  {"voice": "Bitcoin dẫn đầu với hai trăm tám mươi triệu, Ether gần một trăm bảy mươi lăm triệu, Solana khoảng ba mươi tám triệu.",
+   "visual": {"type": "graph", "title": "Thanh lý theo đồng (24h)", "center": {"title": "1,08 tỷ USD", "sub": "CoinGlass"},
+              "branches": [{"label": "280,65 triệu", "sub": "BTC · 89,4% long", "tone": "bad", "token": "BTC"},
+                           {"label": "174,86 triệu", "sub": "ETH · ~82% long", "tone": "bad", "token": "ETH"},
+                           {"label": "37,62 triệu", "sub": "SOL", "tone": "bad", "token": "SOL"}]}},
+  {"voice": "Lệnh lớn nhất: một vị thế long ETH trị giá mười phẩy chín tư triệu đô bị xóa sổ trên Binance.",
+   "visual": {"type": "tx_card", "title": "Lệnh thanh lý lớn nhất · 24h",
+              "rows": [{"k": "Sàn", "v": "Binance"}, {"k": "Cặp", "v": "ETHUSDT"}, {"k": "Vị thế", "v": "LONG", "tone": "bad"}, {"k": "Giá trị", "v": "10,94 triệu USD", "tone": "bad"}, {"k": "Dữ liệu", "v": "CoinGlass"}]}},
+  {"voice": "Binance cũng là nơi thanh lý nhiều nhất, chiếm bốn mươi sáu phẩy bảy phần trăm toàn thị trường.",
+   "visual": {"type": "hero", "logo": "BINANCE", "icon": "chart", "tone": "alert", "kicker": "THANH LÝ NHIỀU NHẤT", "title": "BINANCE", "subtitle": "46,7% tổng thanh lý 24 giờ · CoinGlass"}},
+  {"voice": "Hai trăm mười nghìn ba trăm hai mươi sáu tài khoản đã bị thanh lý, khi Bitcoin rơi xuống dưới bảy mươi sáu nghìn đô.",
+   "visual": {"type": "big_number", "value": 210326, "suffix": "tài khoản", "kicker": "Bị thanh lý · 24h", "caption": "BTC < 76.000 USD", "tone": "bad"}},
+  {"voice": "Crypto dot news và The Block cùng đưa tin. The Block lưu ý, dữ liệu công khai có thể thấp hơn nhiều so với thực tế.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "crypto.news", "date": "05/11/2026", "headline": "Crypto crash wipes out $954M in longs as Bitcoin falls below $76K"},
+     {"outlet": "The Block", "date": "05/11/2026", "headline": "Bitcoin erases post-election gains as Wall Street selloff triggers over $1 billion in crypto liquidations"}]}}
+ ],
+ "cover": {"kicker": "LONG BỊ CHÁY", "big": {"text": "954", "unit": "TRIỆU USD / 24 GIỜ"}, "lines": [["210.326 ", "accent"], ["tài khoản bị thanh lý", "normal"]], "tokens": ["BTC", "ETH", "SOL"], "tone": "alert"},
+ "post": {
+  "title": "954 triệu USD lệnh long bị thanh lý trong 24 giờ khi Bitcoin rơi dưới 76.000 USD",
+  "caption": "Theo CoinGlass, 1,08 tỷ USD bị thanh lý trong 24 giờ, 88,2% là lệnh long. Lệnh lớn nhất là vị thế long ETHUSDT 10,94 triệu USD trên Binance, 210.326 tài khoản bị thanh lý.",
+  "hashtags": ["onchain", "thanhly", "bitcoin", "binance", "crypto"],
+  "sources": ["https://crypto.news/crypto-crash-long-short-liquidations-bitcoin-stocks/", "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"]
+ }
+}
