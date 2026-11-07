@@ -1,0 +1,41 @@
+{
+ "channel": "tndgems",
+ "date": "07.11.2026",
+ "headline": [["Quỹ IBIT của BlackRock bị rút", "normal"], ["hơn 1 tỷ USD", "accent"], ["trong 5 phiên", "normal"]],
+ "source": "Nguồn: Farside, CoinCentral, Lookonchain",
+ "beats": [
+  {"voice": "Một phẩy không bốn tỷ đô. Đó là số tiền rút khỏi quỹ ETF Bitcoin của BlackRock chỉ trong năm phiên liên tiếp.",
+   "visual": {"type": "big_number", "value": 1.04, "decimals": 2, "suffix": "tỷ USD", "kicker": "IBIT · 5 phiên rút ròng", "caption": "30/10 → 05/11", "tokens": ["BTC"], "tone": "bad"}},
+  {"voice": "Ba mươi tháng mười, rút hai trăm ba mươi tư triệu. Hai tháng mười một, mạnh nhất, bốn trăm linh năm triệu. Hai phiên sau thêm gần ba trăm triệu. Ngày năm, thêm một trăm linh năm triệu.",
+   "visual": {"type": "timeline", "title": "Rút ròng khỏi IBIT (Farside)", "events": [
+     {"time": "30/10", "text": "-233,7 triệu USD", "tone": "bad"},
+     {"time": "02/11", "text": "-405,3 triệu USD", "badge": "lớn nhất", "tone": "bad"},
+     {"time": "03-04/11", "text": "-296,2 triệu USD (2 phiên)", "tone": "bad"},
+     {"time": "05/11", "text": "-105 triệu USD", "tone": "bad"}]}},
+  {"voice": "Phiên năm tháng mười một, toàn bộ ETF Bitcoin giao ngay mất bốn trăm ba mươi triệu. Fidelity dẫn đầu với gần hai trăm triệu, chỉ một ngày sau khi hút vào hai trăm ba mươi bảy triệu.",
+   "visual": {"type": "graph", "title": "Rút ròng phiên 05/11", "center": {"title": "-430,2 triệu USD", "sub": "ETF BTC giao ngay"},
+              "branches": [
+               {"label": "-199,9 triệu", "sub": "Fidelity FBTC", "tone": "bad"},
+               {"label": "-105 triệu", "sub": "BlackRock IBIT", "tone": "bad"},
+               {"label": "-49,9 triệu", "sub": "Grayscale GBTC", "tone": "bad"},
+               {"label": "-75,4 triệu", "sub": "EZBC · HODL · ARKB", "tone": "bad"}]}},
+  {"voice": "Tính bốn phiên đầu tháng mười một, các quỹ đã mất gần tám trăm bảy mươi triệu, riêng IBIT chiếm hơn tám trăm triệu.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Tất cả ETF BTC", "value": 869.8, "decimals": 1, "prefix": "-", "unit": "triệu USD", "tone": "bad"},
+     {"label": "Riêng IBIT", "value": 806.5, "decimals": 1, "prefix": "-", "unit": "triệu USD", "tone": "bad"}],
+     "total": {"label": "Giai đoạn:", "text": "02/11 → 05/11"}}},
+  {"voice": "Trên chuỗi, Lookonchain ghi nhận một cá voi rút một nghìn hai trăm tám mươi sáu BTC, khoảng chín mươi tám triệu đô, khỏi Binance ngày sáu tháng mười một.",
+   "visual": {"type": "hero", "logo": "BINANCE", "icon": "chart", "tone": "ice", "kicker": "CÁ VOI RÚT BTC", "title": "1.286 BTC", "subtitle": "~98 triệu USD, theo Lookonchain", "tokens": ["BTC"]}},
+  {"voice": "Cointelegraph cho biết, cộng cả ETF Ether, tổng tiền rút trong phiên là khoảng năm trăm ba mươi triệu đô.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "Cointelegraph", "date": "06/11/2026", "headline": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate"},
+     {"outlet": "Blockonomi", "date": "06/11/2026", "headline": "Dormant Bitcoin Whale Returns as Crypto ETF Outflows Deepen"}]}}
+ ],
+ "cover": {"kicker": "DÒNG TIỀN ETF", "big": {"text": "1,04", "unit": "TỶ USD RÚT / IBIT"}, "lines": [["5 phiên ", "accent"], ["rút ròng liên tiếp", "normal"]], "tokens": ["BTC"], "tone": "alert"},
+ "post": {
+  "title": "Quỹ IBIT của BlackRock bị rút hơn 1 tỷ USD trong 5 phiên liên tiếp",
+  "caption": "Theo Farside, IBIT bị rút ròng 1,04 tỷ USD từ 30/10 đến 5/11. Riêng phiên 5/11, ETF Bitcoin giao ngay mất 430,2 triệu USD, Fidelity FBTC dẫn đầu với 199,9 triệu USD.",
+  "hashtags": ["onchain", "bitcoin", "etf", "blackrock", "crypto"],
+  "sources": ["https://coincentral.com/blackrock-bitcoin-etf-outflows-november-2026", "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased", "https://blockonomi.com/dormant-bitcoin-whale-returns-as-etf-outflows-deepen/"]
+ }
+}

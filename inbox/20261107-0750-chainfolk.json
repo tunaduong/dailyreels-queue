@@ -1,0 +1,41 @@
+{
+ "channel": "chainfolk",
+ "date": "07.11.2026",
+ "headline": [["Bitcoin thủng", "normal"], ["75.000 USD", "accent"], ["dù chứng khoán Mỹ hồi phục", "normal"]],
+ "ticker_line": "ETF Bitcoin bị rút 430 triệu USD",
+ "source": "Nguồn: Cointelegraph, The Hill, Farside",
+ "beats": [
+  {"voice": "Chứng khoán Mỹ đã hồi phục, nhưng Bitcoin thì chưa. Đồng tiền số lớn nhất vừa rơi xuống dưới bảy mươi lăm nghìn đô.",
+   "visual": {"type": "hero", "logo": "BTC", "icon": "warn", "tone": "alert", "kicker": "BITCOIN LẠC NHỊP", "title": "DƯỚI 75.000 USD", "subtitle": "Chứng khoán hồi phục, crypto vẫn giảm"}},
+  {"voice": "Đầu phiên Mỹ ngày sáu tháng mười một, Bitcoin có lúc xuống bảy mươi tư nghìn bảy trăm sáu mươi hai đô, thấp nhất kể từ cuối tháng tám.",
+   "visual": {"type": "big_number", "value": 74762, "suffix": "USD", "kicker": "Đáy phiên 06/11", "caption": "THẤP NHẤT TỪ 21/8", "tokens": ["BTC"], "tone": "bad"}},
+  {"voice": "Áp lực đến từ báo cáo việc làm. Mỹ có thêm một trăm sáu mươi lăm nghìn việc làm trong tháng mười, gấp hơn hai lần dự báo. Thất nghiệp giảm còn bốn phẩy một phần trăm.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Việc làm mới T10", "value": 165, "unit": "nghìn", "tone": "good"},
+     {"label": "Dự báo", "value": 65, "unit": "nghìn", "tone": "neutral"},
+     {"label": "Thất nghiệp", "value": 4.1, "decimals": 1, "unit": "%", "tone": "ice"}]}},
+  {"voice": "Kinh tế mạnh khiến khả năng Fed tăng lãi suất vào tháng mười hai tăng từ sáu mươi bảy lên gần bảy mươi bảy phần trăm, theo CME FedWatch.",
+   "visual": {"type": "gauge", "title": "Xác suất Fed tăng lãi suất T12 (%)", "from": 66.9, "to": 76.8, "from_label": "Trước báo cáo", "to_label": "Sau báo cáo"}},
+  {"voice": "Dòng tiền tổ chức cũng rút ra. Phiên năm tháng mười một, các quỹ ETF Bitcoin giao ngay tại Mỹ bị rút bốn trăm ba mươi triệu đô.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Fidelity FBTC", "value": 199.9, "decimals": 1, "prefix": "-", "unit": "triệu USD", "tone": "bad"},
+     {"label": "BlackRock IBIT", "value": 105, "prefix": "-", "unit": "triệu USD", "tone": "bad"}],
+     "total": {"label": "Tổng rút ròng 05/11:", "text": "430,2 triệu USD"}}},
+  {"voice": "Cointelegraph và The Hill cùng đưa tin về diễn biến này.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "Cointelegraph", "date": "06/11/2026", "headline": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound"},
+     {"outlet": "The Hill", "date": "06/11/2026", "headline": "US economy added 165,000 jobs in October as unemployment fell to 4.1 percent"}]}},
+  {"voice": "Theo crypto dot news, hỗ trợ gần nhất ở bảy mươi lăm nghìn ba trăm đô, kế tiếp là bảy mươi hai nghìn. Kháng cự quanh bảy mươi bảy nghìn chín trăm.",
+   "visual": {"type": "bullets", "title": "Các mốc giá được theo dõi", "items": [
+     {"text": "Kháng cự: ~77.900 USD", "tone": "ice"},
+     {"text": "Hỗ trợ gần: 75.300 USD", "tone": "accent"},
+     {"text": "Hỗ trợ kế tiếp: 72.000 USD", "tone": "bad"}]}}
+ ],
+ "cover": {"kicker": "BITCOIN GIẢM", "big": {"text": "< 75", "unit": "NGHÌN USD / BTC"}, "lines": [["Thấp nhất ", "normal"], ["từ tháng 8", "accent"]], "tokens": ["BTC"], "tone": "alert"},
+ "post": {
+  "title": "Bitcoin thủng 75.000 USD dù chứng khoán Mỹ hồi phục",
+  "caption": "Bitcoin có lúc xuống 74.762 USD, thấp nhất từ 21/8, sau báo cáo việc làm tháng 10 mạnh hơn dự báo (165.000 việc làm). ETF Bitcoin giao ngay bị rút 430,2 triệu USD trong phiên 5/11.",
+  "hashtags": ["bitcoin", "crypto", "etf", "tintuccrypto", "thitruong"],
+  "sources": ["https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock", "https://thehill.com/business/6201764-us-jobs-report-october/", "https://crypto.news/bitcoin-price-today-rebounds-76000-etf-outflows/"]
+ }
+}
