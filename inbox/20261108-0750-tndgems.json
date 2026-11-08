@@ -1,0 +1,38 @@
+{
+ "channel": "tndgems",
+ "date": "08.11.2026",
+ "headline": [["MEXC bị rút ròng", "normal"], ["126 triệu USD", "accent"], ["trong 24 giờ Mỹ ra lệnh cấm", "normal"]],
+ "source": "Nguồn: FinCEN, DefiLlama, CryptoSlate",
+ "beats": [
+  {"voice": "Một trăm hai mươi sáu triệu đô. Đó là lượng tiền ròng chảy khỏi ví sàn MEXC trong hai mươi bốn giờ quanh thời điểm Mỹ ra lệnh cấm.",
+   "visual": {"type": "big_number", "value": 126, "suffix": "triệu USD", "kicker": "MEXC · rút ròng 24 giờ", "caption": "RÚT RÒNG", "tone": "bad"}},
+  {"voice": "Ngày sáu tháng mười một, FinCEN thuộc Bộ Tài chính Mỹ xếp MEXC vào diện mối lo rửa tiền hàng đầu.",
+   "visual": {"type": "hero", "logo": "MEXC", "icon": "lock", "tone": "alert", "kicker": "FINCEN RA LỆNH", "title": "MEXC", "subtitle": "Mối lo rửa tiền hàng đầu · 06/11"}},
+  {"voice": "Lệnh của FinCEN ghi nhận ít nhất mười sáu phẩy bảy tỷ đô dòng tiền phi pháp trong năm năm. Hơn một phẩy tám bảy tỷ dính tới Iran, một phẩy chín chín tỷ từ tội phạm mạng, gần một phẩy năm tỷ để né trừng phạt Nga.",
+   "visual": {"type": "graph", "title": "Dòng tiền FinCEN nêu tên", "center": {"title": "≥ 16,7 tỷ USD", "sub": "05/2021 → 05/2026"},
+              "branches": [
+               {"label": "> 1,87 tỷ", "sub": "Liên quan Iran", "tone": "bad"},
+               {"label": "1,99 tỷ", "sub": "Tội phạm mạng", "tone": "bad"},
+               {"label": "~1,5 tỷ", "sub": "Né trừng phạt Nga", "tone": "bad"}]}},
+  {"voice": "Đào sâu hơn: hơn một tỷ đô giao dịch trực tiếp với hơn bốn mươi sàn Iran. Khoảng một trăm hai mươi chín triệu với sàn Nga Garantex, và bốn phẩy một triệu với Grinex, kéo dài tới tận tháng sáu.",
+   "visual": {"type": "bullets", "title": "Các đối tác bị nêu tên", "items": [
+     {"text": "> 1 tỷ USD trực tiếp với hơn 40 sàn Iran", "tone": "bad"},
+     {"text": "~129 triệu USD với Garantex (Nga)", "tone": "bad"},
+     {"text": "4,1 triệu USD với Grinex, tới 06/2026", "tone": "accent"}]}},
+  {"voice": "Sau cú rút, ví MEXC vẫn giữ khoảng bốn phẩy ba lăm tỷ đô. Sàn nói rút tiền vẫn bình thường và đã mở rà soát độc lập.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Tài sản còn trên ví", "value": 4.35, "decimals": 2, "prefix": "~", "unit": "tỷ USD", "tone": "ice"},
+     {"label": "Rút ròng 24 giờ", "value": 126, "prefix": "-", "unit": "triệu USD", "tone": "bad"}]}},
+  {"voice": "CryptoSlate và Decrypt cho biết, lệnh cấm chuyển tiền có hiệu lực ba mươi ngày sau khi đăng công báo Mỹ.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "CryptoSlate", "date": "07/11/2026", "headline": "MEXC sees $126 million outflows as US targets exchange over $16.7 billion in suspected illicit transactions"},
+     {"outlet": "Decrypt", "date": "06/11/2026", "headline": "Treasury Cuts Crypto Exchange MEXC Off From US Financial System"}]}}
+ ],
+ "cover": {"kicker": "ON-CHAIN · MEXC", "big": {"text": "126", "unit": "TRIỆU USD RÚT RÒNG"}, "lines": [["chỉ trong ", "normal"], ["24 giờ", "accent"]], "logo": "MEXC", "tone": "alert"},
+ "post": {
+  "title": "MEXC bị rút ròng 126 triệu USD trong 24 giờ khi Mỹ ra lệnh cấm",
+  "caption": "Theo DefiLlama, ví MEXC bị rút ròng 126 triệu USD quanh thời điểm FinCEN ra lệnh, còn khoảng 4,35 tỷ USD. FinCEN nêu ít nhất 16,7 tỷ USD dòng tiền phi pháp, gồm hơn 1,87 tỷ USD liên quan Iran.",
+  "hashtags": ["onchain", "mexc", "fincen", "crypto", "tintuccrypto"],
+  "sources": ["https://cryptoslate.com/mexc-sees-126-million-outflows-as-us-targets-exchange-over-16-7-billion-in-suspected-illicit-transactions/", "https://decrypt.co/382758/treasury-cuts-off-crypto-exchange-mexc-us-financial-system", "https://s-curve.news/articles/2026-11-06-mexc-fincen-order"]
+ }
+}

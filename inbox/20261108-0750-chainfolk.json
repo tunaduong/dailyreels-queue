@@ -1,0 +1,38 @@
+{
+ "channel": "chainfolk",
+ "date": "08.11.2026",
+ "headline": [["Mỹ cắt MEXC khỏi hệ thống tài chính:", "normal"], ["hơn 16 tỷ USD", "accent"], ["giao dịch phi pháp", "normal"]],
+ "ticker_line": "MEXC: sàn vẫn hoạt động bình thường",
+ "source": "Nguồn: Bộ Tài chính Mỹ, The Block, Decrypt",
+ "beats": [
+  {"voice": "Bộ Tài chính Mỹ vừa ra lệnh cắt MEXC, một trong hai mươi sàn tiền mã hóa lớn nhất thế giới, khỏi hệ thống tài chính Mỹ.",
+   "visual": {"type": "hero", "logo": "MEXC", "icon": "warn", "tone": "alert", "kicker": "LỆNH CẤM TỪ MỸ", "title": "MEXC", "subtitle": "Bị FinCEN coi là mối lo rửa tiền hàng đầu"}},
+  {"voice": "Theo cơ quan FinCEN, MEXC đã tiếp tay cho hơn mười sáu tỷ đô giao dịch phi pháp trong năm năm, từ năm hai nghìn hai mươi mốt.",
+   "visual": {"type": "big_number", "value": 16, "prefix": ">", "suffix": "tỷ USD", "kicker": "Theo FinCEN · 05/2021 → 05/2026", "caption": "GIAO DỊCH PHI PHÁP", "tone": "bad"}},
+  {"voice": "Trong đó, hơn một phẩy tám tỷ đô liên quan tới Iran, gần một phẩy năm tỷ dùng để né trừng phạt Nga, và khoảng hai tỷ từ tội phạm mạng.",
+   "visual": {"type": "stat_cards", "cards": [
+     {"label": "Iran", "value": 1.8, "decimals": 1, "prefix": "> ", "unit": "tỷ USD", "tone": "bad"},
+     {"label": "Né trừng phạt Nga", "value": 1.5, "decimals": 1, "prefix": "~", "unit": "tỷ USD", "tone": "bad"},
+     {"label": "Tội phạm mạng", "value": 2, "prefix": "~", "unit": "tỷ USD", "tone": "bad"}]}},
+  {"voice": "Bộ trưởng Tài chính Scott Bessent tuyên bố, các tổ chức tài chính không thể bắt cá hai tay.",
+   "visual": {"type": "quote", "who": "Scott Bessent", "role": "Bộ trưởng Tài chính Mỹ · 06/11 (lược dịch)", "text": "Các tổ chức tài chính không thể bắt cá hai tay: hoặc ủng hộ chế độ Iran, hoặc được tiếp cận hệ thống tài chính Mỹ.", "tone": "bad"}},
+  {"voice": "Lệnh cấm có hiệu lực ba mươi ngày sau khi đăng công báo. Khi đó, các tổ chức tài chính Mỹ không được chuyển tiền đi hoặc nhận tiền từ MEXC.",
+   "visual": {"type": "bullets", "title": "Lệnh cấm ảnh hưởng ra sao?", "items": [
+     {"text": "Tổ chức tài chính Mỹ không được chuyển tiền", "tone": "bad"},
+     {"text": "Hiệu lực 30 ngày sau khi đăng công báo", "tone": "accent"},
+     {"text": "Hiện chưa có hiệu lực", "tone": "ice"}]}},
+  {"voice": "Phía MEXC cho biết sàn vẫn hoạt động bình thường, tài sản người dùng an toàn, và đang rà soát lệnh này.",
+   "visual": {"type": "quote", "logo": "MEXC", "who": "MEXC", "role": "Bài đăng trên X · 07/11 (lược dịch)", "text": "Sàn vẫn hoạt động bình thường và tài sản người dùng vẫn an toàn.", "tone": "neutral"}},
+  {"voice": "Nhiều trang tin crypto lớn như The Block và Decrypt đã đưa tin về vụ việc.",
+   "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+     {"outlet": "The Block", "date": "06/11/2026", "headline": "Treasury cuts off MEXC Global over alleged $16 billion in transactions linked to Iran, North Korea and Russia"},
+     {"outlet": "Decrypt", "date": "06/11/2026", "headline": "Treasury Cuts Crypto Exchange MEXC Off From US Financial System"}]}}
+ ],
+ "cover": {"kicker": "LỆNH CẤM TỪ MỸ", "big": {"text": "> 16", "unit": "TỶ USD PHI PHÁP"}, "lines": [["Mỹ ra lệnh cắt ", "normal"], ["MEXC", "accent"]], "logo": "MEXC", "tone": "alert"},
+ "post": {
+  "title": "Mỹ cắt sàn MEXC khỏi hệ thống tài chính vì hơn 16 tỷ USD giao dịch phi pháp",
+  "caption": "FinCEN cáo buộc MEXC tiếp tay cho ít nhất 16 tỷ USD giao dịch liên quan Iran, Nga, Triều Tiên và tội phạm mạng từ 2021. Lệnh có hiệu lực 30 ngày sau khi đăng công báo; MEXC nói sàn vẫn hoạt động bình thường.",
+  "hashtags": ["mexc", "crypto", "tintuccrypto", "fincen", "blockchain"],
+  "sources": ["https://www.theblock.co/news/regulation/2026-11-06-treasury-cuts-off-mexc-global-over-alleged-16-billion-in-transactions-linked-to-iran-north-korea-and-russia-435957", "https://decrypt.co/382758/treasury-cuts-off-crypto-exchange-mexc-us-financial-system", "https://coincentral.com/us-treasury-cuts-off-mexc-global-over-16-billion-in-alleged-illicit-transfers"]
+ }
+}
