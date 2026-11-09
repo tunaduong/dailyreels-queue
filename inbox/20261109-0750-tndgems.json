@@ -1,0 +1,205 @@
+{
+ "channel": "tndgems",
+ "date": "09.11.2026",
+ "headline": [
+  [
+   "44.041 ví Keplr bị rút,",
+   "accent"
+  ],
+  [
+   "nhưng 8 ví 'kẻ trộm'",
+   "normal"
+  ],
+  [
+   "nằm trong danh sách giải cứu",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: Bitquery, The Block, crypto.news",
+ "beats": [
+  {
+   "voice": "Bốn mươi bốn nghìn không trăm bốn mươi mốt ví. Đó là số ví Keplr bị rút tiền trên bảy mạng Cosmos, theo Bitquery.",
+   "visual": {
+    "type": "big_number",
+    "value": 44041,
+    "suffix": "ví",
+    "kicker": "Ví Keplr bị rút tiền",
+    "caption": "7 MẠNG COSMOS",
+    "tokens": [
+     "ATOM",
+     "INJ",
+     "OSMO"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Nạn nhân là những tài khoản tạo bằng Google hoặc Apple, do Web3Auth quản lý đăng nhập. Lỗi của Web3Auth làm lộ khóa riêng.",
+   "visual": {
+    "type": "hero",
+    "logo": "ATOM",
+    "icon": "lock",
+    "tone": "alert",
+    "kicker": "HACK ON-CHAIN",
+    "title": "KEPLR × WEB3AUTH",
+    "subtitle": "Lộ khóa ví đăng nhập Google/Apple"
+   }
+  },
+  {
+   "voice": "Bitquery lần theo khoảng sáu triệu đô đổ về hai địa chỉ gom tiền trong hai ngày sáu và bảy tháng mười một.",
+   "visual": {
+    "type": "flow",
+    "from": {
+     "kicker": "Ví bị lộ khóa",
+     "title": "44.041 ví Keplr",
+     "sub": "7 mạng Cosmos",
+     "tokens": [
+      "ATOM",
+      "INJ",
+      "OSMO"
+     ]
+    },
+    "to": {
+     "kicker": "Địa chỉ gom",
+     "title": "0x••••",
+     "sub": "2 địa chỉ (theo Bitquery)",
+     "tone": "bad"
+    },
+    "amount": {
+     "value": 6,
+     "decimals": 0,
+     "prefix": "~",
+     "suffix": "triệu USD"
+    },
+    "caption": "06/11 → 07/11/2026"
+   }
+  },
+  {
+   "voice": "Riêng trên Cosmos Hub, khoảng một phẩy chín sáu triệu ATOM đang stake bị chuyển đi ngay, bỏ qua thời gian chờ hai mươi mốt ngày rút stake.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "ATOM stake",
+      "token": "ATOM",
+      "value": 1.96,
+      "decimals": 2,
+      "prefix": "~",
+      "unit": "triệu ATOM",
+      "tone": "bad"
+     },
+     {
+      "label": "Cosmos Hub",
+      "token": "ATOM",
+      "value": 3.5,
+      "decimals": 1,
+      "prefix": "~",
+      "unit": "triệu USD",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Thứ sáu, Web3Auth dừng tạo ví. Thứ bảy, họ bắt đầu rút trước tiền khỏi các ví bị lộ. Rạng sáng chủ nhật, họ công bố mười hai địa chỉ giải cứu.",
+   "visual": {
+    "type": "timeline",
+    "title": "Dòng thời gian (11/2026)",
+    "events": [
+     {
+      "time": "06/11",
+      "text": "Web3Auth công bố sự cố, dừng tạo ví",
+      "tone": "bad"
+     },
+     {
+      "time": "07/11",
+      "text": "Bắt đầu rút trước tiền khỏi ví bị lộ",
+      "tone": "ice"
+     },
+     {
+      "time": "08/11",
+      "text": "Công bố 12 địa chỉ giải cứu",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Điểm đáng chú ý: cả tám địa chỉ mà Bitquery gắn với kẻ trộm đều nằm trong danh sách giải cứu đó. Mười hai địa chỉ này đang giữ khoảng năm phẩy sáu triệu đô, phần lớn là ATOM.",
+   "visual": {
+    "type": "graph",
+    "title": "Ví 'kẻ trộm' hay ví giải cứu?",
+    "center": {
+     "title": "Web3Auth",
+     "sub": "12 địa chỉ giải cứu"
+    },
+    "branches": [
+     {
+      "label": "8/8 ví",
+      "sub": "Bitquery gắn nhãn kẻ trộm",
+      "tone": "bad"
+     },
+     {
+      "label": "~5,6 triệu USD",
+      "sub": "đang giữ (The Block)",
+      "tone": "ice"
+     },
+     {
+      "label": "~2,49 triệu ATOM",
+      "sub": "~3,3 triệu USD",
+      "tone": "ice",
+      "token": "ATOM"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Keplr cảnh báo một số tài khoản có thể đã hiện số dư giảm hoặc trống do các biện pháp bảo vệ. Số tiền thật sự bị đánh cắp vẫn chưa được công bố.",
+   "visual": {
+    "type": "quote",
+    "who": "Keplr",
+    "role": "Thông báo · 07/11 (lược dịch)",
+    "text": "Một số tài khoản có thể đã hiển thị số dư giảm hoặc trống do các biện pháp bảo vệ.",
+    "tone": "neutral"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HACK ON-CHAIN",
+  "big": {
+   "text": "44",
+   "unit": "NGHÌN VÍ KEPLR"
+  },
+  "lines": [
+   [
+    "Ví giải cứu hay",
+    "normal"
+   ],
+   [
+    "ví kẻ trộm?",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "ATOM",
+   "INJ",
+   "OSMO"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "44.041 ví Keplr bị rút: 8 ví 'kẻ trộm' nằm trong danh sách giải cứu của Web3Auth",
+  "caption": "On-chain: Bitquery lần theo khoảng 6 triệu USD từ 44.041 ví Keplr trên 7 mạng Cosmos. Web3Auth công bố 12 địa chỉ giải cứu đang giữ khoảng 5,6 triệu USD, trong đó có cả 8 địa chỉ từng bị gắn nhãn kẻ trộm.",
+  "hashtags": [
+   "onchain",
+   "keplr",
+   "cosmos",
+   "atom",
+   "crypto"
+  ],
+  "sources": [
+   "https://www.theblock.co/news/defi/2026-11-08-web3auth-says-it-frontran-hackers-by-moving-5-6-million-out-of-exposed-keplr-wallets-436029",
+   "https://crypto.news/keplr-wallet-hack-web3auth-google-apple-login/"
+  ]
+ }
+}

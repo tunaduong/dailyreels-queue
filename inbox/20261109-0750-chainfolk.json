@@ -1,0 +1,202 @@
+{
+ "channel": "chainfolk",
+ "date": "09.11.2026",
+ "headline": [
+  [
+   "Ví Keplr bị rút",
+   "normal"
+  ],
+  [
+   "khoảng 6 triệu USD",
+   "accent"
+  ],
+  [
+   "vì lỗi từ Web3Auth",
+   "normal"
+  ]
+ ],
+ "ticker_line": "Ví seed phrase, ví cứng: không ảnh hưởng",
+ "source": "Nguồn: The Block, crypto.news, Bitquery",
+ "beats": [
+  {
+   "voice": "Keplr, ví tiền mã hóa với hơn hai triệu người dùng trong hệ sinh thái Cosmos, vừa gặp sự cố an ninh nghiêm trọng.",
+   "visual": {
+    "type": "hero",
+    "logo": "ATOM",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "SỰ CỐ AN NINH",
+    "title": "VÍ KEPLR",
+    "subtitle": "Hơn 2 triệu người dùng · hệ sinh thái Cosmos",
+    "tokens": [
+     "ATOM",
+     "INJ",
+     "OSMO"
+    ]
+   }
+  },
+  {
+   "voice": "Theo công ty phân tích Bitquery, khoảng sáu triệu đô đã bị rút khỏi hơn bốn mươi bốn nghìn ví Keplr.",
+   "visual": {
+    "type": "big_number",
+    "value": 6,
+    "prefix": "~",
+    "suffix": "triệu USD",
+    "kicker": "Bị rút khỏi ví Keplr",
+    "caption": "> 44.000 VÍ",
+    "tokens": [
+     "ATOM",
+     "INJ",
+     "OSMO"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Nguyên nhân là lỗi trong hệ thống của Web3Auth, bên cung cấp đăng nhập bằng Google và Apple cho Keplr, làm lộ khóa riêng của người dùng.",
+   "visual": {
+    "type": "bullets",
+    "title": "Lỗi nằm ở đâu?",
+    "items": [
+     {
+      "text": "Lỗi hạ tầng của Web3Auth",
+      "tone": "bad"
+     },
+     {
+      "text": "Lộ khóa riêng ví đăng nhập Google, Apple",
+      "tone": "bad"
+     },
+     {
+      "text": "Ví dùng cụm từ khôi phục: an toàn",
+      "tone": "good"
+     },
+     {
+      "text": "Ví phần cứng: an toàn",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Đồng sáng lập Keplr, Josh Lee, khẳng định đây không phải vụ hack mã nguồn của Keplr.",
+   "visual": {
+    "type": "quote",
+    "who": "Josh Lee",
+    "role": "Đồng sáng lập Keplr · 07/11 (lược dịch)",
+    "text": "Đây không phải vụ hack mã nguồn của Keplr. Sự cố bắt nguồn từ Web3Auth, một nhà cung cấp mà Keplr sử dụng.",
+    "tone": "neutral"
+   }
+  },
+  {
+   "voice": "Ông ước tính khoảng hai mươi phần trăm tài khoản đăng nhập bằng Google và Apple bị ảnh hưởng. Web3Auth đã chủ động rút trước tiền khỏi các ví bị lộ, hiện giữ khoảng năm phẩy sáu triệu đô.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "TK Google/Apple",
+      "value": 20,
+      "prefix": "~",
+      "unit": "% bị ảnh hưởng",
+      "tone": "bad"
+     },
+     {
+      "label": "Web3Auth giữ",
+      "value": 5.6,
+      "decimals": 1,
+      "prefix": "~",
+      "unit": "triệu USD",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Keplr khuyến cáo người dùng đăng nhập bằng Google hoặc Apple không nạp thêm tiền, và chuyển tài sản còn lại sang ví dùng cụm từ khôi phục hoặc ví phần cứng.",
+   "visual": {
+    "type": "bullets",
+    "title": "Keplr khuyến cáo",
+    "items": [
+     {
+      "text": "Không nạp thêm tiền vào ví Google, Apple",
+      "tone": "accent"
+     },
+     {
+      "text": "Chuyển sang ví có cụm từ khôi phục",
+      "tone": "good"
+     },
+     {
+      "text": "Hoặc chuyển sang ví phần cứng",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Web3Auth, thuộc Consensys, công ty đứng sau MetaMask, cho biết chưa thấy bằng chứng người dùng MetaMask bị ảnh hưởng.",
+   "visual": {
+    "type": "quote",
+    "who": "Web3Auth",
+    "role": "Thông báo trên X · 11/2026 (lược dịch)",
+    "text": "Sau điều tra ban đầu, chúng tôi không thấy bằng chứng người dùng MetaMask bị ảnh hưởng.",
+    "tone": "good"
+   }
+  },
+  {
+   "voice": "Các trang tin crypto lớn như The Block cũng đã đưa tin về vụ việc.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "The Block",
+      "date": "08/11/2026",
+      "headline": "Web3Auth says it frontran hackers by moving $5.6 million out of exposed Keplr wallets"
+     },
+     {
+      "outlet": "crypto.news",
+      "date": "08/11/2026",
+      "headline": "Keplr halts Google, Apple logins as $6M wallet drain hits Cosmos"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "SỰ CỐ AN NINH",
+  "big": {
+   "text": "~6",
+   "unit": "TRIỆU USD BỊ RÚT"
+  },
+  "lines": [
+   [
+    "Ví Keplr",
+    "normal"
+   ],
+   [
+    "lộ khóa qua Web3Auth",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "ATOM",
+   "INJ",
+   "OSMO"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "Ví Keplr bị rút khoảng 6 triệu USD vì lỗi từ Web3Auth",
+  "caption": "Lỗi hệ thống Web3Auth làm lộ khóa riêng một số ví Keplr đăng nhập bằng Google/Apple. Bitquery ước tính khoảng 6 triệu USD bị rút từ hơn 44.000 ví; Web3Auth đang giữ khoảng 5,6 triệu USD rút trước để bảo vệ người dùng.",
+  "hashtags": [
+   "keplr",
+   "cosmos",
+   "web3auth",
+   "crypto",
+   "tintuccrypto"
+  ],
+  "sources": [
+   "https://www.theblock.co/news/defi/2026-11-08-web3auth-says-it-frontran-hackers-by-moving-5-6-million-out-of-exposed-keplr-wallets-436029",
+   "https://crypto.news/keplr-wallet-hack-web3auth-google-apple-login/"
+  ]
+ }
+}
