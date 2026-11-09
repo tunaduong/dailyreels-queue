@@ -43,6 +43,7 @@ Máy tự vẽ ảnh bìa 1080×1920 theo nhận diện kênh, chèn vào khung 
 - `lines`: 1–3 đoạn [text, "normal"|"accent"], tổng ≤40 ký tự; có `big` thì ≤32 ký tự. Không lặp lại nguyên câu `big`.
 - `tokens` (tùy chọn): 2–4 ký hiệu token/sàn để hiện logo. `logo` (tùy chọn): 1 sàn/token, hiện logo lớn (dùng khi tin xoay quanh 1 sàn có logo, VD BINANCE).
 - `tone`: alert (đỏ, mặc định) | good | neutral.
+- Bìa kiểu TikTok: chữ tự IN HOA, đoạn `accent` hiện thành **khối màu** (chữ tối trên nền màu) → mỗi bìa chỉ 1–2 đoạn accent ngắn (1–3 chữ), đừng accent cả câu. Viết `lines` gọn, đọc được trong 1 giây.
 - 2 kênh viết bìa khác nhau: ChainFolk nêu sự kiện + con số; TND GEMS nhấn con số on-chain/mốc thời gian.
 Câu kêu gọi theo dõi ở cuối do máy tự thêm, **không viết vào beats**.
 
