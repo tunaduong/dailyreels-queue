@@ -1,0 +1,168 @@
+{
+ "channel": "chainfolk",
+ "date": "09.11.2026",
+ "headline": [
+  [
+   "Top 5 người giàu nhất crypto:",
+   "normal"
+  ],
+  [
+   "CZ ~110 tỷ USD",
+   "accent"
+  ],
+  [
+   "dẫn đầu, Tether chiếm 4 ghế",
+   "normal"
+  ]
+ ],
+ "ticker_line": "Forbes 2026: Tether chiếm 4/5 vị trí",
+ "source": "Nguồn: Forbes 2026 (số liệu ngày 1/3/2026)",
+ "beats": [
+  {
+   "voice": "Ai đang là người giàu nhất thị trường tiền mã hóa? Danh sách tỷ phú thế giới năm nay của Forbes đưa ra một bảng xếp hạng khá bất ngờ.",
+   "visual": {
+    "type": "hero",
+    "icon": "chart",
+    "tone": "neutral",
+    "kicker": "FORBES 2026",
+    "title": "TOP 5 GIÀU NHẤT CRYPTO",
+    "subtitle": "Theo danh sách tỷ phú Forbes"
+   }
+  },
+  {
+   "voice": "Hạng năm là Stuart Hoegner, cố vấn pháp lý của Tether, với khoảng hai mươi bốn phẩy bảy tỷ đô. Đồng hạng ba là Jean-Louis van der Velde và Paolo Ardoino, mỗi người ba mươi tám tỷ đô.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "#5 Hoegner",
+      "token": "USDT",
+      "value": 24.7,
+      "decimals": 1,
+      "unit": "tỷ USD",
+      "tone": "neutral"
+     },
+     {
+      "label": "#3 van der Velde",
+      "token": "USDT",
+      "value": 38,
+      "unit": "tỷ USD",
+      "tone": "ice"
+     },
+     {
+      "label": "#3 Ardoino",
+      "token": "USDT",
+      "value": 38,
+      "unit": "tỷ USD",
+      "tone": "ice"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Hạng hai là Giancarlo Devasini, chủ tịch Tether, với tám mươi chín phẩy ba tỷ đô. Ông hiện là người giàu nhất nước Ý.",
+   "visual": {
+    "type": "big_number",
+    "value": 89.3,
+    "decimals": 1,
+    "suffix": "tỷ USD",
+    "kicker": "#2 Giancarlo Devasini",
+    "caption": "CHỦ TỊCH TETHER",
+    "tokens": [
+     "USDT"
+    ],
+    "tone": "accent"
+   }
+  },
+  {
+   "voice": "Đứng đầu vẫn là Changpeng Zhao, nhà sáng lập Binance, với khoảng một trăm mười tỷ đô, xếp thứ mười bảy thế giới.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "none",
+    "tone": "good",
+    "kicker": "HẠNG 1 · CRYPTO",
+    "title": "CHANGPENG ZHAO",
+    "subtitle": "Nhà sáng lập Binance · ~110 tỷ USD · #17 thế giới"
+   }
+  },
+  {
+   "voice": "Điểm đáng chú ý: bốn trong năm người giàu nhất đều gắn với Tether, công ty phát hành đồng USDT.",
+   "visual": {
+    "type": "bullets",
+    "title": "Tether chiếm 4/5 vị trí",
+    "items": [
+     {
+      "text": "Devasini · Ardoino · van der Velde · Hoegner",
+      "tone": "ice"
+     },
+     {
+      "text": "Cùng gắn với Tether và Bitfinex",
+      "tone": "accent"
+     },
+     {
+      "text": "Chỉ CZ đến từ một sàn giao dịch",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Forbes tính tài sản theo giá ngày một tháng ba năm nay, nên con số thực tế có thể đã thay đổi theo thị trường.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "Forbes Australia",
+      "date": "2026",
+      "headline": "Forbes Billionaires List 2026: The 200 Richest People In The World"
+     },
+     {
+      "outlet": "VnExpress International",
+      "date": "11/03/2026",
+      "headline": "Binance founder Changpeng Zhao remains richest in crypto with $110B net worth, surpassing Bill Gates"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "FORBES 2026",
+  "big": {
+   "text": "TOP 5",
+   "unit": "GIÀU NHẤT CRYPTO"
+  },
+  "lines": [
+   [
+    "CZ dẫn đầu,",
+    "normal"
+   ],
+   [
+    "Tether chiếm 4 ghế",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "BNB",
+   "USDT"
+  ],
+  "tone": "neutral"
+ },
+ "post": {
+  "title": "Top 5 người giàu nhất crypto theo Forbes 2026: CZ dẫn đầu, Tether chiếm 4 ghế",
+  "caption": "Theo Forbes (số liệu ngày 1/3/2026), Changpeng Zhao dẫn đầu giới crypto với khoảng 110 tỷ USD. Bốn vị trí còn lại đều thuộc về lãnh đạo Tether: Devasini, Ardoino, van der Velde và Hoegner.",
+  "hashtags": [
+   "crypto",
+   "forbes",
+   "typhu",
+   "binance",
+   "tether"
+  ],
+  "sources": [
+   "https://www.forbes.com.au/news/billionaires/the-forbes-billionaires-list-top-200/",
+   "https://e.vnexpress.net/news/tech/personalities/binance-founder-changpeng-zhao-remains-richest-in-crypto-with-110b-net-worth-surpassing-bill-gates-5049286.html",
+   "https://www.calcioefinanza.it/2026/03/11/miliardari-italiani-2026-devasini-ferrero/"
+  ]
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "channel": "tndgems",
+ "date": "09.11.2026",
+ "headline": [
+  [
+   "Gấp 4 lần trong 5 tháng:",
+   "accent"
+  ],
+  [
+   "cỗ máy in tiền Tether",
+   "normal"
+  ],
+  [
+   "và 1,1 triệu BTC của Satoshi",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: Forbes, Reuters, Bitcoin.com, Arkham",
+ "beats": [
+  {
+   "voice": "Gấp bốn lần. Chỉ trong năm tháng, tài sản của CEO Tether Paolo Ardoino tăng từ chín phẩy năm lên ba mươi tám tỷ đô, theo Forbes.",
+   "visual": {
+    "type": "big_number",
+    "value": 4,
+    "suffix": "lần",
+    "kicker": "Tài sản Paolo Ardoino",
+    "caption": "9,5 → 38 TỶ USD",
+    "tokens": [
+     "USDT"
+    ],
+    "tone": "accent"
+   }
+  },
+  {
+   "voice": "Mốc một tháng mười năm ngoái, chủ tịch Tether Giancarlo Devasini có hai mươi hai phẩy bốn tỷ đô. Đến một tháng ba năm nay, con số là tám mươi chín phẩy ba tỷ.",
+   "visual": {
+    "type": "timeline",
+    "title": "Forbes định giá lại (USD)",
+    "events": [
+     {
+      "time": "01/10/25",
+      "text": "Devasini 22,4 tỷ · Ardoino 9,5 tỷ",
+      "tone": "ice",
+      "token": "USDT"
+     },
+     {
+      "time": "01/03/26",
+      "text": "Devasini 89,3 tỷ · Ardoino 38 tỷ",
+      "badge": "~x4",
+      "tone": "good",
+      "token": "USDT"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Bốn trong năm người giàu nhất crypto trên danh sách Forbes đều là người của Tether. Cộng lại khoảng một trăm chín mươi tỷ đô.",
+   "visual": {
+    "type": "graph",
+    "title": "Tether: 4/5 ghế top crypto",
+    "center": {
+     "title": "TETHER",
+     "sub": "~190 tỷ USD (4 người)"
+    },
+    "branches": [
+     {
+      "label": "Devasini",
+      "sub": "89,3 tỷ USD",
+      "tone": "good",
+      "token": "USDT"
+     },
+     {
+      "label": "Ardoino",
+      "sub": "38 tỷ USD",
+      "tone": "ice"
+     },
+     {
+      "label": "Van der Velde",
+      "sub": "38 tỷ USD",
+      "tone": "ice"
+     },
+     {
+      "label": "Hoegner",
+      "sub": "24,7 tỷ USD",
+      "tone": "ice"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Tiền đến từ đâu? Theo Reuters Breakingviews, riêng năm hai nghìn không trăm hai mươi lăm Tether đã chia mười phẩy chín tỷ đô cổ tức.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Cổ tức 2025",
+      "token": "USDT",
+      "value": 10.9,
+      "decimals": 1,
+      "unit": "tỷ USD",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Người duy nhất ngoài Tether lọt top năm là Changpeng Zhao của Binance, khoảng một trăm mười tỷ đô.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "none",
+    "tone": "neutral",
+    "kicker": "NGOẠI LỆ DUY NHẤT",
+    "title": "CZ · ~110 TỶ USD",
+    "subtitle": "Hạng 1 crypto, #17 thế giới (Forbes)"
+   }
+  },
+  {
+   "voice": "Nhưng cá voi lớn nhất không có tên trên bảng. Satoshi Nakamoto được ước tính giữ khoảng một phẩy một triệu BTC, hơn mười lăm năm chưa hề di chuyển.",
+   "visual": {
+    "type": "big_number",
+    "value": 1.1,
+    "decimals": 1,
+    "prefix": "~",
+    "suffix": "triệu BTC",
+    "kicker": "Ví Satoshi Nakamoto",
+    "caption": "15+ NĂM BẤT ĐỘNG",
+    "tokens": [
+     "BTC"
+    ],
+    "tone": "accent"
+   }
+  },
+  {
+   "voice": "Forbes không xếp Satoshi vì danh tính chưa được xác minh.",
+   "visual": {
+    "type": "news_card",
+    "title": "Nguồn tin",
+    "items": [
+     {
+      "outlet": "Bitcoin.com News",
+      "date": "16/06/2026",
+      "headline": "Onchain Data Locks In Satoshi's 1.1M BTC Hoard — 3 Theories on Why It Never Moves"
+     },
+     {
+      "outlet": "Euronews",
+      "date": "24/08/2026",
+      "headline": "As bitcoin soars people ask who is Giancarlo Devasini, Italy's richest man?"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "TIỀN CỦA AI?",
+  "big": {
+   "text": "x4",
+   "unit": "TRONG 5 THÁNG"
+  },
+  "lines": [
+   [
+    "Tether chiếm",
+    "normal"
+   ],
+   [
+    "4/5 ghế giàu nhất",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "USDT",
+   "BTC",
+   "BNB"
+  ],
+  "tone": "neutral"
+ },
+ "post": {
+  "title": "Gấp 4 lần trong 5 tháng: người Tether chiếm 4/5 ghế giàu nhất crypto",
+  "caption": "Theo Forbes, tài sản của Devasini và Ardoino tăng khoảng 4 lần từ 1/10/2025 đến 1/3/2026. Bốn lãnh đạo Tether cộng lại khoảng 190 tỷ USD, trong khi ví Satoshi giữ khoảng 1,1 triệu BTC chưa từng di chuyển.",
+  "hashtags": [
+   "onchain",
+   "tether",
+   "satoshi",
+   "typhu",
+   "crypto"
+  ],
+  "sources": [
+   "https://www.forbes.com.au/news/billionaires/the-forbes-billionaires-list-top-200/",
+   "https://uk.finance.yahoo.com/news/wealthiest-crypto-tycoons-now-131500667.html",
+   "https://news.bitcoin.com/onchain-data-locks-in-satoshis-1-1m-btc-hoard-3-theories-on-why-it-never-moves/",
+   "https://www.euronews.com/business/2026/08/24/as-bitcoin-soars-people-ask-who-is-giancarlo-devasini-italys-richest-man"
+  ]
+ }
+}
