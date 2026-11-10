@@ -1,0 +1,213 @@
+{
+ "channel": "tndgems",
+ "date": "10.11.2026",
+ "headline": [
+  [
+   "Tiền hack Binance chạy qua",
+   "normal"
+  ],
+  [
+   "20.000 ví",
+   "accent"
+  ],
+  [
+   "và memecoin NEAR",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: Elliptic, Bitcoin.com, crypto.news",
+ "beats": [
+  {
+   "voice": "Hơn hai mươi nghìn ví, mười sáu blockchain. Đó là mê cung tẩu tán tiền hack Binance của nhóm tin tặc bị FBI quy cho Triều Tiên.",
+   "visual": {
+    "type": "big_number",
+    "value": 20,
+    "prefix": ">",
+    "suffix": "nghìn ví",
+    "kicker": "Ví nhận tiền hack Binance",
+    "caption": "16 CHUỖI",
+    "tokens": [
+     "BTC",
+     "ETH",
+     "NEAR"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Theo Elliptic, khoảng ba nghìn bitcoin, cỡ hai trăm hai mươi lăm triệu đô, đã được đổi ra và chuyển vào ví mới. Khoảng bảy nghìn ETH đi vào Tornado Cash.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "BTC",
+      "token": "BTC",
+      "value": 3000,
+      "prefix": "~",
+      "unit": "BTC",
+      "stamp": "Ví mới",
+      "tone": "bad"
+     },
+     {
+      "label": "Tornado",
+      "token": "ETH",
+      "value": 7000,
+      "prefix": "~",
+      "unit": "ETH",
+      "stamp": "8/11",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Chiêu mới là memecoin. Ngày hai tháng mười một, một token rác trên Tron ra đời chỉ để rửa tiền. Từ ngày năm đến bảy, thêm sáu token trên NEAR.",
+   "visual": {
+    "type": "timeline",
+    "title": "Dòng thời gian (tháng 11)",
+    "events": [
+     {
+      "time": "02/11",
+      "text": "Token rác trên Tron tạo ra để rửa tiền",
+      "tone": "bad",
+      "token": "TRX"
+     },
+     {
+      "time": "05–07/11",
+      "text": "6 token mới trên NEAR, ~90 USD mỗi token",
+      "tone": "accent",
+      "token": "NEAR"
+     },
+     {
+      "time": "08/11",
+      "text": "Rút tiền khỏi 4 pool NEAR",
+      "tone": "bad"
+     },
+     {
+      "time": "09/11",
+      "text": "~3.000 BTC nằm ở ví mới",
+      "tone": "bad",
+      "token": "BTC"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Một nhóm ví dùng NEAR bị trộm mua token mới, nhóm khác bán ra và nhận lại gần đủ tiền. Khoảng bốn trăm ba mươi nghìn đô đã đi qua đường này.",
+   "visual": {
+    "type": "flow",
+    "from": {
+     "kicker": "Ví mua",
+     "title": "NEAR bị trộm",
+     "sub": "mua token mới qua pool",
+     "tokens": [
+      "NEAR"
+     ]
+    },
+    "to": {
+     "kicker": "Ví bán",
+     "title": "0x••••",
+     "sub": "nhận lại gần đủ số tiền",
+     "tone": "bad"
+    },
+    "amount": {
+     "value": 430,
+     "decimals": 0,
+     "prefix": "~",
+     "suffix": "nghìn USD"
+    },
+    "caption": "~117.000 NEAR · 05–07/11"
+   }
+  },
+  {
+   "voice": "Khoảng hai tỷ tám trăm năm mươi triệu đô đã bị đóng băng, nhưng còn khoảng ba tỷ đô vẫn nằm trong các ví liên quan.",
+   "visual": {
+    "type": "graph",
+    "title": "Số phận khoảng 6,3 tỷ USD",
+    "center": {
+     "title": "Tiền hack Binance",
+     "sub": "29/10"
+    },
+    "branches": [
+     {
+      "label": "ĐÓNG BĂNG",
+      "sub": "~2,85 tỷ USD",
+      "tone": "ice"
+     },
+     {
+      "label": "CÒN TRONG VÍ",
+      "sub": "~3 tỷ USD",
+      "tone": "bad"
+     },
+     {
+      "label": "ĐỔI SANG BTC",
+      "sub": "~3.000 BTC",
+      "tone": "bad",
+      "token": "BTC"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Dù vậy, Elliptic khẳng định dấu vết vẫn có thể lần theo trên chuỗi.",
+   "visual": {
+    "type": "quote",
+    "who": "Elliptic",
+    "role": "Tom Robinson · 09/11 (lược dịch)",
+    "text": "Dấu vết vẫn có thể lần theo trên chuỗi.",
+    "tone": "neutral"
+   }
+  },
+  {
+   "voice": "Sàn Binance cho biết đã bù khoảng chín mươi tám phần trăm số token bị ảnh hưởng.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "shield",
+    "tone": "neutral",
+    "kicker": "PHÍA BINANCE",
+    "title": "Đã bù ~98% token",
+    "subtitle": "Phần tài sản kém thanh khoản còn lại đang được mua bù"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HACK ON-CHAIN",
+  "big": {
+   "text": "3.000",
+   "unit": "BTC VÀO VÍ MỚI"
+  },
+  "lines": [
+   [
+    "Tiền hack Binance",
+    "normal"
+   ],
+   [
+    "qua memecoin",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "BTC",
+   "ETH",
+   "NEAR",
+   "TRX"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "Tiền hack Binance chạy qua 20.000 ví, 16 chuỗi và memecoin NEAR",
+  "caption": "Elliptic: khoảng 3.000 BTC từ vụ hack Binance đã vào ví mới, 7.000 ETH đi vào Tornado Cash, memecoin trên Tron và NEAR được tạo ra để rửa tiền. Khoảng 3 tỷ USD vẫn nằm trong các ví liên quan.",
+  "hashtags": [
+   "onchain",
+   "binance",
+   "hack",
+   "near",
+   "crypto"
+  ],
+  "sources": [
+   "https://news.bitcoin.com/security/north-korea-binance-hack-takes-strange-turn-meme-coins",
+   "https://crypto.news/binance-hack-memecoins-near-laundering-elliptic/"
+  ]
+ }
+}

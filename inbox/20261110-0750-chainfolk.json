@@ -1,0 +1,184 @@
+{
+ "channel": "chainfolk",
+ "date": "10.11.2026",
+ "headline": [
+  [
+   "Hack Binance",
+   "normal"
+  ],
+  [
+   "6,3 tỷ USD",
+   "accent"
+  ],
+  [
+   "bắt đầu từ buổi phỏng vấn giả",
+   "normal"
+  ]
+ ],
+ "ticker_line": "Binance thay giám đốc tài chính",
+ "source": "Nguồn: Binance, Reuters, CoinDesk",
+ "beats": [
+  {
+   "voice": "Vụ hack khoảng sáu phẩy ba tỷ đô tại Binance có diễn biến mới. Giám đốc tài chính của sàn vừa rời ghế.",
+   "visual": {
+    "type": "hero",
+    "logo": "BINANCE",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "DIỄN BIẾN MỚI",
+    "title": "BINANCE",
+    "subtitle": "Vụ hack khoảng 6,3 tỷ USD ngày 29/10"
+   }
+  },
+  {
+   "voice": "Theo báo cáo của Binance, tin tặc đã nằm vùng nhiều tháng. Tháng chín, một kỹ sư nhận lời mời phỏng vấn xin việc giả, rồi tải về một bài kiểm tra có chứa mã độc.",
+   "visual": {
+    "type": "timeline",
+    "title": "Hành trình tấn công (theo Binance)",
+    "events": [
+     {
+      "time": "T6",
+      "text": "Kỹ sư tải phải phần mềm bị cài mã độc",
+      "tone": "bad"
+     },
+     {
+      "time": "T9",
+      "text": "Phỏng vấn xin việc giả, bài test chứa mã độc",
+      "tone": "bad"
+     },
+     {
+      "time": "20/10",
+      "text": "Xâm nhập máy của kỹ sư phụ trách ví",
+      "tone": "accent"
+     },
+     {
+      "time": "29/10",
+      "text": "Tiền bị rút khỏi ví nóng",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Đồng giám đốc điều hành Richard Teng gọi đây là một chiến dịch được xây dựng trong nhiều tháng.",
+   "visual": {
+    "type": "quote",
+    "logo": "BINANCE",
+    "who": "Richard Teng",
+    "role": "Đồng CEO Binance · 03/11 (lược dịch)",
+    "text": "Đây là một chiến dịch được xây dựng trong nhiều tháng.",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Khoảng hai tỷ tám trăm năm mươi triệu đô đã bị đóng băng hoặc chặn lại. Binance cho biết đã bù khoảng chín mươi tám phần trăm số token bị ảnh hưởng.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Bị khóa",
+      "value": 2.85,
+      "decimals": 2,
+      "prefix": "~",
+      "unit": "tỷ USD",
+      "stamp": "Đóng băng",
+      "tone": "ice"
+     },
+     {
+      "label": "Đã bù",
+      "value": 98,
+      "unit": "%",
+      "stamp": "Theo Binance",
+      "tone": "good"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Cùng lúc, giám đốc tài chính Kaiser Ng rời Binance sau hơn năm năm. Người thay thế là Justin Yek, đến từ công ty thanh toán Airwallex.",
+   "visual": {
+    "type": "bullets",
+    "title": "Thay giám đốc tài chính",
+    "items": [
+     {
+      "text": "Kaiser Ng rời Binance sau hơn 5 năm",
+      "tone": "bad"
+     },
+     {
+      "text": "Justin Yek, từ Airwallex, nhận ghế CFO",
+      "tone": "good"
+     },
+     {
+      "text": "Binance: kế hoạch chuyển giao có từ trước",
+      "tone": "ice"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Hãng Reuters và CoinDesk đều đã đưa tin về các diễn biến này.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "Reuters / The Star",
+      "date": "08/11/2026",
+      "headline": "Binance CFO Kaiser Ng steps down, Justin Yek named new finance chief"
+     },
+     {
+      "outlet": "CoinDesk",
+      "date": "03/11/2026",
+      "headline": "Binance's $6.3 billion hack began with a fake job interview, and a campaign 'built over many months'"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Binance khẳng định người dùng không bị ảnh hưởng. Bài học rút ra: cẩn trọng với lời mời tuyển dụng lạ và tệp tải về từ người không quen.",
+   "visual": {
+    "type": "hero",
+    "icon": "shield",
+    "tone": "good",
+    "kicker": "BÀI HỌC AN NINH",
+    "title": "Cẩn trọng tệp lạ",
+    "subtitle": "Lời mời tuyển dụng lạ có thể là bẫy cài mã độc"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "VỤ HACK BINANCE",
+  "big": {
+   "text": "6,3",
+   "unit": "TỶ USD BỊ TRỘM"
+  },
+  "lines": [
+   [
+    "Bắt đầu từ một",
+    "normal"
+   ],
+   [
+    "phỏng vấn giả",
+    "accent"
+   ]
+  ],
+  "logo": "BINANCE",
+  "tone": "alert"
+ },
+ "post": {
+  "title": "Vụ hack Binance 6,3 tỷ USD bắt đầu từ phỏng vấn xin việc giả, CFO rời ghế",
+  "caption": "Báo cáo của Binance cho thấy tin tặc nằm vùng nhiều tháng, mở đầu bằng một buổi phỏng vấn xin việc giả. Khoảng 2,85 tỷ USD đã bị đóng băng, CFO Kaiser Ng rời sàn, Justin Yek thay thế.",
+  "hashtags": [
+   "binance",
+   "hack",
+   "crypto",
+   "tintuccrypto",
+   "anninhmang"
+  ],
+  "sources": [
+   "https://www.coindesk.com/business/2026/11/03/binance-s-usd6-3-billion-hack-began-with-a-fake-job-interview-exchange-says",
+   "https://www.thestar.com.my/tech/tech-news/2026/11/08/binance-cfo-kaiser-ng-steps-down-justin-yek-named-new-finance-chief",
+   "https://www.blockhead.co/2026/11/09/binance-traces-6-3-billion-theft-to-a-fake-job-interview-as-its-cfo-steps-down/"
+  ]
+ }
+}
