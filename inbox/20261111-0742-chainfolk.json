@@ -1,0 +1,42 @@
+{
+  "channel": "chainfolk",
+  "date": "11.11.2026",
+  "headline": [["Lạm phát Mỹ vượt dự báo,", "normal"], ["Bitcoin dưới 73.000 USD", "accent"], ["thấp nhất từ tháng 8", "normal"]],
+  "ticker_line": "Thị trường cược Fed tăng lãi suất T12",
+  "source": "Nguồn: Forbes, CoinDesk, Decrypt",
+  "beats": [
+    {"voice": "Bitcoin vừa thủng mốc bảy mươi ba nghìn đô, mức thấp nhất kể từ tháng Tám.",
+     "visual": {"type": "hero", "logo": "BTC", "icon": "chart", "tone": "alert", "kicker": "THỊ TRƯỜNG", "title": "BITCOIN < 73.000 USD", "subtitle": "Mức thấp nhất kể từ tháng 8/2026"}},
+    {"voice": "Nguyên nhân chính là chỉ số giá tiêu dùng Mỹ tháng Mười tăng không phẩy bốn phần trăm, cao hơn mức dự báo không phẩy ba. Lạm phát lõi cũng vượt kỳ vọng.",
+     "visual": {"type": "stat_cards", "cards": [
+       {"label": "CPI tháng 10", "value": 0.4, "decimals": 1, "prefix": "+", "unit": "% so với tháng trước", "stamp": "Thực tế", "tone": "bad"},
+       {"label": "Dự báo", "value": 0.3, "decimals": 1, "prefix": "+", "unit": "% so với tháng trước", "stamp": "Kỳ vọng", "tone": "neutral"}],
+      "total": {"label": "CPI lõi:", "text": "+0,3% (dự báo +0,2%)"}}},
+    {"voice": "Giới đầu tư giờ đặt cược khoảng tám mươi lăm phần trăm Fed sẽ tăng lãi suất thêm một phần tư điểm phần trăm vào ngày chín tháng Mười Hai.",
+     "visual": {"type": "big_number", "value": 85, "ring_max": 100, "suffix": "%", "kicker": "Xác suất Fed tăng lãi suất 9/12", "caption": "TĂNG 0,25 ĐIỂM", "tone": "bad"}},
+    {"voice": "Thống đốc Fed Christopher Waller thậm chí cho rằng nên cân nhắc mức tăng nửa điểm phần trăm.",
+     "visual": {"type": "quote", "who": "Christopher Waller", "role": "Thống đốc Fed · 10/11 (lược dịch)", "text": "Mức tăng lãi suất 50 điểm cơ bản nên được cân nhắc tại cuộc họp tháng 12.", "tone": "bad"}},
+    {"voice": "Bitcoin rơi từ khoảng bảy mươi bốn nghìn ba trăm đô trước giờ công bố xuống dưới bảy mươi ba nghìn đô, giảm khoảng bốn phẩy năm phần trăm trong một tuần.",
+     "visual": {"type": "price_chart", "symbol": "BTC", "days": 1, "timeframe_label": "30m", "start": 74300, "end": 73000,
+                "side": [{"label": "Trước CPI", "value": "~74.300 USD"}, {"label": "7 ngày", "value": "▼ ~4,5%", "tone": "bad"}]}},
+    {"voice": "Cùng lúc đó, dòng tiền rời khỏi các quỹ ETF Bitcoin, cổ phiếu công nghệ chịu áp lực bán, khiến thị trường thêm chao đảo.",
+     "visual": {"type": "bullets", "title": "Nhiều sức ép cùng lúc", "items": [
+       {"text": "Lạm phát Mỹ vượt dự báo", "tone": "bad"},
+       {"text": "Cược Fed tăng lãi suất tháng 12", "tone": "bad"},
+       {"text": "Quỹ ETF Bitcoin bị rút ròng", "tone": "bad"},
+       {"text": "Cổ phiếu công nghệ, AI lao dốc", "tone": "bad"}]}},
+    {"voice": "Forbes và Decrypt cùng đưa tin, lạm phát nóng khiến giới đầu tư lo Fed sẽ thắt chặt mạnh tay hơn.",
+     "visual": {"type": "news_card", "title": "Báo chí quốc tế đưa tin", "items": [
+       {"outlet": "Forbes", "date": "10/11/2026", "headline": "Bitcoin Falls Below $73,000 To Reach Lowest Since August"},
+       {"outlet": "Decrypt / Yahoo Finance", "date": "10/11/2026", "headline": "Bitcoin Falls as Hot US Inflation Fuels Fears of Bigger Fed Rate Hike"}]}}
+  ],
+  "cover": {"kicker": "BITCOIN", "big": {"text": "< 73K", "unit": "USD · ĐÁY TỪ THÁNG 8"}, "lines": [["Lạm phát Mỹ", "normal"], ["vượt dự báo", "accent"]], "tokens": ["BTC", "ETH"], "tone": "alert"},
+  "post": {
+    "title": "Bitcoin thủng 73.000 USD, thấp nhất từ tháng 8 sau khi lạm phát Mỹ vượt dự báo",
+    "caption": "CPI tháng 10 của Mỹ tăng 0,4%, cao hơn dự báo 0,3%. Thị trường cược khoảng 85% Fed tăng lãi suất ngày 9/12, Bitcoin rơi xuống dưới 73.000 USD.",
+    "hashtags": ["bitcoin", "lamphat", "fed", "tintuccrypto", "crypto"],
+    "sources": ["https://www.forbes.com/sites/digital-assets/2026/11/10/bitcoin-falls-below-73000-to-reach-lowest-since-august/",
+                "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
+                "https://finance.yahoo.com/markets/crypto/articles/bitcoin-falls-hot-us-inflation-162757880.html"]
+  }
+}

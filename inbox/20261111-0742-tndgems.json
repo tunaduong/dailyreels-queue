@@ -1,0 +1,199 @@
+{
+  "channel": "tndgems",
+  "date": "11.11.2026",
+  "headline": [
+    [
+      "Một giờ sau CPI Mỹ:",
+      "normal"
+    ],
+    [
+      "178 triệu USD",
+      "accent"
+    ],
+    [
+      "lệnh Long bị thanh lý",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: Decrypt, Forbes, Cointelegraph",
+  "beats": [
+    {
+      "voice": "Một trăm bảy mươi tám triệu đô. Đó là giá trị lệnh Long bị thanh lý chỉ trong một giờ sau khi Mỹ công bố lạm phát, theo Decrypt.",
+      "visual": {
+        "type": "big_number",
+        "value": 178,
+        "suffix": "triệu USD",
+        "kicker": "Trong 1 giờ sau CPI (Decrypt)",
+        "caption": "LONG BỊ THANH LÝ",
+        "tokens": [
+          "BTC",
+          "ETH"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Hai mươi giờ ba mươi tối qua, giờ Việt Nam, số liệu CPI ra. Vài phút sau, Bitcoin trượt từ bảy mươi bốn nghìn ba trăm về quanh bảy mươi ba nghìn bốn trăm đô.",
+      "visual": {
+        "type": "timeline",
+        "title": "Diễn biến (giờ VN, 10/11)",
+        "events": [
+          {
+            "time": "20:30",
+            "text": "Mỹ công bố CPI tháng 10: +0,4%",
+            "tone": "accent"
+          },
+          {
+            "time": "~20:35",
+            "text": "BTC trượt từ ~74.300 về ~73.400 USD",
+            "tone": "bad",
+            "token": "BTC"
+          },
+          {
+            "time": "23:38",
+            "text": "Đáy 72.643 USD trên Coinbase",
+            "badge": "+3 giờ",
+            "tone": "bad",
+            "token": "BTC"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Hai mươi ba giờ ba mươi tám, giá chạm đáy bảy mươi hai nghìn sáu trăm bốn mươi ba đô trên Coinbase, theo Forbes.",
+      "visual": {
+        "type": "big_number",
+        "value": 72643,
+        "prefix": "",
+        "suffix": "USD",
+        "kicker": "Đáy BTC trên Coinbase · 23:38",
+        "caption": "THẤP NHẤT TỪ T8",
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Ether còn chịu đòn nặng hơn, có lúc giảm gần sáu phần trăm, lùi về quanh hai nghìn không trăm bốn mươi đô.",
+      "visual": {
+        "type": "hero",
+        "logo": "ETH",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "ETHER",
+        "title": "~2.040 USD",
+        "subtitle": "Có lúc giảm gần 6% trong phiên 10/11"
+      }
+    },
+    {
+      "voice": "Trước đó, các quỹ ETF Bitcoin giao ngay đã bị rút ròng hai trăm lẻ một triệu đô trong ngày thứ Hai.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "Quỹ ETF",
+          "title": "ETF Bitcoin",
+          "sub": "giao ngay tại Mỹ",
+          "tokens": [
+            "BTC"
+          ]
+        },
+        "to": {
+          "kicker": "Rút ròng",
+          "title": "Nhà đầu tư",
+          "sub": "rút tiền khỏi quỹ",
+          "tone": "bad"
+        },
+        "amount": {
+          "value": 201,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": "triệu USD"
+        },
+        "caption": "Thứ Hai 9/11"
+      }
+    },
+    {
+      "voice": "Trên CME FedWatch, khả năng Fed tăng lãi suất nửa điểm phần trăm vào tháng Mười Hai đã lên khoảng mười lăm phần trăm.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Tăng 0,25 điểm",
+            "value": 85,
+            "unit": "%",
+            "tone": "neutral"
+          },
+          {
+            "label": "Tăng 0,5 điểm",
+            "value": 15,
+            "unit": "%",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "Fed họp:",
+          "text": "8–9/12/2026"
+        }
+      }
+    },
+    {
+      "voice": "CoinDesk và Cointelegraph đều ghi nhận đây là vùng đáy gần ba tháng của Bitcoin.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "CoinDesk",
+            "date": "10/11/2026",
+            "headline": "Live news: Bitcoin falls to nearly three-month low after disappointing inflation data"
+          },
+          {
+            "outlet": "Cointelegraph",
+            "date": "10/11/2026",
+            "headline": "Bitcoin nears 11-week low after 'discouraging' US CPI inflation beat"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "THANH LÝ",
+    "big": {
+      "text": "178",
+      "unit": "TRIỆU USD LỆNH LONG"
+    },
+    "lines": [
+      [
+        "Chỉ",
+        "normal"
+      ],
+      [
+        "1 giờ",
+        "accent"
+      ],
+      [
+        "sau CPI Mỹ",
+        "normal"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "1 giờ sau CPI Mỹ: 178 triệu USD lệnh Long bị thanh lý, BTC chạm 72.643 USD",
+    "caption": "CPI Mỹ ra lúc 20:30 giờ VN, Bitcoin trượt về đáy 72.643 USD trên Coinbase lúc 23:38. ETF Bitcoin bị rút ròng 201 triệu USD hôm thứ Hai, cược Fed tăng 0,5 điểm lên 15%.",
+    "hashtags": [
+      "onchain",
+      "bitcoin",
+      "thanhly",
+      "fed",
+      "crypto"
+    ],
+    "sources": [
+      "https://finance.yahoo.com/markets/crypto/articles/bitcoin-falls-hot-us-inflation-162757880.html",
+      "https://www.forbes.com/sites/digital-assets/2026/11/10/bitcoin-falls-below-73000-to-reach-lowest-since-august/",
+      "https://cointelegraph.com/markets/bitcoin-11-week-low-discouraging-us-cpi-inflation"
+    ]
+  }
+}
