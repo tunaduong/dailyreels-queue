@@ -1,0 +1,206 @@
+{
+ "channel": "chainfolk",
+ "date": "12.11.2026",
+ "headline": [
+  [
+   "MSCI loại Strategy khỏi chỉ số,",
+   "normal"
+  ],
+  [
+   "~2,8 tỷ USD",
+   "accent"
+  ],
+  [
+   "có thể bị bán ra",
+   "normal"
+  ]
+ ],
+ "ticker_line": "Hiệu lực sau phiên đóng cửa 30/11",
+ "source": "Nguồn: The Block, Bitcoin Magazine",
+ "beats": [
+  {
+   "voice": "Công ty đại chúng nắm nhiều Bitcoin nhất thế giới vừa bị loại khỏi bộ chỉ số chứng khoán MSCI.",
+   "visual": {
+    "type": "hero",
+    "logo": "BTC",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "CHỈ SỐ CHỨNG KHOÁN",
+    "title": "MSCI LOẠI STRATEGY",
+    "subtitle": "Công ty nắm nhiều Bitcoin nhất thế giới"
+   }
+  },
+  {
+   "voice": "Trong kỳ rà soát tháng mười một, MSCI xóa Strategy khỏi chỉ số MSCI USA, kéo theo MSCI World. Metaplanet của Nhật Bản cũng chung số phận. Quyết định có hiệu lực sau phiên ngày ba mươi tháng mười một.",
+   "visual": {
+    "type": "bullets",
+    "title": "Kỳ rà soát tháng 11 của MSCI",
+    "items": [
+     {
+      "text": "Strategy: rời MSCI USA, World, ACWI",
+      "tone": "bad"
+     },
+     {
+      "text": "Metaplanet: rời MSCI Japan Small Cap",
+      "tone": "bad"
+     },
+     {
+      "text": "Hiệu lực: sau phiên đóng cửa 30/11",
+      "tone": "accent"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Lý do là quy tắc mới với công ty không có hoạt động kinh doanh chính. Tài sản vận hành dưới một nửa thì bị chấm năm chỉ số tài chính, dính từ bốn cờ đỏ là bị loại.",
+   "visual": {
+    "type": "graph",
+    "title": "Quy tắc mới của MSCI",
+    "center": {
+     "title": "Công ty",
+     "sub": "phi hoạt động"
+    },
+    "branches": [
+     {
+      "label": "< 50%",
+      "sub": "tài sản vận hành",
+      "tone": "bad"
+     },
+     {
+      "label": "5 chỉ số",
+      "sub": "tài chính bị chấm",
+      "tone": "ice"
+     },
+     {
+      "label": "≥ 4 cờ đỏ",
+      "sub": "bị loại khỏi chỉ số",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "JPMorgan từng ước tính, nếu bị loại, cổ phiếu Strategy có thể chịu áp lực bán khoảng hai phẩy tám tỷ đô từ các quỹ chỉ số.",
+   "visual": {
+    "type": "big_number",
+    "value": 2.8,
+    "decimals": 1,
+    "prefix": "~",
+    "suffix": "tỷ USD",
+    "kicker": "Ước tính của JPMorgan",
+    "caption": "ÁP LỰC BÁN",
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Ngay sau tin này, cổ phiếu Strategy giảm khoảng hai phẩy sáu phần trăm ngoài giờ, từ một trăm hai mươi hai xuống quanh một trăm mười chín đô.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Đóng cửa 11/11",
+      "value": 122.35,
+      "decimals": 2,
+      "unit": "USD",
+      "tone": "neutral"
+     },
+     {
+      "label": "Ngoài giờ",
+      "value": 119.06,
+      "decimals": 2,
+      "unit": "USD",
+      "stamp": "▼ 2,6%",
+      "tone": "bad"
+     }
+    ],
+    "total": {
+     "label": "Cổ phiếu:",
+     "text": "MSTR (Strategy)"
+    }
+   }
+  },
+  {
+   "voice": "Trước đó, Strategy khẳng định việc bị loại sẽ không ảnh hưởng đáng kể đến hoạt động kinh doanh của công ty.",
+   "visual": {
+    "type": "quote",
+    "who": "Strategy",
+    "role": "Thư góp ý gửi MSCI (lược dịch)",
+    "text": "Việc bị loại sẽ không có tác động đáng kể nào tới hoạt động kinh doanh của Strategy.",
+    "tone": "neutral"
+   }
+  },
+  {
+   "voice": "Các trang tin lớn như The Block và Cointelegraph đã đồng loạt đưa tin.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "The Block",
+      "date": "11/11/2026",
+      "headline": "Strategy, Metaplanet lose MSCI index membership in November reshuffle"
+     },
+     {
+      "outlet": "Cointelegraph",
+      "date": "12/11/2026",
+      "headline": "MSCI confirms Strategy's removal from indexes at end of November"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Lưu ý, quyết định này tác động lên cổ phiếu, không buộc Strategy phải bán số Bitcoin đang nắm giữ.",
+   "visual": {
+    "type": "bullets",
+    "title": "Điều cần lưu ý",
+    "items": [
+     {
+      "text": "Không buộc Strategy bán Bitcoin",
+      "tone": "good"
+     },
+     {
+      "text": "Quỹ chỉ số phải bán cổ phiếu MSTR",
+      "tone": "bad"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "CHỈ SỐ MSCI",
+  "big": {
+   "text": "2,8",
+   "unit": "TỶ USD ÁP LỰC BÁN"
+  },
+  "lines": [
+   [
+    "MSCI loại",
+    "normal"
+   ],
+   [
+    "STRATEGY",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "BTC"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "MSCI loại Strategy khỏi chỉ số: cổ phiếu có thể chịu 2,8 tỷ USD áp lực bán",
+  "caption": "MSCI xóa Strategy và Metaplanet khỏi bộ chỉ số, hiệu lực sau phiên 30/11. JPMorgan từng ước tính áp lực bán khoảng 2,8 tỷ USD; quyết định không buộc Strategy bán Bitcoin.",
+  "hashtags": [
+   "strategy",
+   "msci",
+   "bitcoin",
+   "tintuccrypto",
+   "crypto"
+  ],
+  "sources": [
+   "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437",
+   "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index",
+   "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"
+  ]
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "channel": "tndgems",
+ "date": "12.11.2026",
+ "headline": [
+  [
+   "Ôm 850.364 BTC,",
+   "accent"
+  ],
+  [
+   "Strategy vẫn bị MSCI loại",
+   "normal"
+  ],
+  [
+   "từ 30/11",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: Bitcoin Magazine, The Block",
+ "beats": [
+  {
+   "voice": "Tám trăm năm mươi nghìn ba trăm sáu mươi tư Bitcoin. Đó là kho coin của Strategy, và cũng là lý do công ty vừa bị gạch tên khỏi chỉ số MSCI.",
+   "visual": {
+    "type": "big_number",
+    "value": 850364,
+    "suffix": "BTC",
+    "kicker": "Strategy nắm giữ (8/11)",
+    "caption": "BỊ MSCI LOẠI",
+    "tokens": [
+     "BTC"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Rạng sáng nay giờ Việt Nam, MSCI xác nhận xóa Strategy, công ty của Michael Saylor, khỏi chỉ số MSCI USA.",
+   "visual": {
+    "type": "hero",
+    "logo": "BTC",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "MSCI · RÀ SOÁT T11",
+    "title": "STRATEGY BỊ LOẠI",
+    "subtitle": "Rời MSCI USA, MSCI World và ACWI"
+   }
+  },
+  {
+   "voice": "Giá vốn trung bình là bảy mươi lăm nghìn bốn trăm năm mươi sáu đô mỗi coin. Bitcoin đang quanh bảy mươi bốn nghìn, kho coin nằm dưới giá vốn.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Giá vốn trung bình",
+      "token": "BTC",
+      "value": 75456,
+      "unit": "USD",
+      "tone": "neutral"
+     },
+     {
+      "label": "Giá BTC hiện tại",
+      "token": "BTC",
+      "value": 74000,
+      "prefix": "~",
+      "unit": "USD",
+      "tone": "bad"
+     }
+    ],
+    "total": {
+     "label": "Kho 850.364 BTC:",
+     "text": "dưới giá vốn"
+    }
+   }
+  },
+  {
+   "voice": "Tháng mười, MSCI ra quy tắc mới. Tuần trước, Strategy vẫn mua thêm một nghìn không trăm ba mươi sáu Bitcoin. Ngày ba mươi tháng mười một, lệnh loại có hiệu lực.",
+   "visual": {
+    "type": "timeline",
+    "title": "Mốc thời gian (giờ VN)",
+    "events": [
+     {
+      "time": "T10",
+      "text": "MSCI áp quy tắc công ty phi hoạt động",
+      "tone": "ice"
+     },
+     {
+      "time": "08/11",
+      "text": "Strategy mua thêm 1.036 BTC",
+      "tone": "good",
+      "token": "BTC"
+     },
+     {
+      "time": "12/11",
+      "text": "MSCI công bố xóa Strategy",
+      "tone": "bad"
+     },
+     {
+      "time": "30/11",
+      "text": "Hiệu lực sau phiên đóng cửa",
+      "badge": "+18 ngày",
+      "tone": "accent"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Theo chính Strategy, các quỹ bám MSCI đang giữ khoảng mười ba triệu cổ phiếu, tức ba phẩy một phần trăm cổ phiếu cơ bản. Số này phải được bán ra.",
+   "visual": {
+    "type": "flow",
+    "from": {
+     "kicker": "Quỹ bám MSCI",
+     "title": "~13 triệu CP",
+     "sub": "3,1% cổ phiếu cơ bản MSTR"
+    },
+    "to": {
+     "kicker": "Phải bán trước",
+     "title": "30/11",
+     "sub": "sau phiên đóng cửa",
+     "tone": "bad"
+    },
+    "caption": "Số liệu do Strategy công bố"
+   }
+  },
+  {
+   "voice": "Theo Bitcoin Magazine, Strategy chiếm hơn chín mươi phần trăm giá trị của cả năm công ty bị xóa đợt này.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "Bitcoin Magazine",
+      "date": "11/11/2026",
+      "headline": "MSCI Removes Strategy (MSTR) From Its USA Index, Forcing Index Funds to Sell by Nov. 30"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Còn mười bảy công ty kho bạc crypto khác như SharpLink hay TON Strategy vẫn nằm trong danh sách theo dõi, nhưng chưa bị loại.",
+   "visual": {
+    "type": "bullets",
+    "title": "Danh sách theo dõi: 17 công ty",
+    "items": [
+     {
+      "text": "SharpLink (ETH): chưa bị loại",
+      "tone": "ice"
+     },
+     {
+      "text": "TON Strategy: chưa bị loại",
+      "tone": "ice"
+     },
+     {
+      "text": "Solana Company: chưa bị loại",
+      "tone": "ice"
+     }
+    ]
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "ON-CHAIN · MSCI",
+  "big": {
+   "text": "850K",
+   "unit": "BTC TRONG KHO"
+  },
+  "lines": [
+   [
+    "Strategy vẫn bị loại",
+    "normal"
+   ],
+   [
+    "30/11",
+    "accent"
+   ]
+  ],
+  "tokens": [
+   "BTC"
+  ],
+  "tone": "alert"
+ },
+ "post": {
+  "title": "Ôm 850.364 BTC dưới giá vốn, Strategy bị MSCI gạch tên từ 30/11",
+  "caption": "Strategy giữ 850.364 BTC với giá vốn 75.456 USD/coin. MSCI xóa công ty khỏi chỉ số USA; quỹ bám MSCI đang giữ khoảng 13 triệu cổ phiếu (3,1%) phải bán trước 30/11.",
+  "hashtags": [
+   "onchain",
+   "strategy",
+   "msci",
+   "bitcoin",
+   "saylor"
+  ],
+  "sources": [
+   "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index",
+   "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437"
+  ]
+ }
+}
