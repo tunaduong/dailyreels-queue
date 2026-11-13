@@ -1,0 +1,228 @@
+{
+  "channel": "tndgems",
+  "date": "13.11.2026",
+  "headline": [
+    [
+      "Hợp đồng NVDA trên Hyperliquid:",
+      "normal"
+    ],
+    [
+      "2,35 tỷ USD",
+      "accent"
+    ],
+    [
+      "trong 24 giờ, gần gấp đôi ETH",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: Hyperliquid, CoinMarketCap, Lookonchain",
+  "beats": [
+    {
+      "voice": "Hai tỷ ba trăm năm mươi triệu đô. Đó là khối lượng hợp đồng cổ phiếu Nvidia trên Hyperliquid trong hai mươi bốn giờ.",
+      "visual": {
+        "type": "big_number",
+        "value": 2.35,
+        "decimals": 2,
+        "suffix": "tỷ USD",
+        "kicker": "NVDA perp · Hyperliquid · 24h",
+        "caption": "KỶ LỤC MỚI",
+        "tone": "accent"
+      }
+    },
+    {
+      "voice": "Con số này gần gấp đôi Ethereum trên cùng sàn, ngay sau khi Jensen Huang rời ghế tổng giám đốc Nvidia.",
+      "visual": {
+        "type": "hero",
+        "logo": "HYPERLIQUID",
+        "icon": "chart",
+        "tone": "neutral",
+        "kicker": "ON-CHAIN",
+        "title": "HYPERLIQUID",
+        "subtitle": "Hợp đồng NVDA vượt ETH về khối lượng",
+        "tokens": [
+          "HYPE",
+          "ETH"
+        ]
+      }
+    },
+    {
+      "voice": "Ngày năm tháng mười một, phiên sôi động nhất chỉ ba trăm mười bảy triệu. Ngày mười một vọt lên chín trăm sáu mươi triệu.",
+      "visual": {
+        "type": "timeline",
+        "title": "Khối lượng hợp đồng NVDA",
+        "events": [
+          {
+            "time": "05/11",
+            "text": "317 triệu USD, phiên đông nhất trước đó",
+            "tone": "ice"
+          },
+          {
+            "time": "11/11",
+            "text": "~960 triệu USD, kỷ lục, vượt ETH",
+            "badge": "x3",
+            "tone": "accent"
+          },
+          {
+            "time": "12/11",
+            "text": "2,35 tỷ USD trong 24 giờ",
+            "badge": "≈ 2x ETH",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Khối lượng mở khoảng bốn trăm chín mươi lăm triệu đô, đòn bẩy tối đa hai mươi lần. Sáu mươi hai phần trăm giao dịch diễn ra ngoài giờ sàn Mỹ.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Khối lượng mở",
+            "value": 495,
+            "prefix": "~",
+            "unit": "triệu USD",
+            "tone": "ice"
+          },
+          {
+            "label": "Đòn bẩy tối đa",
+            "value": 20,
+            "unit": "lần",
+            "tone": "bad"
+          },
+          {
+            "label": "Ngoài giờ sàn Mỹ",
+            "value": 62,
+            "prefix": "~",
+            "unit": "%",
+            "tone": "neutral"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Lookonchain phát hiện một ví cá voi đang giữ vị thế mua sáu mươi nghìn đơn vị NVDA, trị giá chín phẩy ba lăm triệu đô, đòn bẩy hai mươi lần.",
+      "visual": {
+        "type": "tx_card",
+        "title": "Vị thế · Hyperliquid",
+        "status": "Open",
+        "rows": [
+          {
+            "k": "Ví",
+            "v": "0x•••• (Lookonchain)"
+          },
+          {
+            "k": "Cặp",
+            "v": "xyz:NVDA · Long"
+          },
+          {
+            "k": "Khối lượng",
+            "v": "60.000 NVDA"
+          },
+          {
+            "k": "Giá trị",
+            "v": "9,35 triệu USD"
+          },
+          {
+            "k": "Đòn bẩy",
+            "v": "20x cross",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Ví này đang lỗ tạm tính gần hai trăm nghìn đô, nhưng vẫn đặt thêm lệnh chờ mua hai mươi nghìn đơn vị.",
+      "visual": {
+        "type": "graph",
+        "title": "Cá voi chưa buông",
+        "center": {
+          "title": "Ví cá voi",
+          "sub": "0x••••"
+        },
+        "branches": [
+          {
+            "label": "Lỗ tạm tính",
+            "sub": "~199.500 USD",
+            "tone": "bad"
+          },
+          {
+            "label": "Lệnh chờ mua",
+            "sub": "+20.000 NVDA",
+            "tone": "ice"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Nhiều trang tin crypto đã ghi nhận làn sóng này.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí đưa tin",
+        "items": [
+          {
+            "outlet": "CoinMarketCap",
+            "date": "12/11/2026",
+            "headline": "Nvidia Perps Outtrade Ethereum on Hyperliquid After CEO Exit"
+          },
+          {
+            "outlet": "crypto.news",
+            "date": "12/11/2026",
+            "headline": "Hyperliquid whale holds $9.35M Nvidia long as stock drops 10%"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Cổ phiếu lên chuỗi giao dịch suốt ngày đêm, tin xấu được định giá ngay lập tức.",
+      "visual": {
+        "type": "bullets",
+        "title": "Cổ phiếu trên chuỗi",
+        "items": [
+          {
+            "text": "Giao dịch 24/7, cả ngoài giờ sàn Mỹ",
+            "tone": "good"
+          },
+          {
+            "text": "Đòn bẩy cao, rủi ro thanh lý lớn",
+            "tone": "bad"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "HYPERLIQUID",
+    "big": {
+      "text": "2,35",
+      "unit": "TỶ USD NVDA PERP"
+    },
+    "lines": [
+      [
+        "24 giờ,",
+        "normal"
+      ],
+      [
+        "gấp đôi ETH",
+        "accent"
+      ]
+    ],
+    "logo": "HYPERLIQUID",
+    "tone": "neutral"
+  },
+  "post": {
+    "title": "2,35 tỷ USD hợp đồng Nvidia trên Hyperliquid sau khi Jensen Huang từ chức",
+    "caption": "On-chain: hợp đồng NVDA trên Hyperliquid đạt 2,35 tỷ USD khối lượng 24 giờ, gần gấp đôi ETH. Một cá voi giữ vị thế Long 9,35 triệu USD với đòn bẩy 20 lần.",
+    "hashtags": [
+      "onchain",
+      "hyperliquid",
+      "nvidia",
+      "crypto",
+      "cavoi"
+    ],
+    "sources": [
+      "https://coinmarketcap.com/academy/article/nvidia-perps-outtrade-ethereum-hyperliquid",
+      "https://crypto.news/hyperliquid-whale-nvidia-long-huang-exit/",
+      "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
+    ]
+  }
+}

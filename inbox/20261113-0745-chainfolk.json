@@ -1,0 +1,195 @@
+{
+  "channel": "chainfolk",
+  "date": "13.11.2026",
+  "headline": [
+    [
+      "Jensen Huang rời Nvidia,",
+      "normal"
+    ],
+    [
+      "Bitcoin rơi về 71.200 USD",
+      "accent"
+    ],
+    [
+      "thấp nhất gần 12 tuần",
+      "normal"
+    ]
+  ],
+  "ticker_line": "BTC thấp nhất gần 12 tuần",
+  "source": "Nguồn: The Block, CoinGlass, SoSoValue",
+  "beats": [
+    {
+      "voice": "Bitcoin vừa rơi xuống mức thấp nhất trong gần mười hai tuần. Lần này, cú sốc đến từ phố Wall.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "THỊ TRƯỜNG CHAO ĐẢO",
+        "title": "BITCOIN",
+        "subtitle": "Thấp nhất gần 12 tuần sau cú sốc Nvidia",
+        "tokens": [
+          "BTC",
+          "ETH"
+        ]
+      }
+    },
+    {
+      "voice": "Ngày mười hai tháng mười một, ông Jensen Huang bất ngờ từ chức tổng giám đốc Nvidia, giữa lúc công ty mở cuộc điều tra độc lập về ông.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "Al Jazeera",
+            "date": "12/11/2026",
+            "headline": "Nvidia CEO Jensen Huang resigns amid spy scandal and market loss"
+          },
+          {
+            "outlet": "The Block",
+            "date": "12/11/2026",
+            "headline": "Bitcoin falls to 12-week low as Jensen Huang's exit from Nvidia rattles markets"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Cổ phiếu Nvidia mở cửa giảm khoảng mười hai phần trăm, kéo cả nhóm công nghệ đi xuống.",
+      "visual": {
+        "type": "big_number",
+        "value": 12,
+        "prefix": "~",
+        "suffix": "%",
+        "kicker": "Cổ phiếu Nvidia lúc mở cửa",
+        "caption": "GIẢM MẠNH",
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Bitcoin có lúc chạm bảy mươi mốt nghìn hai trăm đô, thấp nhất kể từ tháng tám.",
+      "visual": {
+        "type": "price_chart",
+        "symbol": "BTC",
+        "days": 1,
+        "timeframe_label": "30m",
+        "start": 74700,
+        "end": 71200,
+        "side": [
+          {
+            "label": "Đáy trong phiên",
+            "value": "71.200 USD",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Hơn bảy trăm năm mươi triệu đô vị thế bị thanh lý trong hai mươi bốn giờ, phần lớn là lệnh đặt cược giá tăng.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Tổng thanh lý 24h",
+            "value": 750,
+            "prefix": "> ",
+            "unit": "triệu USD",
+            "tone": "bad"
+          },
+          {
+            "label": "Trong đó lệnh Long",
+            "value": 634,
+            "prefix": "> ",
+            "unit": "triệu USD",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Các quỹ ETF bitcoin giao ngay tại Mỹ cũng rút ròng năm phiên liên tiếp, tổng cộng khoảng một tỷ bốn trăm bốn mươi triệu đô.",
+      "visual": {
+        "type": "big_number",
+        "value": 1.44,
+        "decimals": 2,
+        "prefix": "~",
+        "suffix": "tỷ USD",
+        "kicker": "ETF bitcoin rút ròng 5 phiên",
+        "caption": "RÚT RÒNG",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Hãng tạo lập thị trường Wintermute cho biết họ vẫn thận trọng với bitcoin khi giá thử thách vùng bảy mươi ba nghìn đô.",
+      "visual": {
+        "type": "quote",
+        "who": "Wintermute",
+        "role": "Jasper De Maere · 12/11 (lược dịch, theo The Block)",
+        "text": "Chúng tôi vẫn thận trọng với BTC khi giá thử thách mốc 73 nghìn USD.",
+        "tone": "neutral"
+      }
+    },
+    {
+      "voice": "Tuần tới, thị trường chờ Nvidia công bố kết quả kinh doanh vào ngày mười bảy tháng mười một.",
+      "visual": {
+        "type": "bullets",
+        "title": "Điều cần theo dõi",
+        "items": [
+          {
+            "text": "17/11: Nvidia công bố kết quả kinh doanh",
+            "tone": "accent"
+          },
+          {
+            "text": "CFO Colette Kress làm CEO tạm quyền",
+            "tone": "ice"
+          },
+          {
+            "text": "ETF bitcoin đã rút ròng 5 phiên liền",
+            "tone": "bad"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "CÚ SỐC NVIDIA",
+    "big": {
+      "text": "71,2",
+      "unit": "NGHÌN USD / BTC"
+    },
+    "lines": [
+      [
+        "Bitcoin thấp nhất",
+        "normal"
+      ],
+      [
+        "12 tuần",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Jensen Huang rời Nvidia, Bitcoin rơi về 71.200 USD – thấp nhất gần 12 tuần",
+    "caption": "CEO Nvidia Jensen Huang từ chức, cổ phiếu Nvidia mở cửa giảm khoảng 12%. Bitcoin chạm 71.200 USD, hơn 750 triệu USD vị thế bị thanh lý, ETF bitcoin rút ròng 5 phiên liên tiếp.",
+    "hashtags": [
+      "bitcoin",
+      "nvidia",
+      "crypto",
+      "tintuccrypto",
+      "thitruong"
+    ],
+    "sources": [
+      "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992",
+      "https://aljazeera.com/news/2026/11/12/ai-titan-jensen-huang-out-as-nvidia-ceo",
+      "https://bitcoinmagazine.com/markets/bitcoin-price-falls-below-72000",
+      "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
+    ]
+  }
+}
