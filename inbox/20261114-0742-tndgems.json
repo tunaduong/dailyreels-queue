@@ -1,0 +1,235 @@
+{
+  "channel": "tndgems",
+  "date": "14.11.2026",
+  "headline": [
+    [
+      "Gần 90%",
+      "accent"
+    ],
+    [
+      "lệnh bị thanh lý là Long,",
+      "normal"
+    ],
+    [
+      "BTC chạm 67.653 USD",
+      "accent"
+    ]
+  ],
+  "source": "Nguồn: CoinGlass, Glassnode, Checkonchain",
+  "beats": [
+    {
+      "voice": "Gần chín mươi phần trăm. Đó là tỷ lệ lệnh đặt cược giá tăng trong đợt thanh lý hơn một tỷ đô vừa qua.",
+      "visual": {
+        "type": "big_number",
+        "value": 90,
+        "ring_max": 100,
+        "prefix": "~",
+        "suffix": "%",
+        "kicker": "Tỷ lệ lệnh bị thanh lý",
+        "caption": "LÀ LỆNH LONG",
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Bitcoin rơi xuống sáu mươi bảy nghìn sáu trăm năm mươi ba đô, đáy thấp nhất kể từ ngày mười chín tháng tám.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "warn",
+        "tone": "alert",
+        "kicker": "ĐÁY 12 TUẦN",
+        "title": "67.653 USD",
+        "subtitle": "Thấp nhất kể từ 19/8 · dưới MA 200 tuần"
+      }
+    },
+    {
+      "voice": "Chỉ trong bốn giờ, CoinGlass ghi nhận năm trăm bốn mươi chín triệu đô lệnh long bị thanh lý, so với bảy mươi hai triệu đô lệnh short.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Long",
+            "value": 549,
+            "unit": "triệu USD",
+            "stamp": "Quét",
+            "tone": "bad"
+          },
+          {
+            "label": "Short",
+            "value": 72,
+            "unit": "triệu USD",
+            "stamp": "Quét",
+            "tone": "good"
+          }
+        ],
+        "total": {
+          "label": "Trong 4 giờ:",
+          "text": "~622 triệu USD"
+        }
+      }
+    },
+    {
+      "voice": "Lệnh lớn nhất: một vị thế long Bitcoin hơn ba mươi mốt triệu đô bị quét trên sàn Hyperliquid.",
+      "visual": {
+        "type": "tx_card",
+        "title": "Thanh lý lớn nhất 24h",
+        "status": "Liquidated",
+        "rows": [
+          {
+            "k": "Sàn",
+            "v": "Hyperliquid"
+          },
+          {
+            "k": "Cặp",
+            "v": "BTC perp"
+          },
+          {
+            "k": "Hướng",
+            "v": "Long",
+            "tone": "bad"
+          },
+          {
+            "k": "Giá trị",
+            "v": "> 31 triệu USD",
+            "tone": "bad"
+          }
+        ],
+        "tokens_title": "Vị thế bị đóng",
+        "tokens": [
+          {
+            "sym": "BTC",
+            "amount": "> 31 triệu USD",
+            "note": "Long"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Sau cú quét, funding hợp đồng vĩnh cửu chuyển âm lần đầu sau một tháng, theo Glassnode. Phe bán khống giờ phải trả phí cho phe mua.",
+      "visual": {
+        "type": "timeline",
+        "title": "Diễn biến (theo giờ Mỹ)",
+        "events": [
+          {
+            "time": "12/11",
+            "text": "BTC thủng mốc 70.000 USD",
+            "tone": "bad",
+            "token": "BTC"
+          },
+          {
+            "time": "13/11",
+            "text": "Đáy 67.653 USD, dưới MA 200 tuần",
+            "tone": "bad"
+          },
+          {
+            "time": "13/11",
+            "text": "Funding perp âm lần đầu sau 1 tháng",
+            "tone": "ice"
+          },
+          {
+            "time": "15/11",
+            "text": "Đóng nến tuần, mốc theo dõi ~68.000",
+            "badge": "Chủ nhật",
+            "tone": "accent"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Checkonchain ghi nhận hơn sáu trăm tám mươi triệu đô lỗ đã chốt chỉ trong ngày thứ Năm, dấu hiệu bán tháo hoảng loạn.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "Người bán hoảng loạn",
+          "title": "Bán cắt lỗ",
+          "sub": "On-chain · BTC",
+          "tokens": [
+            "BTC"
+          ]
+        },
+        "to": {
+          "kicker": "Lỗ đã chốt",
+          "title": "> 680 triệu USD",
+          "sub": "theo Checkonchain",
+          "tone": "bad"
+        },
+        "caption": "Thứ Năm 12/11"
+      }
+    },
+    {
+      "voice": "Người mua gần đây có giá vốn khoảng bảy mươi lăm nghìn bốn trăm đô, theo Bitfinex. Chênh lệch giá Coinbase đã âm từ tháng chín.",
+      "visual": {
+        "type": "bullets",
+        "title": "Dòng tiền đang yếu",
+        "items": [
+          {
+            "text": "Giá vốn người mua mới: ~75.400 USD",
+            "tone": "bad"
+          },
+          {
+            "text": "Coinbase premium âm từ tháng 9",
+            "tone": "ice"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "CoinMarketCap và CoinDesk cùng ghi nhận Bitcoin đang thử đường trung bình hai trăm tuần.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "CoinMarketCap",
+            "date": "13/11/2026",
+            "headline": "Bitcoin Price Falls to 200-Week Average as US Demand Fades"
+          },
+          {
+            "outlet": "CoinDesk",
+            "date": "13/11/2026",
+            "headline": "Live updates: Bitcoin eyes bear market lows as late summer rally mostly wiped out"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "THANH LÝ",
+    "big": {
+      "text": "~90%",
+      "unit": "LÀ LỆNH LONG"
+    },
+    "lines": [
+      [
+        "> 1,3 tỷ USD",
+        "accent"
+      ],
+      [
+        "bị quét trong 24h",
+        "normal"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Gần 90% lệnh bị thanh lý là Long: BTC chạm 67.653 USD, funding chuyển âm",
+    "caption": "On-chain: hơn 1,3 tỷ USD vị thế bị quét, lệnh lớn nhất là long BTC hơn 31 triệu USD trên Hyperliquid. Funding perp âm lần đầu sau 1 tháng, hơn 680 triệu USD lỗ đã chốt ngày 12/11.",
+    "hashtags": [
+      "onchain",
+      "bitcoin",
+      "thanhly",
+      "hyperliquid",
+      "crypto"
+    ],
+    "sources": [
+      "https://www.kucoin.com/news/flash/bitcoin-price-falls-below-70-000-amid-1-6-billion-in-crypto-liquidations",
+      "https://coinmarketcap.com/academy/article/bitcoin-price-200-week-average-us-demand",
+      "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets",
+      "https://cryptoticker.io/en/crypto-news-bitcoin-crash-liquidations-etf-outflows-november-13-2026/"
+    ]
+  }
+}
