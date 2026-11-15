@@ -1,0 +1,218 @@
+{
+  "channel": "tndgems",
+  "date": "15.11.2026",
+  "headline": [
+    [
+      "Độ khó đào Bitcoin giảm",
+      "normal"
+    ],
+    [
+      "9,13%",
+      "accent"
+    ],
+    [
+      "mạnh nhất từ tháng 6",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: CloverPool, Hashrate Index, MARA",
+  "beats": [
+    {
+      "voice": "Chín phẩy mười ba phần trăm. Đó là mức giảm độ khó đào Bitcoin vừa ghi nhận, mạnh nhất kể từ tháng sáu.",
+      "visual": {
+        "type": "big_number",
+        "value": 9.13,
+        "decimals": 2,
+        "prefix": "-",
+        "suffix": "%",
+        "kicker": "Độ khó đào Bitcoin",
+        "caption": "MẠNH NHẤT TỪ THÁNG 6",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Tại khối chín trăm bảy mươi lăm nghìn bảy trăm bốn mươi bốn, khoảng mười hai giờ trưa thứ Bảy giờ Việt Nam, độ khó rơi từ một trăm bốn mươi tám phẩy ba sáu xuống một trăm ba mươi tư phẩy tám hai nghìn tỷ.",
+      "visual": {
+        "type": "tx_card",
+        "title": "Difficulty Adjustment · Bitcoin",
+        "status": "Confirmed",
+        "rows": [
+          {
+            "k": "Block",
+            "v": "975.744"
+          },
+          {
+            "k": "Thời gian",
+            "v": "14/11 ~12:02 (giờ VN)"
+          },
+          {
+            "k": "Trước",
+            "v": "148,36 T"
+          },
+          {
+            "k": "Sau",
+            "v": "134,82 T"
+          },
+          {
+            "k": "Thay đổi",
+            "v": "-9,13%",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Chỉ hai tuần trước, độ khó còn tăng hai lần liên tiếp, năm phẩy chín hai rồi năm phẩy năm tư phần trăm.",
+      "visual": {
+        "type": "timeline",
+        "title": "Ba lần điều chỉnh gần nhất",
+        "events": [
+          {
+            "time": "16/10",
+            "text": "Độ khó tăng 5,92%",
+            "tone": "good"
+          },
+          {
+            "time": "29/10",
+            "text": "Độ khó tăng 5,54%",
+            "tone": "good"
+          },
+          {
+            "time": "14/11",
+            "text": "Độ khó giảm 9,13%",
+            "badge": "Block 975.744",
+            "tone": "bad",
+            "token": "BTC"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Nguyên nhân là sức mạnh đào đi xuống. Theo Hashrate Index, hashrate trung bình bảy ngày đã giảm bảy phẩy tám phần trăm, còn chín trăm bảy mươi chín ê-xa-hash mỗi giây.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Ngày 2/11",
+            "value": 1062,
+            "unit": "EH/s",
+            "tone": "neutral"
+          },
+          {
+            "label": "Ngày 9/11",
+            "value": 979,
+            "unit": "EH/s",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "Hashrate Index · -7,8%"
+        }
+      }
+    },
+    {
+      "voice": "Thợ đào lớn MARA cũng đã bán mười ba nghìn năm trăm chín mươi bảy BTC sau ngày ba mươi tháng chín, thu về khoảng một phẩy một tỷ đô.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "VÍ THỢ ĐÀO",
+          "title": "MARA",
+          "sub": "13.597 BTC",
+          "tokens": [
+            "BTC"
+          ]
+        },
+        "to": {
+          "kicker": "ĐÃ BÁN",
+          "title": "Bán ra",
+          "sub": "Giá TB ~81.039 USD",
+          "tone": "bad"
+        },
+        "amount": {
+          "value": 1.1,
+          "decimals": 1,
+          "prefix": "~",
+          "suffix": " tỷ USD"
+        },
+        "caption": "Sau 30/9/2026"
+      }
+    },
+    {
+      "voice": "Giá bán bình quân hơn tám mươi mốt nghìn đô. Trong khi rạng sáng nay, Bitcoin có lúc chỉ còn sáu mươi tư nghìn chín trăm sáu mươi đô trên Binance.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "GIÁ BITCOIN",
+        "title": "64.960 USD",
+        "subtitle": "Đáy rạng sáng 15/11 trên Binance (Bloomingbit)",
+        "tokens": [
+          "BTC"
+        ]
+      }
+    },
+    {
+      "voice": "Các trang tin on-chain xác nhận đây là lần giảm độ khó lớn nhất kể từ tháng sáu.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "TokenPost",
+            "date": "14/11/2026",
+            "headline": "Bitcoin Mining Difficulty Drops 9.13%, Biggest Cut Since June"
+          },
+          {
+            "outlet": "Coinpaper",
+            "date": "10/11/2026",
+            "headline": "Bitcoin Miner MARA Sells 13,597 BTC for $1.1 Billion as Revenue Drops 35% Amid AI Pivot"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "ON-CHAIN · THỢ ĐÀO",
+    "big": {
+      "text": "-9,13",
+      "unit": "% ĐỘ KHÓ ĐÀO"
+    },
+    "lines": [
+      [
+        "Mạnh nhất từ",
+        "normal"
+      ],
+      [
+        "tháng 6",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "BTC"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Độ khó đào Bitcoin giảm 9,13%, mạnh nhất từ tháng 6",
+    "caption": "Block 975.744: độ khó từ 148,36T xuống 134,82T. Hashrate 7 ngày giảm 7,8% (Hashrate Index), MARA bán 13.597 BTC thu ~1,1 tỷ USD sau 30/9.",
+    "hashtags": [
+      "onchain",
+      "bitcoin",
+      "dodaokho",
+      "thodao",
+      "crypto"
+    ],
+    "sources": [
+      "https://www.tokenpost.com/news/technology/57219",
+      "https://www.tradingview.com/news/binance_news:0e8399a72094b:0-bitcoin-mining-difficulty-falls-9-13-to-134-82-t-biggest-drop-since-june/",
+      "https://hashrateindex.com/blog/hashrate-index-roundup-november-9-2026/",
+      "https://coinpaper.com/38620/bitcoin-miner-mara-sells-13-597-btc-for-1-1-billion-as-revenue-drops-35-amid-ai-pivot",
+      "https://en.bloomingbit.io/feed/news/124456"
+    ]
+  }
+}

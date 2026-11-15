@@ -1,0 +1,194 @@
+{
+  "channel": "chainfolk",
+  "date": "15.11.2026",
+  "headline": [
+    [
+      "Bitcoin mất 14% trong một tuần,",
+      "normal"
+    ],
+    [
+      "thủng 65.000 USD",
+      "accent"
+    ]
+  ],
+  "ticker_line": "Sợ hãi & Tham lam: 13 · đáy 5 tháng",
+  "source": "Nguồn: Bitcoin Magazine, CoinGlass, SoSoValue",
+  "beats": [
+    {
+      "voice": "Bitcoin vừa khép lại một tuần tồi tệ, mất khoảng mười bốn phần trăm và có lúc thủng mốc sáu mươi lăm nghìn đô.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "THỊ TRƯỜNG CRYPTO",
+        "title": "THỦNG 65.000 USD",
+        "subtitle": "Mất khoảng 14% sau một tuần",
+        "tokens": [
+          "BTC",
+          "ETH"
+        ]
+      }
+    },
+    {
+      "voice": "Ngày bảy tháng mười một, giá còn quanh bảy mươi lăm nghìn bảy trăm năm mươi đô. Rạng sáng nay, trên Binance, có lúc chỉ còn sáu mươi tư nghìn chín trăm sáu mươi đô.",
+      "visual": {
+        "type": "price_chart",
+        "symbol": "BTC",
+        "days": 7,
+        "timeframe_label": "4h",
+        "start": 75750,
+        "end": 64960,
+        "side": [
+          {
+            "label": "Ngày 7/11",
+            "value": "75.750"
+          },
+          {
+            "label": "Đáy 15/11",
+            "value": "64.960",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Theo CoinGlass, khoảng một phẩy không một tỷ đô vị thế đòn bẩy bị thanh lý trong hai mươi bốn giờ. Chín mươi ba phần trăm là lệnh đặt cược giá tăng.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Thanh lý 24h",
+            "value": 1.01,
+            "decimals": 2,
+            "prefix": "~",
+            "unit": "tỷ USD",
+            "tone": "bad"
+          },
+          {
+            "label": "Tỷ lệ lệnh Long",
+            "value": 93,
+            "unit": "%",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "CoinGlass"
+        }
+      }
+    },
+    {
+      "voice": "Các quỹ ETF Bitcoin tại Mỹ bị rút ròng cả năm phiên trong tuần, tổng cộng khoảng một phẩy không bảy tỷ đô.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "ETF BTC Mỹ",
+            "token": "BTC",
+            "value": 1.07,
+            "decimals": 2,
+            "prefix": "~",
+            "unit": "tỷ USD",
+            "stamp": "Rút ròng",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "5 phiên · Dữ liệu:",
+          "text": "SoSoValue"
+        }
+      }
+    },
+    {
+      "voice": "Áp lực đến từ vĩ mô. Giá sản xuất tại Mỹ tăng sáu phẩy năm phần trăm so với cùng kỳ, lợi suất trái phiếu mười năm chạm năm phẩy mười bảy phần trăm, và thị trường đặt cược Fed tăng lãi suất trong tháng mười hai.",
+      "visual": {
+        "type": "bullets",
+        "title": "Vì sao Bitcoin giảm?",
+        "items": [
+          {
+            "text": "PPI Mỹ +6,5% so với cùng kỳ",
+            "tone": "bad"
+          },
+          {
+            "text": "Lợi suất TP Mỹ 10 năm chạm 5,17%",
+            "tone": "bad"
+          },
+          {
+            "text": "Cược Fed tăng lãi suất 8-9/12",
+            "tone": "accent"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Chỉ số sợ hãi và tham lam rơi từ hai mươi xuống mười ba, mức thấp nhất khoảng năm tháng.",
+      "visual": {
+        "type": "gauge",
+        "title": "Chỉ số Sợ hãi & Tham lam",
+        "from": 20,
+        "to": 13,
+        "from_label": "13/11",
+        "to_label": "14/11"
+      }
+    },
+    {
+      "voice": "Báo chí quốc tế đồng loạt đưa tin Bitcoin rơi về vùng thấp nhất kể từ giữa tháng tám.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "Bitcoin Magazine",
+            "date": "14/11/2026",
+            "headline": "Bitcoin Price Falls 14% in a Week to $65,000 as Weekend Selling Breaks Friday’s Low"
+          },
+          {
+            "outlet": "CoinGape",
+            "date": "14/11/2026",
+            "headline": "Crypto Fear and Greed Index Drops to a 5-Month Low as Weekend Slump Heightens"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "BITCOIN",
+    "big": {
+      "text": "-14%",
+      "unit": "SAU 1 TUẦN"
+    },
+    "lines": [
+      [
+        "Thủng mốc",
+        "normal"
+      ],
+      [
+        "65.000 USD",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Bitcoin mất 14% trong một tuần, có lúc thủng 65.000 USD",
+    "caption": "Bitcoin rơi từ khoảng 75.750 USD (7/11) xuống 64.960 USD trên Binance. Khoảng 1,01 tỷ USD bị thanh lý trong 24 giờ, ETF Bitcoin Mỹ rút ròng cả 5 phiên trong tuần, chỉ số Sợ hãi & Tham lam về 13.",
+    "hashtags": [
+      "bitcoin",
+      "crypto",
+      "tintuccrypto",
+      "thanhly",
+      "etf"
+    ],
+    "sources": [
+      "https://cryptonews.net/news/bitcoin/33752780/",
+      "https://www.trendingtopics.eu/bitcoin-65000-dollars-liquidations/",
+      "https://coingape.com/crypto-fear-and-greed-index-drops-to-a-5-month-low-as-weekend-slump-heightens/",
+      "https://en.bloomingbit.io/feed/news/124456"
+    ]
+  }
+}
