@@ -1,0 +1,196 @@
+{
+  "channel": "chainfolk",
+  "date": "16.11.2026",
+  "headline": [
+    [
+      "Bitcoin chạm",
+      "normal"
+    ],
+    [
+      "62.000 USD,",
+      "accent"
+    ],
+    [
+      "gần 2 tỷ USD bị thanh lý",
+      "normal"
+    ]
+  ],
+  "ticker_line": "Sợ hãi & Tham lam: 10 · sợ hãi tột độ",
+  "source": "Nguồn: BeInCrypto, crypto.news, CoinGlass",
+  "beats": [
+    {
+      "voice": "Bitcoin vừa rơi xuống quanh sáu mươi hai nghìn đô, mức thấp nhất kể từ tháng bảy.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "THỊ TRƯỜNG CRYPTO",
+        "title": "62.000 USD",
+        "subtitle": "Thấp nhất kể từ tháng 7",
+        "tokens": [
+          "BTC",
+          "ETH"
+        ]
+      }
+    },
+    {
+      "voice": "Tuần trước mở cửa quanh bảy mươi tư nghìn bảy trăm đô. Sáng Chủ nhật giờ Việt Nam, trên Coinbase, giá có lúc chỉ còn sáu mươi mốt nghìn chín trăm bốn mươi sáu đô.",
+      "visual": {
+        "type": "price_chart",
+        "symbol": "BTC",
+        "days": 7,
+        "timeframe_label": "4h",
+        "start": 74757,
+        "end": 65458,
+        "side": [
+          {
+            "label": "Mở tuần",
+            "value": "74.757"
+          },
+          {
+            "label": "Đáy Coinbase 15/11",
+            "value": "61.946",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Theo CoinGlass, khoảng một phẩy chín sáu tỷ đô vị thế đòn bẩy bị thanh lý trong hai mươi bốn giờ, hơn ba trăm mười hai nghìn nhà giao dịch bị cuốn bay.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Thanh lý 24h",
+            "value": 1.96,
+            "decimals": 2,
+            "prefix": "~",
+            "unit": "tỷ USD",
+            "tone": "bad"
+          },
+          {
+            "label": "Bị thanh lý",
+            "value": 312000,
+            "prefix": "> ",
+            "unit": "người",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "CoinGlass"
+        }
+      }
+    },
+    {
+      "voice": "Bitcoin giờ thấp hơn đỉnh lịch sử một trăm hai mươi sáu nghìn đô khoảng bốn mươi chín phần trăm.",
+      "visual": {
+        "type": "big_number",
+        "value": 49,
+        "ring_max": 100,
+        "prefix": "-",
+        "suffix": "%",
+        "kicker": "So với đỉnh lịch sử",
+        "caption": "ĐỈNH 126.080 USD",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Chỉ số sợ hãi và tham lam tiếp tục rơi, từ mười ba xuống mười, vùng sợ hãi tột độ.",
+      "visual": {
+        "type": "gauge",
+        "title": "Chỉ số Sợ hãi & Tham lam",
+        "from": 13,
+        "to": 10,
+        "from_label": "14/11",
+        "to_label": "15/11"
+      }
+    },
+    {
+      "voice": "Một số nhà phân tích cho rằng cú sập bị thao túng, nhưng chưa có bằng chứng công khai. Nguyên nhân được nhắc nhiều hơn là đòn bẩy cao, ETF bị rút vốn bảy phiên liên tiếp và lạm phát Mỹ nóng hơn dự kiến.",
+      "visual": {
+        "type": "bullets",
+        "title": "Vì sao Bitcoin giảm sâu?",
+        "items": [
+          {
+            "text": "Cáo buộc thao túng: chưa có bằng chứng",
+            "tone": "accent"
+          },
+          {
+            "text": "Đòn bẩy cao, thanh lý dây chuyền",
+            "tone": "bad"
+          },
+          {
+            "text": "ETF BTC Mỹ rút ròng 7 phiên liên tiếp",
+            "tone": "bad"
+          },
+          {
+            "text": "CPI Mỹ tháng 10 tăng 0,4%",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Báo chí quốc tế đồng loạt đưa tin về cú sập cuối tuần.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "BeInCrypto / Yahoo Finance",
+            "date": "15/11/2026",
+            "headline": "Bitcoin's Fall to $62,000 Sparks Market Manipulation Claims"
+          },
+          {
+            "outlet": "crypto.news",
+            "date": "15/11/2026",
+            "headline": "Bitcoin price falls to three-month low: Is $60K the next stop?"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "BITCOIN",
+    "big": {
+      "text": "~2",
+      "unit": "TỶ USD BỊ THANH LÝ"
+    },
+    "lines": [
+      [
+        "BTC chạm",
+        "normal"
+      ],
+      [
+        "62.000 USD",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Bitcoin chạm 62.000 USD, gần 2 tỷ USD bị thanh lý trong 24 giờ",
+    "caption": "Bitcoin có lúc xuống 61.946 USD trên Coinbase sáng 15/11, thấp nhất kể từ tháng 7. Khoảng 1,96 tỷ USD vị thế bị thanh lý (CoinGlass), chỉ số Sợ hãi & Tham lam về 10. Cáo buộc thao túng chưa có bằng chứng.",
+    "hashtags": [
+      "bitcoin",
+      "crypto",
+      "tintuccrypto",
+      "thanhly",
+      "thitruong"
+    ],
+    "sources": [
+      "https://finance.yahoo.com/markets/crypto/articles/bitcoin-fall-62-000-sparks-092429244.html",
+      "https://crypto.news/bitcoin-price-falls-62000-etf-outflows-liquidations/",
+      "https://cryptoticker.io/en/bitcoin-price-overnight-low-weekly-close-november-15-2026/"
+    ]
+  }
+}

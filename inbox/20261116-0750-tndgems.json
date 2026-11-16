@@ -1,0 +1,224 @@
+{
+  "channel": "tndgems",
+  "date": "16.11.2026",
+  "headline": [
+    [
+      "Giá sập, cá voi gom",
+      "normal"
+    ],
+    [
+      "47.000 BTC",
+      "accent"
+    ],
+    [
+      "còn ví cỡ vừa bán tháo",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: CryptoQuant, Lookonchain, Glassnode",
+  "beats": [
+    {
+      "voice": "Bốn mươi bảy nghìn BTC. Đó là lượng Bitcoin cá voi đã gom thêm khi giá rơi khoảng hai mươi bốn phần trăm.",
+      "visual": {
+        "type": "big_number",
+        "value": 47,
+        "suffix": "nghìn BTC",
+        "kicker": "Ví cá voi > 1.000 BTC",
+        "caption": "CÁ VOI GOM",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "good"
+      }
+    },
+    {
+      "voice": "Tám đến chín giờ sáng Chủ nhật giờ Việt Nam, Bitcoin trên Coinbase chạm sáu mươi mốt nghìn chín trăm bốn mươi sáu đô, rồi bật lên sáu mươi lăm nghìn trong chưa đầy một giờ.",
+      "visual": {
+        "type": "timeline",
+        "title": "Cú quét đáy (giờ VN, 15/11)",
+        "events": [
+          {
+            "time": "08–09h",
+            "text": "BTC chạm 61.946 USD trên Coinbase",
+            "tone": "bad",
+            "token": "BTC"
+          },
+          {
+            "time": "09–10h",
+            "text": "Bật lên 65.098 USD",
+            "badge": "< 1 giờ",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Người bán là ví cỡ vừa. Ví từ một trăm đến một nghìn BTC xả khoảng năm mươi nghìn năm trăm BTC, ví từ mười đến một trăm BTC bán thêm mười bốn nghìn bốn trăm.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Ví 100–1.000 BTC",
+            "token": "BTC",
+            "value": 50500,
+            "prefix": "-",
+            "unit": "BTC",
+            "tone": "bad"
+          },
+          {
+            "label": "Ví 10–100 BTC",
+            "token": "BTC",
+            "value": 14400,
+            "prefix": "-",
+            "unit": "BTC",
+            "tone": "bad"
+          },
+          {
+            "label": "Ví > 1.000 BTC",
+            "token": "BTC",
+            "value": 47000,
+            "prefix": "+",
+            "unit": "BTC",
+            "tone": "good"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "CryptoQuant"
+        }
+      }
+    },
+    {
+      "voice": "Với Ethereum, theo Lookonchain, ví liên quan Erik Voorhees chi khoảng một trăm hai mươi lăm triệu đô gom sáu mươi ba nghìn năm trăm bốn mươi ETH.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "CHI RA",
+          "title": "~125 triệu USD",
+          "sub": "Mua ETH lúc giá giảm",
+          "tokens": [
+            "ETH"
+          ]
+        },
+        "to": {
+          "kicker": "VÍ LIÊN QUAN",
+          "title": "Erik Voorhees",
+          "sub": "+63.540 ETH · TB 1.972 USD",
+          "tone": "good"
+        },
+        "amount": {
+          "value": 125,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " triệu USD"
+        },
+        "caption": "Theo Lookonchain · 15/11/2026"
+      }
+    },
+    {
+      "voice": "Ví 7 Siblings mua thêm hơn ba mươi mốt nghìn ETH. Hai ví lớn khác rút gần hai mươi mốt nghìn rưỡi ETH khỏi Binance và OKX.",
+      "visual": {
+        "type": "graph",
+        "title": "Cá voi ETH bắt đáy",
+        "center": {
+          "title": "Cá voi ETH",
+          "sub": "15/11 · Lookonchain"
+        },
+        "branches": [
+          {
+            "label": "7 Siblings",
+            "sub": "+31.484 ETH",
+            "tone": "good",
+            "token": "ETH"
+          },
+          {
+            "label": "Wang Chun",
+            "sub": "Rút 10.997 ETH",
+            "tone": "ice",
+            "token": "BINANCE"
+          },
+          {
+            "label": "58bro.eth",
+            "sub": "Rút 10.501 ETH",
+            "tone": "ice",
+            "token": "OKX"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Rủi ro vẫn còn. Glassnode thấy một cụm lệnh long đòn bẩy dày đặc từ sáu mươi đến sáu mươi hai nghìn đô. Người mua gần đây đang lỗ khoảng mười lăm phần trăm.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "warn",
+        "tone": "alert",
+        "kicker": "BẢN ĐỒ THANH LÝ",
+        "title": "60K–62K USD",
+        "subtitle": "Cụm long đòn bẩy dày đặc · người mua mới lỗ ~15%",
+        "tokens": [
+          "BTC"
+        ]
+      }
+    },
+    {
+      "voice": "Dữ liệu on-chain được ChainCatcher và Brave New Coin cùng ghi nhận.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "ChainCatcher",
+            "date": "15/11/2026",
+            "headline": "Data: Multiple whales are buying ETH on dips, Erik Voorhees' associated wallet increased holdings by 125 million USD"
+          },
+          {
+            "outlet": "Brave New Coin",
+            "date": "15/11/2026",
+            "headline": "Bitcoin (BTC) Price Today: $65K Support Under Pressure as Glassnode Maps $60K–$62K Liquidation Cluster"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "ON-CHAIN · CÁ VOI",
+    "big": {
+      "text": "47K",
+      "unit": "BTC CÁ VOI GOM"
+    },
+    "lines": [
+      [
+        "Ví cỡ vừa",
+        "normal"
+      ],
+      [
+        "bán tháo",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "BTC",
+      "ETH"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Giá sập, cá voi gom 47.000 BTC, ví cỡ vừa bán tháo",
+    "caption": "CryptoQuant: ví >1.000 BTC gom ~47.000 BTC khi giá giảm ~24%, ví 100–1.000 BTC bán ~50.500 BTC. Lookonchain: ví liên quan Erik Voorhees mua 63.540 ETH (~125 triệu USD).",
+    "hashtags": [
+      "onchain",
+      "bitcoin",
+      "cavoi",
+      "ethereum",
+      "crypto"
+    ],
+    "sources": [
+      "https://www.kucoin.com/news/flash/btc-whales-accumulate-47-000-during-24-drop-mid-sized-holders-sell-more",
+      "https://bravenewcoin.com/insights/bitcoin-btc-price-today-65k-support-under-pressure-as-glassnode-maps-60k-62k-liquidation-cluster",
+      "https://chaincatcher.com/en/article/2304828",
+      "https://en.bloomingbit.io/feed/news/124462",
+      "https://cryptoticker.io/en/bitcoin-price-overnight-low-weekly-close-november-15-2026/"
+    ]
+  }
+}
