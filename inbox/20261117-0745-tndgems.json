@@ -1,0 +1,223 @@
+{
+  "channel": "tndgems",
+  "date": "17.11.2026",
+  "headline": [
+    [
+      "Máy đào bị chiếm, ví lạ nhận",
+      "normal"
+    ],
+    [
+      "0,243 BTC",
+      "accent"
+    ],
+    [
+      "từ pool OCEAN",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: OCEAN, CryptoSlate, TFTC",
+  "beats": [
+    {
+      "voice": "Không phẩy hai bốn ba BTC. Đó là số thưởng đào mà một địa chỉ lạ nhận từ pool OCEAN sau vụ chiếm quyền máy đào cuối tuần.",
+      "visual": {
+        "type": "big_number",
+        "value": 0.243,
+        "decimals": 3,
+        "suffix": "BTC",
+        "kicker": "Ví nhận thưởng đáng ngờ",
+        "caption": "3 LẦN TRẢ THƯỞNG",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Chín giờ sáng mười lăm tháng mười một, giờ Việt Nam, sức đào bắt đầu bị chuyển sang OCEAN. CoreX Hosting phát hiện và báo động. Đầu ngày mười sáu, Luxor xác nhận bị xâm nhập.",
+      "visual": {
+        "type": "timeline",
+        "title": "Diễn biến (giờ VN)",
+        "events": [
+          {
+            "time": "15/11 09h",
+            "text": "Sức đào bị chuyển sang pool OCEAN",
+            "tone": "bad",
+            "token": "BTC"
+          },
+          {
+            "time": "15/11",
+            "text": "CoreX Hosting phát hiện, báo động",
+            "tone": "ice"
+          },
+          {
+            "time": "16/11 00:25",
+            "text": "Luxor xác nhận Commander bị xâm nhập",
+            "badge": "sửa < 2 giờ",
+            "tone": "accent"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Sức đào của OCEAN vọt lên gần năm mươi exa hash mỗi giây, rồi lùi về khoảng bốn mươi. Khi máy được khôi phục, sức đào trỏ về ví lạ chỉ còn khoảng một trăm peta hash.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Đỉnh OCEAN",
+            "value": 50,
+            "prefix": "~",
+            "unit": "EH/s",
+            "tone": "bad"
+          },
+          {
+            "label": "Sau đó",
+            "value": 40,
+            "prefix": "~",
+            "unit": "EH/s",
+            "tone": "neutral"
+          },
+          {
+            "label": "Ví lạ còn lại",
+            "value": 100,
+            "prefix": "~",
+            "unit": "PH/s",
+            "tone": "good"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "OCEAN, CoreX"
+        }
+      }
+    },
+    {
+      "voice": "Trong khối chín trăm bảy mươi lăm nghìn chín trăm chín mươi lăm do OCEAN đào, địa chỉ này nhận khoảng không phẩy không tám BTC, cỡ năm nghìn hai trăm đô.",
+      "visual": {
+        "type": "tx_card",
+        "title": "Khối 975.995 · pool OCEAN",
+        "status": "Success",
+        "rows": [
+          {
+            "k": "Ngày",
+            "v": "15/11/2026"
+          },
+          {
+            "k": "Ví nhận",
+            "v": "•••• (đáng ngờ)",
+            "tone": "bad"
+          },
+          {
+            "k": "Số BTC",
+            "v": "0,08088977 BTC",
+            "tone": "bad"
+          },
+          {
+            "k": "Giá trị",
+            "v": "~5.250 USD"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Các nguồn đếm khác nhau. TFTC ghi nhận hai lần trả, khoảng không phẩy một sáu hai BTC. CryptoSlate đếm ba lần, khoảng không phẩy hai bốn ba BTC.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "TFTC · 2 lần trả",
+            "token": "BTC",
+            "value": 0.162,
+            "decimals": 3,
+            "prefix": "~",
+            "unit": "BTC",
+            "tone": "bad"
+          },
+          {
+            "label": "CryptoSlate · 3 lần",
+            "token": "BTC",
+            "value": 0.243,
+            "decimals": 3,
+            "prefix": "~",
+            "unit": "BTC",
+            "tone": "bad"
+          }
+        ],
+        "total": {
+          "label": "Lưu ý:",
+          "text": "Chưa rõ chủ ví"
+        }
+      }
+    },
+    {
+      "voice": "Giao thức Bitcoin không bị phá. Lỗ hổng nằm ở Commander, phần mềm quản lý dàn máy của Luxor, ảnh hưởng hơn chục tài khoản khách hàng.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "lock",
+        "tone": "neutral",
+        "kicker": "ĐIỂM YẾU NẰM Ở ĐÂU",
+        "title": "LUXOR",
+        "subtitle": "Lỗ hổng ở phần mềm Commander"
+      }
+    },
+    {
+      "voice": "Dữ liệu on-chain được TFTC và The Cyber Express cùng ghi nhận.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "TFTC",
+            "date": "16/11/2026",
+            "headline": "Luxor Commander Hijack: AI Attack Redirects Mining Hashrate"
+          },
+          {
+            "outlet": "The Cyber Express",
+            "date": "16/11/2026",
+            "headline": "Hackers Hijack Luxor Mining Software to Divert Bitcoin Mining Rewards"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "ON-CHAIN · ĐÀO COIN",
+    "big": {
+      "text": "0,243",
+      "unit": "BTC VỀ VÍ LẠ"
+    },
+    "lines": [
+      [
+        "Pool",
+        "normal"
+      ],
+      [
+        "OCEAN",
+        "accent"
+      ],
+      [
+        "trả thưởng",
+        "normal"
+      ]
+    ],
+    "logo": "BTC",
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Máy đào bị chiếm, ví lạ nhận 0,243 BTC từ pool OCEAN",
+    "caption": "Sau vụ Luxor Commander bị xâm nhập, sức đào OCEAN vọt lên ~50 EH/s. Khối 975.995 trả 0,08088977 BTC cho ví đáng ngờ; tổng thưởng ~0,162–0,243 BTC tùy nguồn (TFTC, CryptoSlate).",
+    "hashtags": [
+      "onchain",
+      "bitcoin",
+      "daocoin",
+      "hashrate",
+      "crypto"
+    ],
+    "sources": [
+      "https://www.kucoin.com/news/flash/bitcoin-mining-industry-hit-by-ai-linked-breach-13-eh-s-diverted",
+      "https://www.tftc.io/luxor-commander-hijack-ai-attack-hashrate-redirect-ocean",
+      "https://thecyberexpress.com/luxor-cyberattack/"
+    ]
+  }
+}

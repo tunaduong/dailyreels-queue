@@ -1,0 +1,175 @@
+{
+  "channel": "chainfolk",
+  "date": "17.11.2026",
+  "headline": [
+    [
+      "Hacker chiếm quyền",
+      "normal"
+    ],
+    [
+      "64.000 máy đào",
+      "accent"
+    ],
+    [
+      "Bitcoin qua phần mềm Luxor",
+      "normal"
+    ]
+  ],
+  "ticker_line": "Luxor cam kết bồi thường toàn bộ",
+  "source": "Nguồn: Luxor, FinanceFeeds, Cyber Express",
+  "beats": [
+    {
+      "voice": "Khoảng sáu mươi tư nghìn máy đào Bitcoin vừa bị kẻ gian chiếm quyền điều khiển trong một vụ tấn công cuối tuần qua.",
+      "visual": {
+        "type": "hero",
+        "logo": "BTC",
+        "icon": "warn",
+        "tone": "alert",
+        "kicker": "SỰ CỐ AN NINH",
+        "title": "~64.000 MÁY ĐÀO",
+        "subtitle": "Bị chiếm quyền, sức đào bị chuyển sang pool khác"
+      }
+    },
+    {
+      "voice": "Ước tính khoảng mười ba exa hash mỗi giây sức đào bị chuyển sang pool OCEAN, tương đương khoảng một phẩy bốn đến một phẩy năm phần trăm toàn mạng Bitcoin.",
+      "visual": {
+        "type": "big_number",
+        "value": 13,
+        "prefix": "~",
+        "suffix": "EH/s",
+        "kicker": "Sức đào bị chuyển hướng",
+        "caption": "~1,4–1,5% TOÀN MẠNG",
+        "tokens": [
+          "BTC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Kẻ tấn công lợi dụng Commander, phần mềm quản lý dàn máy đào của Luxor, để đổi cấu hình pool của hơn chục tài khoản khách hàng.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "Phần mềm quản lý",
+          "title": "Luxor Commander",
+          "sub": "> 12 tài khoản khách hàng",
+          "tokens": [
+            "BTC"
+          ]
+        },
+        "to": {
+          "kicker": "Bị trỏ sang",
+          "title": "Pool OCEAN",
+          "sub": "thưởng về ví kẻ tấn công",
+          "tone": "bad"
+        },
+        "amount": {
+          "value": 13,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " EH/s"
+        },
+        "caption": "Từ ~09:00 ngày 15/11 (giờ VN)"
+      }
+    },
+    {
+      "voice": "Luxor cho biết đã vá lỗ hổng trong vòng hai giờ sau khi phát hiện, và khẳng định không có dữ liệu nào bị rò rỉ.",
+      "visual": {
+        "type": "quote",
+        "who": "Luxor",
+        "role": "Thông báo chính thức · 15/11 (lược dịch)",
+        "text": "Không có dữ liệu nào bị rò rỉ hay bị lấy ra khỏi hệ thống của chúng tôi.",
+        "tone": "neutral"
+      }
+    },
+    {
+      "voice": "Giám đốc điều hành Luxor, Nick Hansen, gọi đây là một vụ tấn công tinh vi có sự hỗ trợ của trí tuệ nhân tạo.",
+      "visual": {
+        "type": "quote",
+        "who": "Nick Hansen",
+        "role": "CEO Luxor · 16/11 (lược dịch)",
+        "text": "Các mô hình AI bị gỡ rào chắn đang chạy 24/7, rà toàn bộ hệ thống của bạn để tìm một kẽ hở nhỏ.",
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Luxor cam kết bồi thường như thể máy vẫn đào bình thường. Giao thức Bitcoin không bị xâm phạm, nhưng con số sáu mươi tư nghìn máy vẫn chưa được Luxor xác nhận.",
+      "visual": {
+        "type": "bullets",
+        "title": "Ảnh hưởng tới thợ đào",
+        "items": [
+          {
+            "text": "Bồi thường như máy vẫn đào bình thường",
+            "tone": "good"
+          },
+          {
+            "text": "Pool Luxor và LuxOS không bị ảnh hưởng",
+            "tone": "good"
+          },
+          {
+            "text": "Giao thức Bitcoin không bị xâm phạm",
+            "tone": "ice"
+          },
+          {
+            "text": "Con số 64.000 máy chưa được xác nhận",
+            "tone": "accent"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Vụ việc được FinanceFeeds và The Cyber Express cùng đưa tin, cho thấy rủi ro từ phần mềm quản lý tập trung trong ngành đào.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "FinanceFeeds",
+            "date": "16/11/2026",
+            "headline": "64,000 Bitcoin Mining Machines Reportedly Hijacked as 13 EH/s Redirected to OCEAN Pool"
+          },
+          {
+            "outlet": "The Cyber Express",
+            "date": "16/11/2026",
+            "headline": "Hackers Hijack Luxor Mining Software to Divert Bitcoin Mining Rewards"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "HACK MÁY ĐÀO",
+    "big": {
+      "text": "64K",
+      "unit": "MÁY ĐÀO BỊ CHIẾM"
+    },
+    "lines": [
+      [
+        "13 EH/s",
+        "accent"
+      ],
+      [
+        "bị chuyển hướng",
+        "normal"
+      ]
+    ],
+    "logo": "BTC",
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Hacker chiếm quyền ~64.000 máy đào Bitcoin qua phần mềm Luxor Commander",
+    "caption": "Khoảng 13 EH/s sức đào (~1,4–1,5% toàn mạng) bị chuyển sang pool OCEAN sau khi phần mềm Commander của Luxor bị xâm nhập. Luxor vá lỗi trong 2 giờ và cam kết bồi thường đầy đủ; con số 64.000 máy chưa được Luxor xác nhận.",
+    "hashtags": [
+      "bitcoin",
+      "daocoin",
+      "luxor",
+      "anninhcrypto",
+      "tintuccrypto"
+    ],
+    "sources": [
+      "https://financefeeds.com/64000-bitcoin-mining-machines-reportedly-hijacked-as-13-eh-s-redirected-to-ocean-pool/",
+      "https://thecyberexpress.com/luxor-cyberattack/",
+      "https://www.tftc.io/luxor-commander-hijack-ai-attack-hashrate-redirect-ocean"
+    ]
+  }
+}
