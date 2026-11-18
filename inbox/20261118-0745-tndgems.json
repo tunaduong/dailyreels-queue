@@ -1,0 +1,218 @@
+{
+  "channel": "tndgems",
+  "date": "18.11.2026",
+  "headline": [
+    [
+      "USDT và USDC bốc hơi",
+      "normal"
+    ],
+    [
+      "11,6 tỷ USD",
+      "accent"
+    ],
+    [
+      "trong 30 ngày",
+      "normal"
+    ]
+  ],
+  "source": "Nguồn: DefiLlama, Glassnode, CryptoQuant",
+  "beats": [
+    {
+      "voice": "Mười một phẩy sáu tỷ đô. Đó là lượng USDT và USDC biến mất khỏi thị trường chỉ trong ba mươi ngày, theo dữ liệu DefiLlama.",
+      "visual": {
+        "type": "big_number",
+        "value": 11.6,
+        "decimals": 1,
+        "suffix": "tỷ USD",
+        "kicker": "USDT + USDC giảm",
+        "caption": "TRONG 30 NGÀY",
+        "tokens": [
+          "USDT",
+          "USDC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Tổng nguồn cung stablecoin còn hai trăm tám mươi tư phẩy hai tỷ đô, giảm năm phẩy ba phần trăm. Riêng cặp USDT và USDC còn hai trăm bốn mươi tư phẩy năm tỷ.",
+      "visual": {
+        "type": "stat_cards",
+        "cards": [
+          {
+            "label": "Tổng stablecoin",
+            "value": 284.2,
+            "decimals": 1,
+            "unit": "tỷ USD",
+            "tone": "neutral"
+          },
+          {
+            "label": "Giảm 30 ngày",
+            "value": 5.3,
+            "decimals": 1,
+            "unit": "%",
+            "tone": "bad"
+          },
+          {
+            "label": "USDT + USDC",
+            "value": 244.5,
+            "decimals": 1,
+            "unit": "tỷ USD",
+            "token": "USDT",
+            "tone": "ice"
+          }
+        ],
+        "total": {
+          "label": "Dữ liệu:",
+          "text": "DefiLlama qua CoinDesk"
+        }
+      }
+    },
+    {
+      "voice": "Theo Kaiko, hai đồng này chiếm tới chín mươi phần trăm mức giảm của cả thị trường stablecoin.",
+      "visual": {
+        "type": "hero",
+        "logo": "USDT",
+        "icon": "chart",
+        "tone": "alert",
+        "kicker": "THEO KAIKO",
+        "title": "90% MỨC GIẢM",
+        "subtitle": "đến từ USDT và USDC",
+        "tokens": [
+          "USDT",
+          "USDC"
+        ]
+      }
+    },
+    {
+      "voice": "Glassnode đo được mức giảm khoảng mười bốn phẩy hai tỷ đô trong ba mươi ngày tính đến chín tháng mười một, phản ánh nhà đầu tư đổi stablecoin ra tiền mặt.",
+      "visual": {
+        "type": "flow",
+        "from": {
+          "kicker": "On-chain",
+          "title": "Stablecoin",
+          "sub": "USDT, USDC…",
+          "tokens": [
+            "USDT",
+            "USDC"
+          ]
+        },
+        "to": {
+          "kicker": "Đổi ra",
+          "title": "Tiền pháp định",
+          "sub": "rút khỏi crypto",
+          "tone": "bad"
+        },
+        "amount": {
+          "value": 14.2,
+          "decimals": 1,
+          "prefix": "~",
+          "suffix": " tỷ USD"
+        },
+        "caption": "30 ngày tới 09/11 · Glassnode"
+      }
+    },
+    {
+      "voice": "Con số này vượt xa đợt rút tháng bảy năm hai nghìn không trăm hai mươi tư, khi đó chỉ khoảng chín phẩy năm tỷ.",
+      "visual": {
+        "type": "range",
+        "title": "Stablecoin giảm trong 30 ngày",
+        "min": 0,
+        "max": 20,
+        "unit": "tỷ",
+        "markers": [
+          {
+            "value": 9.5,
+            "label": "~9,5 tỷ",
+            "who": "07/2024"
+          },
+          {
+            "value": 14.2,
+            "label": "~14,2 tỷ",
+            "who": "11/2026"
+          }
+        ],
+        "notes": [
+          "Số liệu: Glassnode"
+        ]
+      }
+    },
+    {
+      "voice": "Tín hiệu đã lóe lên từ sớm. Hai mươi chín tháng mười, chỉ số Coinbase Premium xuống âm không phẩy hai bảy phần trăm, thấp nhất kể từ tháng mười một năm hai nghìn không trăm hai mươi hai.",
+      "visual": {
+        "type": "timeline",
+        "title": "Diễn biến dòng tiền",
+        "events": [
+          {
+            "time": "29/10",
+            "text": "Coinbase Premium −0,27%, thấp nhất từ 11/2022",
+            "tone": "bad"
+          },
+          {
+            "time": "09/11",
+            "text": "Stablecoin −14,2 tỷ USD trong 30 ngày",
+            "tone": "bad",
+            "token": "USDT"
+          },
+          {
+            "time": "17/11",
+            "text": "BTC lùi về quanh 64.000 USD",
+            "tone": "accent",
+            "token": "BTC"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "CoinDesk gọi stablecoin là chip sòng bạc của crypto. Và số chip trên bàn đang ít dần.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "CoinDesk",
+            "date": "17/11/2026",
+            "headline": "Crypto's 'casino-chips' are disappearing, adding to pain from spot ETF outflows"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "ON-CHAIN",
+    "big": {
+      "text": "11,6",
+      "unit": "TỶ USD BIẾN MẤT"
+    },
+    "lines": [
+      [
+        "USDT + USDC",
+        "accent"
+      ],
+      [
+        "trong 30 ngày",
+        "normal"
+      ]
+    ],
+    "tokens": [
+      "USDT",
+      "USDC"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "11,6 tỷ USD USDT và USDC rời thị trường trong 30 ngày",
+    "caption": "Theo DefiLlama, tổng stablecoin còn 284,24 tỷ USD (-5,3%/30 ngày), USDT + USDC giảm 11,6 tỷ USD. Glassnode đo mức giảm ~14,2 tỷ USD tới 9/11, lớn hơn đợt tháng 7/2024; Coinbase Premium chạm -0,27% ngày 29/10, thấp nhất từ 11/2022.",
+    "hashtags": [
+      "stablecoin",
+      "onchain",
+      "usdt",
+      "usdc",
+      "dongtien"
+    ],
+    "sources": [
+      "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows",
+      "https://coincodex.com/article/95318/142-billion-in-stablecoin-supply-leaves-crypto-market-a-signal-of-weak-liquidity",
+      "https://news.bloomberglaw.com/business-and-practice/stablecoin-market-shrinks-most-since-terra-lunas-2022-crash"
+    ]
+  }
+}

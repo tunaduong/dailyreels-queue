@@ -1,0 +1,165 @@
+{
+  "channel": "chainfolk",
+  "date": "18.11.2026",
+  "headline": [
+    [
+      "Stablecoin co lại mạnh nhất từ Terra:",
+      "normal"
+    ],
+    [
+      "mất ~12 tỷ USD",
+      "accent"
+    ],
+    [
+      "trong 30 ngày",
+      "normal"
+    ]
+  ],
+  "ticker_line": "Stablecoin mất ~12 tỷ USD/30 ngày",
+  "source": "Nguồn: Bloomberg, Kaiko, CoinDesk",
+  "beats": [
+    {
+      "voice": "Stablecoin vốn là nơi nhà đầu tư trú ẩn khi thị trường lao dốc mà không cần rút tiền ra ngoài. Nhưng giờ, thị trường này đang co lại nhanh nhất kể từ cú sụp đổ Terra Luna năm hai nghìn không trăm hai mươi hai.",
+      "visual": {
+        "type": "hero",
+        "logo": "USDT",
+        "icon": "warn",
+        "tone": "alert",
+        "kicker": "DÒNG TIỀN RÚT RA",
+        "title": "STABLECOIN CO LẠI",
+        "subtitle": "Mạnh nhất từ vụ Terra-Luna 2022",
+        "tokens": [
+          "USDT",
+          "USDC"
+        ]
+      }
+    },
+    {
+      "voice": "Theo dữ liệu của hãng Kaiko mà Bloomberg dẫn lại, vốn hóa stablecoin đã mất khoảng mười hai tỷ đô chỉ trong ba mươi ngày qua.",
+      "visual": {
+        "type": "big_number",
+        "value": 12,
+        "prefix": "~",
+        "suffix": "tỷ USD",
+        "kicker": "Vốn hóa stablecoin giảm",
+        "caption": "30 NGÀY · KAIKO",
+        "tokens": [
+          "USDT",
+          "USDC"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Cùng lúc, Bitcoin giảm khoảng mười ba phần trăm trong một tuần, về quanh sáu mươi tư nghìn đô. Ether cũng thủng mốc một nghìn tám trăm đô.",
+      "visual": {
+        "type": "price_chart",
+        "symbol": "BTC",
+        "days": 7,
+        "timeframe_label": "4h",
+        "start": 73500,
+        "end": 64000,
+        "side": [
+          {
+            "label": "BTC 7 ngày",
+            "value": "~ -13%",
+            "tone": "bad"
+          },
+          {
+            "label": "ETH",
+            "value": "< 1.800 $",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Hãng phân tích CryptoQuant nhận định: stablecoin từng tiếp sức cho mọi đợt tăng giá chu kỳ này, và nguồn nhiên liệu ấy đang cạn dần.",
+      "visual": {
+        "type": "quote",
+        "who": "CryptoQuant",
+        "role": "Bài đăng trên X · 17/11 (lược dịch)",
+        "text": "Tăng trưởng stablecoin đã tiếp sức cho mọi đợt tăng giá chu kỳ này. Nguồn nhiên liệu đó đang cạn dần.",
+        "tone": "bad"
+      }
+    },
+    {
+      "voice": "Stablecoin co lại cho thấy tiền đang rút hẳn khỏi thị trường, chứ không chỉ xoay giữa các đồng coin. Thanh khoản mỏng hơn khiến thị trường dễ tổn thương trước các đợt bán tháo.",
+      "visual": {
+        "type": "bullets",
+        "title": "Ảnh hưởng tới thị trường",
+        "items": [
+          {
+            "text": "Tiền rút ra ngoài, không chỉ đổi coin",
+            "tone": "bad"
+          },
+          {
+            "text": "Thanh khoản mỏng, dễ bị bán tháo",
+            "tone": "bad"
+          },
+          {
+            "text": "Nguồn cung tăng lại = tín hiệu vốn quay về",
+            "tone": "ice"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "Bloomberg và CoinDesk cùng đưa tin, gọi stablecoin là chip sòng bạc của thị trường crypto, và số chip ấy đang biến mất.",
+      "visual": {
+        "type": "news_card",
+        "title": "Báo chí quốc tế đưa tin",
+        "items": [
+          {
+            "outlet": "Bloomberg",
+            "date": "16/11/2026",
+            "headline": "Stablecoin Market Shrinks Most Since Terra-Luna’s 2022 Crash"
+          },
+          {
+            "outlet": "CoinDesk",
+            "date": "17/11/2026",
+            "headline": "Crypto's 'casino-chips' are disappearing, adding to pain from spot ETF outflows"
+          }
+        ]
+      }
+    }
+  ],
+  "cover": {
+    "kicker": "DÒNG TIỀN RÚT",
+    "big": {
+      "text": "~12",
+      "unit": "TỶ USD STABLECOIN"
+    },
+    "lines": [
+      [
+        "mạnh nhất từ",
+        "normal"
+      ],
+      [
+        "Terra 2022",
+        "accent"
+      ]
+    ],
+    "tokens": [
+      "USDT",
+      "USDC"
+    ],
+    "tone": "alert"
+  },
+  "post": {
+    "title": "Stablecoin co lại mạnh nhất từ vụ Terra-Luna: mất ~12 tỷ USD trong 30 ngày",
+    "caption": "Theo Kaiko (Bloomberg dẫn lại), vốn hóa stablecoin giảm khoảng 12 tỷ USD trong 30 ngày, nhanh nhất từ 2022; Glassnode ước tính tới ~14,2 tỷ USD. Bitcoin cùng lúc lùi về quanh 64.000 USD, thanh khoản thị trường mỏng dần.",
+    "hashtags": [
+      "stablecoin",
+      "bitcoin",
+      "usdt",
+      "thanhkhoan",
+      "tintuccrypto"
+    ],
+    "sources": [
+      "https://news.bloomberglaw.com/business-and-practice/stablecoin-market-shrinks-most-since-terra-lunas-2022-crash",
+      "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows",
+      "https://www.fool.com/coverage/stock-market-today/2026/11/17/crypto-market-today-nov-17-a-warning-sign-not-seen-since-2022-is-flashing-across-cryptocurrency-markets/"
+    ]
+  }
+}
