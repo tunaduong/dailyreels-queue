@@ -1,0 +1,195 @@
+{
+ "channel": "chainfolk",
+ "date": "19.11.2026",
+ "headline": [
+  [
+   "Ví Ledger mua ở Dubai bị nghi cài chip,",
+   "normal"
+  ],
+  [
+   "mất ~604 nghìn USD",
+   "accent"
+  ]
+ ],
+ "ticker_line": "Ledger: chuyển tiền sang ví seed mới",
+ "source": "Nguồn: Cointelegraph, crypto.news, CoinDesk",
+ "cover": {
+  "kicker": "CÀI CHIP GIÁN ĐIỆP",
+  "big": {
+   "text": "604",
+   "unit": "NGHÌN USD BỊ MẤT"
+  },
+  "lines": [
+   [
+    "Ví Ledger",
+    "accent"
+   ],
+   [
+    "mua ở Dubai",
+    "normal"
+   ]
+  ],
+  "tokens": [
+   "SOL",
+   "USDT"
+  ],
+  "tone": "alert"
+ },
+ "beats": [
+  {
+   "voice": "Nỗi lo ví lạnh Ledger bị cài chip gián điệp nay đã lan tới Dubai.",
+   "visual": {
+    "type": "hero",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "VÍ LẠNH BỊ CÀI CHIP",
+    "title": "Ledger tại Dubai",
+    "subtitle": "Hai người dùng báo mất tiền",
+    "tokens": [
+     "SOL",
+     "USDT"
+    ]
+   }
+  },
+  {
+   "voice": "Hai người mua ví tại cửa hàng Virgin Megastore ở Dubai cho biết đã mất tổng cộng khoảng sáu trăm linh bốn nghìn đô.",
+   "visual": {
+    "type": "big_number",
+    "value": 604,
+    "prefix": "~",
+    "suffix": "nghìn USD",
+    "kicker": "Thiệt hại người dùng báo",
+    "caption": "2 VÍ MUA Ở DUBAI",
+    "tokens": [
+     "SOL",
+     "USDT"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Một chiếc Ledger Stax mất năm trăm linh bảy nghìn USDT. Một chiếc Ledger Flex mất khoảng một nghìn ba trăm SOL, và đã được xác nhận có chip lạ bên trong.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "Stax",
+      "token": "USDT",
+      "value": 507,
+      "unit": "nghìn USDT",
+      "stamp": "Nghi vấn",
+      "tone": "bad"
+     },
+     {
+      "label": "Flex",
+      "token": "SOL",
+      "value": 1300,
+      "prefix": "~",
+      "unit": "SOL",
+      "stamp": "Có chip lạ",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Theo điều tra của Ledger, chip cài lén đọc hai mươi bốn từ khôi phục trên màn hình, rồi gửi ra ngoài qua mạng di động.",
+   "visual": {
+    "type": "flow",
+    "from": {
+     "kicker": "Màn hình ví",
+     "title": "24 từ khôi phục",
+     "sub": "lúc cài đặt ví mới",
+     "tokens": []
+    },
+    "to": {
+     "kicker": "Chip lạ + eSIM",
+     "title": "Gửi ra ngoài",
+     "sub": "qua mạng di động LTE",
+     "tone": "bad"
+    },
+    "caption": "Theo Ledger · điều tra công bố 13/10/2026"
+   }
+  },
+  {
+   "voice": "Ledger thừa nhận công cụ kiểm tra hàng thật không thể biết thiết bị đã qua tay ai trong chuỗi phân phối.",
+   "visual": {
+    "type": "quote",
+    "who": "Ledger",
+    "role": "Tài liệu hỗ trợ chính thức (lược dịch)",
+    "text": "Genuine Check xác nhận thiết bị là hàng thật, nhưng không thể kiểm chứng lịch sử chuỗi cung ứng vật lý.",
+    "tone": "neutral"
+   }
+  },
+  {
+   "voice": "Trước đó, cảnh sát Singapore ghi nhận hai nạn nhân mất khoảng ba phẩy năm triệu đô Singapore. Chuỗi MediaMarkt Saturn ở Đức đã ngừng bán Ledger.",
+   "visual": {
+    "type": "bullets",
+    "title": "Không chỉ ở Dubai",
+    "items": [
+     {
+      "text": "Singapore: 2 nạn nhân mất ~3,5 triệu SGD",
+      "tone": "bad"
+     },
+     {
+      "text": "Đức: MediaMarkt Saturn ngừng bán Ledger",
+      "tone": "accent"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Cointelegraph và crypto.news cùng đưa tin. Đến nay Ledger và Virgin Megastore chưa phản hồi riêng về hai vụ ở Dubai.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí quốc tế đưa tin",
+    "items": [
+     {
+      "outlet": "Cointelegraph",
+      "date": "18/11/2026",
+      "headline": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore"
+     },
+     {
+      "outlet": "crypto.news",
+      "date": "18/11/2026",
+      "headline": "Ledger wallet tampering fears reach Dubai as two users report $604K in crypto losses"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Ledger khuyên ai nghi ngờ ví của mình hãy chuyển tiền sang ví mới với cụm từ khôi phục mới.",
+   "visual": {
+    "type": "bullets",
+    "title": "Ledger khuyến cáo",
+    "items": [
+     {
+      "text": "Nghi ngờ: chuyển tiền sang ví seed mới",
+      "tone": "good"
+     },
+     {
+      "text": "Bị mất tiền: báo Ledger và công an",
+      "tone": "ice"
+     }
+    ]
+   }
+  }
+ ],
+ "post": {
+  "title": "Ví Ledger mua ở Dubai bị nghi cài chip, 2 người dùng mất ~604.000 USD",
+  "caption": "Hai người dùng mua ví Ledger tại Virgin Megastore Dubai báo mất tổng ~604.000 USD; một ví Flex đã được xác nhận có chip lạ. Ledger khuyên ai nghi ngờ hãy chuyển tiền sang ví có cụm từ khôi phục mới.",
+  "hashtags": [
+   "ledger",
+   "vilanh",
+   "anninhcrypto",
+   "crypto",
+   "tintuccrypto"
+  ],
+  "sources": [
+   "https://cointelegraph.com/news/what-happened-in-crypto-today",
+   "https://crypto.news/ledger-wallet-tampering-dubai-virgin-megastore-losses/",
+   "https://financefeeds.com/ledger-wallet-implant-reports-reach-dubai-as-users-claim-604k-in-losses/",
+   "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network"
+  ]
+ }
+}

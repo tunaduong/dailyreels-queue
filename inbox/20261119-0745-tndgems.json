@@ -1,0 +1,220 @@
+{
+ "channel": "tndgems",
+ "date": "19.11.2026",
+ "headline": [
+  [
+   "Ví lạnh mua ở Dubai mất",
+   "normal"
+  ],
+  [
+   "507.000 USDT",
+   "accent"
+  ],
+  [
+   "lộ chip lạ phiên bản mới",
+   "normal"
+  ]
+ ],
+ "source": "Nguồn: crypto.news, FinanceFeeds, CoinDesk",
+ "cover": {
+  "kicker": "ON-CHAIN · LEDGER",
+  "big": {
+   "text": "507",
+   "unit": "NGHÌN USDT BỐC HƠI"
+  },
+  "lines": [
+   [
+    "Ăng-ten",
+    "normal"
+   ],
+   [
+    "V1.3",
+    "accent"
+   ],
+   [
+    "lộ diện",
+    "normal"
+   ]
+  ],
+  "tokens": [
+   "USDT",
+   "SOL"
+  ],
+  "tone": "alert"
+ },
+ "beats": [
+  {
+   "voice": "Năm trăm linh bảy nghìn USDT. Bốc hơi khỏi một chiếc ví lạnh mà chủ nhân nói chưa từng nhập cụm từ khôi phục ở bất cứ đâu.",
+   "visual": {
+    "type": "big_number",
+    "value": 507,
+    "suffix": "nghìn USDT",
+    "kicker": "Ledger Stax · Dubai",
+    "caption": "BỐC HƠI 14/11",
+    "tokens": [
+     "USDT"
+    ],
+    "tone": "bad"
+   }
+  },
+  {
+   "voice": "Ngày chín tháng mười, Ledger công bố điều tra ví bị can thiệp. Hai ngày sau, nạn nhân mua chiếc Ledger Stax tại Virgin Megastore Dubai. Ngày mười bốn tháng mười một, ví bị rút sạch.",
+   "visual": {
+    "type": "timeline",
+    "title": "Dòng thời gian (2026)",
+    "events": [
+     {
+      "time": "09/10",
+      "text": "Ledger công bố điều tra vụ CryptoBilis",
+      "tone": "ice"
+     },
+     {
+      "time": "11/10",
+      "text": "Mua Ledger Stax tại Virgin Megastore",
+      "badge": "+2 ngày",
+      "tone": "accent"
+     },
+     {
+      "time": "14/11",
+      "text": "Ví Stax mất 507.000 USDT",
+      "tone": "bad",
+      "token": "USDT"
+     },
+     {
+      "time": "15/11",
+      "text": "Ví Flex mua ở Dubai mất ~1.300 SOL",
+      "tone": "bad",
+      "token": "SOL"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Ngày mười lăm, một người dùng khác báo chiếc Ledger Flex cũng mua ở Dubai mất khoảng một nghìn ba trăm SOL.",
+   "visual": {
+    "type": "tx_card",
+    "title": "Báo cáo mất tiền · Solana",
+    "rows": [
+     {
+      "k": "Thời điểm",
+      "v": "~15/11/2026"
+     },
+     {
+      "k": "Thiết bị",
+      "v": "Ledger Flex (mua ở Dubai)"
+     },
+     {
+      "k": "To",
+      "v": "•••• [ví lạ]",
+      "tone": "bad"
+     },
+     {
+      "k": "Số lượng",
+      "v": "~1.300 SOL",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Mở máy ra, anh thấy một bảng mạch phụ và ăng-ten dán trong nắp lưng, ghi V một chấm ba. Các mẫu chip lạ trước đó chỉ ghi V một chấm hai.",
+   "visual": {
+    "type": "hero",
+    "icon": "warn",
+    "tone": "alert",
+    "kicker": "CHIP LẠ · BẢN MỚI",
+    "title": "Ăng-ten V1.3",
+    "subtitle": "Mạch phụ + ăng-ten trong nắp lưng Ledger Flex",
+    "tokens": [
+     "SOL"
+    ]
+   }
+  },
+  {
+   "voice": "Vụ thiết bị bán qua đại lý CryptoBilis tháng trước được ước tính thiệt hại từ tám mươi sáu đến hơn chín mươi ba triệu đô, trên hơn ba trăm ví.",
+   "visual": {
+    "type": "range",
+    "title": "Ước tính thiệt hại vụ CryptoBilis",
+    "min": 80,
+    "max": 100,
+    "unit": "triệu",
+    "markers": [
+     {
+      "value": 86,
+      "label": "~86 triệu",
+      "who": "Decrypt"
+     },
+     {
+      "value": 93.2,
+      "label": "~93,2 triệu",
+      "who": "CoinDesk*"
+     }
+    ],
+    "notes": [
+     "Ledger chưa xác nhận tổng thiệt hại.",
+     "*Theo các nhà nghiên cứu on-chain, >300 ví."
+    ]
+   }
+  },
+  {
+   "voice": "Khi đó Tether đã đóng băng mười triệu USDT liên quan. Lần này, chủ ví Stax đã báo công an và đề nghị Tether khóa số tiền bị rút.",
+   "visual": {
+    "type": "stat_cards",
+    "cards": [
+     {
+      "label": "T10",
+      "token": "USDT",
+      "value": 10,
+      "unit": "triệu USDT",
+      "stamp": "Đã khóa",
+      "tone": "ice"
+     },
+     {
+      "label": "Stax",
+      "token": "USDT",
+      "value": 507,
+      "unit": "nghìn USDT",
+      "stamp": "Xin khóa",
+      "tone": "bad"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "Chiếc Stax chưa được mở kiểm tra, nên chip lạ vẫn chỉ là nghi vấn. Ledger chưa phản hồi riêng về hai vụ này.",
+   "visual": {
+    "type": "news_card",
+    "title": "Báo chí đưa tin",
+    "items": [
+     {
+      "outlet": "FinanceFeeds",
+      "date": "18/11/2026",
+      "headline": "Ledger Wallet Implant Reports Reach Dubai as Users Claim $604K in Losses"
+     },
+     {
+      "outlet": "The Defiant",
+      "date": "18/11/2026",
+      "headline": "Ledger Users Report Losses From Dubai-Bought Wallets"
+     }
+    ]
+   }
+  }
+ ],
+ "post": {
+  "title": "507.000 USDT bốc hơi: ví Ledger mua ở Dubai lộ chip lạ phiên bản V1.3",
+  "caption": "Ledger Stax mua ở Virgin Megastore Dubai ngày 11/10 mất 507.000 USDT ngày 14/11; một Ledger Flex khác mất ~1.300 SOL và được xác nhận có ăng-ten V1.3. Chip trong Stax chưa được kiểm chứng.",
+  "hashtags": [
+   "onchain",
+   "ledger",
+   "usdt",
+   "solana",
+   "crypto"
+  ],
+  "sources": [
+   "https://crypto.news/ledger-wallet-tampering-dubai-virgin-megastore-losses/",
+   "https://financefeeds.com/ledger-wallet-implant-reports-reach-dubai-as-users-claim-604k-in-losses/",
+   "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
+   "https://decrypt.co/380826/ledger-finds-lte-implant-that-stole-recovery-phrases-in-suspected-86m-drain"
+  ]
+ }
+}
